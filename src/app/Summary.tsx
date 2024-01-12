@@ -265,6 +265,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
                   {getTranslations(x)}
                 </TableHead>
               ))}
+              <TableHead>Suma</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -276,6 +277,12 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
                   </TableCell>
                 )
               )}
+              <TableCell>
+                {Object.values(currentDataset.income)
+                  .reduce((a: Decimal, b: string) => a.add(b), new Decimal(0))
+                  .toFixed(2)}{" "}
+                zł
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>
@@ -288,6 +295,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
                   {getTranslations(x)}
                 </TableHead>
               ))}
+              <TableHead>Suma</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -297,6 +305,12 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
                   {new Decimal(value).toFixed(2)} zł
                 </TableCell>
               ))}
+              <TableCell>
+                {Object.values(currentDataset.income)
+                  .reduce((a: Decimal, b: string) => a.add(b), new Decimal(0))
+                  .toFixed(2)}{" "}
+                zł
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>
