@@ -184,8 +184,8 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
   }
 
   const currentDataset = getDataset(currentYear, currentMonth);
-  console.log(currentDataset.income)
-  console.log(getTranslations(currentDataset['darowizny_celowe']))
+  console.log(currentDataset.income);
+  console.log(getTranslations(currentDataset["darowizny_celowe"]));
 
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
@@ -269,7 +269,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           <TableHeader>
             <TableRow>
               {Object.keys(currentDataset.koszty).map((x) => (
-                <TableHead key={currentMonth + getTranslations(x)}>
+                <TableHead key={"costs" + currentMonth + getTranslations(x)}>
                   {getTranslations(x)}
                 </TableHead>
               ))}
@@ -277,8 +277,10 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           </TableHeader>
           <TableBody>
             <TableRow>
-              {Object.values(currentDataset.koszty).map((x) => (
-                <TableCell key={x}>{new Decimal(x).toFixed(2)} zł</TableCell>
+              {Object.entries(currentDataset.income).map(([key, value]) => (
+                <TableCell key={"costs" + key + value}>
+                  {new Decimal(value).toFixed(2)} zł
+                </TableCell>
               ))}
             </TableRow>
           </TableBody>
@@ -288,7 +290,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           <TableHeader>
             <TableRow>
               {Object.keys(currentDataset.income).map((x) => (
-                <TableHead key={currentMonth + getTranslations(x)}>
+                <TableHead key={"income" + currentMonth + getTranslations(x)}>
                   {getTranslations(x)}
                 </TableHead>
               ))}
@@ -296,8 +298,10 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           </TableHeader>
           <TableBody>
             <TableRow>
-              {Object.values(currentDataset.income).map((x) => (
-                <TableCell key={x}>{new Decimal(x).toFixed(2)} zł</TableCell>
+              {Object.entries(currentDataset.income).map(([key, value]) => (
+                <TableCell key={"income" + key + value}>
+                  {new Decimal(value).toFixed(2)} zł
+                </TableCell>
               ))}
             </TableRow>
           </TableBody>
