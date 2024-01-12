@@ -1,0 +1,326 @@
+"use client";
+import React, { useState, useMemo } from "react";
+import {
+  TableCaption,
+  TableHeader,
+  TableRow,
+  TableHead,
+  TableBody,
+  TableCell,
+  Table,
+} from "@/components/ui/table";
+import { ModeToggle } from "@/components/mode-toggle";
+import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
+import Decimal from "decimal.js";
+
+type Legend = Record<string, string>;
+
+interface Income {
+  // Decimal
+  darowizny_celowe: string;
+  // Decimal
+  darowizny_inne: string;
+  // Decimal
+  darowizny_koronawirus: string;
+  // Decimal
+  darowizny_sponsoring: string;
+  // Decimal
+  darowizny_statutowe: string;
+  // Decimal
+  eventy: string;
+  // Decimal
+  inne_wplywy: string;
+  // Decimal
+  warsztaty: string;
+}
+
+interface Costs {
+  // Decimal
+  administracyjne: string;
+  // Decimal
+  bank: string;
+  // Decimal
+  covid: string;
+  // Decimal
+  eventy: string;
+  // Decimal
+  hosting: string;
+  // Decimal
+  inne_koszty: string;
+  // Decimal
+  internet: string;
+  // Decimal
+  ksiegowosc: string;
+  // Decimal
+  lokal: string;
+  // Decimal
+  ubezpieczenia: string;
+  // Decimal
+  umowy: string;
+  // Decimal
+  zakupy: string;
+  // Decimal
+  zwroty: string;
+}
+
+interface MonthSummary {
+  // Decimal
+  bilans: string;
+  // Decimal
+  end_saldo: string;
+  // Decimal
+  safe_threshold: string;
+  // Decimal
+  safe_threshold_difference: string;
+  // Decimal
+  start_saldo: string;
+}
+
+interface Described {
+  // Decimal
+  value: string;
+  data: {
+    category: "event" | "workshops" | string;
+    metadata: {
+      details: string;
+      name: string;
+    };
+  };
+}
+
+type MonthDetails = {
+  income: Income;
+  income_described: Described[];
+  koszty: Costs;
+  koszty_described: Described[];
+  summary: MonthSummary;
+};
+
+type Summary = Record<string, MonthDetails>;
+
+const keyTranslations: Record<string, string> = {
+  darowizny_celowe: "Darowizny Celowe",
+  darowizny_inne: "Darowizny Inne",
+  darowizny_koronawirus: "Darowizny Koronawirus",
+  darowizny_sponsoring: "Darowizny Sponsoring",
+  darowizny_statutowe: "Darowizny Statutowe",
+  eventy: "eventy",
+  inne_wplywy: "inne Wplywy",
+  warsztaty: "warsztaty",
+  administracyjne: "administracyjne",
+  bank: "bank",
+  covid: "covid",
+  hosting: "hosting",
+  inne_koszty: "inneKoszty",
+  internet: "internet",
+  ksiegowosc: "ksiegowosc",
+  lokal: "lokal",
+  ubezpieczenia: "ubezpieczenia",
+  income: "Dochód",
+  koszty: "Koszty",
+  summary: "Suma",
+};
+
+export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
+  function getTranslations(key: string): string {
+    return (legend as any)[key] || keyTranslations[key] || key;
+  }
+
+  const years = useMemo(() => {
+    const newYears: Record<string, string[]> = {};
+    Object.keys(data).forEach((entry) => {
+      const [year, month] = entry.split("-");
+      if (!newYears[year]) {
+        newYears[year] = [];
+      }
+      newYears[year].push(month);
+    });
+
+    return newYears;
+  }, [data]);
+
+  const availableYears = useMemo(
+    () =>
+      Object.keys(years)
+        .map((x) => parseInt(x))
+        .toSorted()
+        .reverse()
+        .map((x) => x.toString()),
+    [years]
+  );
+  const newestDataObject = availableYears[0];
+
+  const [currentYear, setCurrentYear] = useState(availableYears[0]);
+  const [currentMonth, setCurrentMonth] = useState(years[currentYear][0]);
+
+  function getDataset(year: string, month: string) {
+    return data[`${year}-${month}`];
+  }
+
+  function updateYear(newYear: string) {
+    const hasMonthInNewYear = years[newYear].includes(currentMonth);
+    setCurrentYear(newYear);
+    if (!hasMonthInNewYear) {
+      setCurrentMonth(years[newYear][0]);
+    }
+  }
+
+  function getCleanDataset(year: string, month: string) {
+    const item = getDataset(year, month);
+    const newItem = { ...item };
+    delete newItem.income_described;
+    delete newItem.koszty_described;
+    return newItem;
+  }
+
+  const currentDataset = getDataset(currentYear, currentMonth);
+  console.log(currentDataset.income)
+  console.log(getTranslations(currentDataset['darowizny_celowe']))
+
+  return (
+    <div className="mt-4 flex flex-1 flex-col gap-4 relative">
+      <h1 className="text-center">Monthly Financial Report</h1>
+      <div className="absolute right-0 top-0">
+        <ModeToggle />
+      </div>
+      <div className="flex gap-4 justify-end mt-4 ">
+        <Select
+          value={currentYear}
+          onValueChange={(value) => updateYear(value)}
+        >
+          <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder={`Rok: ${currentYear}`} />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              {availableYears.map((year, index) => (
+                <SelectItem value={year} key={year}>
+                  Rok: {year}
+                </SelectItem>
+              ))}
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+      </div>
+
+      <Table>
+        <TableCaption>Podsumowanie roku {currentYear}</TableCaption>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Miesiąc</TableHead>
+            {Object.keys(currentDataset.summary).map((x) => (
+              <TableHead key={getTranslations(x)}>
+                {getTranslations(x)}
+              </TableHead>
+            ))}
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {years[currentYear].map((month) => {
+            const currentData = getDataset(currentYear, month);
+            const { summary } = currentData;
+            return (
+              <TableRow key={currentYear + month}>
+                <TableCell>{month}</TableCell>
+                {Object.values(summary).map((x) => (
+                  <TableCell key={currentYear + month + x}>
+                    {new Decimal(x).toFixed(2)} zł
+                  </TableCell>
+                ))}
+              </TableRow>
+            );
+          })}
+        </TableBody>
+      </Table>
+      <div className="flex flex-1 flex-col gap-4">
+        <div className="flex justify-end">
+          <Select
+            value={currentMonth}
+            onValueChange={(value) => {
+              setCurrentMonth(value);
+            }}
+          >
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder={`Rok: ${currentMonth}`} />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                {years[currentYear].map((month, index) => (
+                  <SelectItem value={month} key={month}>
+                    Miesiąc: {month}.{currentYear}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
+        <Table className="my-4">
+          <TableCaption>Wydatki na miesiąc {currentMonth}</TableCaption>
+          <TableHeader>
+            <TableRow>
+              {Object.keys(currentDataset.koszty).map((x) => (
+                <TableHead key={currentMonth + getTranslations(x)}>
+                  {getTranslations(x)}
+                </TableHead>
+              ))}
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow>
+              {Object.values(currentDataset.koszty).map((x) => (
+                <TableCell key={x}>{new Decimal(x).toFixed(2)} zł</TableCell>
+              ))}
+            </TableRow>
+          </TableBody>
+        </Table>
+        <Table className="my-4">
+          <TableCaption>Wpływy na miesiąc {currentMonth}</TableCaption>
+          <TableHeader>
+            <TableRow>
+              {Object.keys(currentDataset.income).map((x) => (
+                <TableHead key={currentMonth + getTranslations(x)}>
+                  {getTranslations(x)}
+                </TableHead>
+              ))}
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow>
+              {Object.values(currentDataset.income).map((x) => (
+                <TableCell key={x}>{new Decimal(x).toFixed(2)} zł</TableCell>
+              ))}
+            </TableRow>
+          </TableBody>
+        </Table>
+
+        {/* <Table className="my-4">
+          <TableCaption>Wpływy na miesiąc {currentMonth}</TableCaption>
+          <TableHeader>
+            {Object.keys(currentDataset.income).map((x) => (
+              <TableRow key={currentMonth + getTranslations(x)}>
+                <TableHead>{getTranslations(x)}</TableHead>
+              </TableRow>
+            ))}
+          </TableHeader>
+          <TableBody>
+            {Object.values(currentDataset.income).map((x) => (
+              <TableRow key={currentYear + x}>
+                <TableCell>{new Decimal(x).toFixed(2)} zł</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table> */}
+      </div>
+    </div>
+  );
+}
