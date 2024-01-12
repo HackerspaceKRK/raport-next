@@ -158,7 +158,6 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
         .map((x) => x.toString()),
     [years]
   );
-  const newestDataObject = availableYears[0];
 
   const [currentYear, setCurrentYear] = useState(availableYears[0]);
   const [currentMonth, setCurrentMonth] = useState(years[currentYear][0]);
@@ -175,17 +174,10 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
     }
   }
 
-  function getCleanDataset(year: string, month: string) {
-    const item = getDataset(year, month);
-    const newItem = { ...item };
-    delete newItem.income_described;
-    delete newItem.koszty_described;
-    return newItem;
-  }
-
   const currentDataset = getDataset(currentYear, currentMonth);
-  console.log(currentDataset.income);
-  console.log(getTranslations(currentDataset["darowizny_celowe"]));
+
+  Object.entries(currentDataset.koszty); //?
+  console.log(Object.entries(currentDataset.koszty));
 
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
@@ -269,7 +261,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           <TableHeader>
             <TableRow>
               {Object.keys(currentDataset.koszty).map((x) => (
-                <TableHead key={"costs" + currentMonth + getTranslations(x)}>
+                <TableHead key={"costs" + currentMonth + x}>
                   {getTranslations(x)}
                 </TableHead>
               ))}
@@ -277,11 +269,13 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           </TableHeader>
           <TableBody>
             <TableRow>
-              {Object.entries(currentDataset.income).map(([key, value]) => (
-                <TableCell key={"costs" + key + value}>
-                  {new Decimal(value).toFixed(2)} zł
-                </TableCell>
-              ))}
+              {Object.entries(currentDataset.koszty).map(
+                ([key, value], index) => (
+                  <TableCell key={"costs" + key + value}>
+                    {new Decimal(value).toFixed(2)} zł
+                  </TableCell>
+                )
+              )}
             </TableRow>
           </TableBody>
         </Table>
@@ -290,7 +284,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           <TableHeader>
             <TableRow>
               {Object.keys(currentDataset.income).map((x) => (
-                <TableHead key={"income" + currentMonth + getTranslations(x)}>
+                <TableHead key={"income" + currentMonth + x}>
                   {getTranslations(x)}
                 </TableHead>
               ))}
@@ -306,24 +300,6 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
             </TableRow>
           </TableBody>
         </Table>
-
-        {/* <Table className="my-4">
-          <TableCaption>Wpływy na miesiąc {currentMonth}</TableCaption>
-          <TableHeader>
-            {Object.keys(currentDataset.income).map((x) => (
-              <TableRow key={currentMonth + getTranslations(x)}>
-                <TableHead>{getTranslations(x)}</TableHead>
-              </TableRow>
-            ))}
-          </TableHeader>
-          <TableBody>
-            {Object.values(currentDataset.income).map((x) => (
-              <TableRow key={currentYear + x}>
-                <TableCell>{new Decimal(x).toFixed(2)} zł</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table> */}
       </div>
     </div>
   );
