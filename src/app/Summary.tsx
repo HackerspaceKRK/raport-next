@@ -1,5 +1,7 @@
 "use client";
 import React, { useState, useMemo } from "react";
+import moment from "moment";
+
 import {
   TableCaption,
   TableHeader,
@@ -177,7 +179,6 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
   const currentDataset = getDataset(currentYear, currentMonth);
 
   Object.entries(currentDataset.koszty); //?
-  console.log(Object.entries(currentDataset.koszty));
 
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
@@ -223,10 +224,10 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
             const { summary } = currentData;
             return (
               <TableRow key={currentYear + month}>
-                <TableCell>{month}</TableCell>
-                {Object.values(summary).map((x) => (
-                  <TableCell key={currentYear + month + x}>
-                    {new Decimal(x).toFixed(2)} zł
+                <TableCell>{moment(month, "MM").format("MMMM")}</TableCell>
+                {Object.entries(summary).map(([key, value], index) => (
+                  <TableCell key={currentYear + month + key} className={ key === "bilans" || key === "safe_threshold_difference" ? ( value > 0 ? "text-[#a3e635]" : "text-[#f87171]") : ""}>
+                    {new Decimal(value).toFixed(2)} zł
                   </TableCell>
                 ))}
               </TableRow>
@@ -257,7 +258,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           </Select>
         </div>
         <Table className="my-4">
-          <TableCaption>Wydatki na miesiąc {currentMonth}</TableCaption>
+          <TableCaption>Wydatki na miesiąc {moment(currentMonth, "MM").format("MMMM")}</TableCaption>
           <TableHeader>
             <TableRow>
               {Object.keys(currentDataset.koszty).map((x) => (
@@ -272,13 +273,13 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
             <TableRow>
               {Object.entries(currentDataset.koszty).map(
                 ([key, value], index) => (
-                  <TableCell key={"costs" + key + value}>
-                    {new Decimal(value).toFixed(2)} zł
+                  <TableCell key={"costs" + key + value} className={( value === "0" ? "text-[#9ca3af]" : "")}>
+                    {new Decimal(-value).toFixed(2)} zł
                   </TableCell>
                 )
               )}
               <TableCell>
-                {Object.values(currentDataset.income)
+                {Object.values(currentDataset.koszty)
                   .reduce((a: Decimal, b: string) => a.add(b), new Decimal(0))
                   .toFixed(2)}{" "}
                 zł
@@ -287,7 +288,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           </TableBody>
         </Table>
         <Table className="my-4">
-          <TableCaption>Wpływy na miesiąc {currentMonth}</TableCaption>
+          <TableCaption>Wpływy na miesiąc {moment(currentMonth, "MM").format("MMMM")}</TableCaption>
           <TableHeader>
             <TableRow>
               {Object.keys(currentDataset.income).map((x) => (
@@ -301,7 +302,7 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend }) {
           <TableBody>
             <TableRow>
               {Object.entries(currentDataset.income).map(([key, value]) => (
-                <TableCell key={"income" + key + value}>
+                <TableCell key={"income" + key + value} className={( value === "0" ? "text-[#9ca3af]" : "")}>
                   {new Decimal(value).toFixed(2)} zł
                 </TableCell>
               ))}
