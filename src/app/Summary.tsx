@@ -13,7 +13,10 @@ import {
   Pie,
   Legend,
   ResponsiveContainer,
+  Brush
 } from "recharts";
+
+import { useTheme } from 'next-themes'
 
 import {
   TableHeader,
@@ -45,21 +48,38 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { HsKrkIcon } from "@/components/HsKrkIcon";
 
-const COLORS = [
+const COLORS_DARK = [
+  "#a1a1aa",
   "#f87171",
-  "#fca5a5",
-  "#00C49F",
-  "#bef264",
-  "#FFBB28",
-  "#fde68a",
-  "#f0fdfa",
-  "#38bdf8",
-  "#4f46e5",
-  "#a855f7",
-  "#b3d23c",
-  "#1e1b4b",
+  "#fb923c",
+  "#fbbf24",
+  "#fde047",
+  "#a3e635",
+  "#4ade80",
+  "#2dd4bf",
+  "#60a5fa",
+  "#a78bfa",
+  "#e879f9",
+  "#fb7185"
 ];
+
+const COLORS_LIGHT = [
+  "#52525b",
+  "#dc2626",
+  "#ea580c",
+  "#d97706",
+  "#ca8a04",
+  "#65a30d",
+  "#16a34a",
+  "#0d9488",
+  "#2563eb",
+  "#7c3aed",
+  "#c026d3",
+  "#e11d48"
+];
+
 
 type DataLegend = Record<string, string>;
 
@@ -221,6 +241,14 @@ export function Summary({
     [years]
   );
 
+
+  const { theme, setTheme } = useTheme()
+  const { resolvedTheme } = useTheme()
+  
+  function returnPlotColors(theme){
+    return theme === "dark" ? COLORS_DARK : COLORS_LIGHT
+  }
+
   const [currentYear, setCurrentYear] = useState(availableYears[10]);
   const [currentMonth, setCurrentMonth] = useState(years[currentYear][11]);
 
@@ -305,7 +333,11 @@ export function Summary({
 
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
-      <h1 className="text-center">Monthly Financial Report</h1>
+          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <HsKrkIcon theme={resolvedTheme} className="h-20 w-20" />
+        <h1 className="flex items-center text-5xl font-extrabold dark:text-white">Podsumowanie Finansowe</h1>
+    </a>
+      
       <div className="absolute right-0 top-0">
         <ModeToggle />
       </div>
@@ -331,6 +363,7 @@ export function Summary({
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <div className="col-span-2">
+          <Card><CardHeader><CardTitle></CardTitle></CardHeader><CardContent>
           <Table>
             <TableHeader>
               <TableRow>
@@ -356,8 +389,8 @@ export function Summary({
                           key === "bilans" ||
                           key === "safe_threshold_difference"
                             ? value > 0
-                              ? "text-[#a3e635]"
-                              : "text-[#f87171]"
+                              ? "text-lime-600 dark:text-lime-400"
+                              : "text-red-600 dark:text-red-400"
                             : ""
                         }
                       >
@@ -368,11 +401,11 @@ export function Summary({
                 );
               })}
             </TableBody>
-          </Table>
+          </Table></CardContent></Card>
         </div>
         <div className="col-span-2">
-          <div style={{ width: "100%", height: "100%" }}>
-            <ResponsiveContainer>
+        <Card><CardHeader><CardTitle></CardTitle></CardHeader><CardContent><div style={{ width: "100%", height: 700 }}>
+          <ResponsiveContainer>
               <BarChart
                 data={getPlotDataset(currentYear)}
                 accessibilityLayer
@@ -384,23 +417,23 @@ export function Summary({
                 <Bar
                   dataKey={keyTranslations["venue_expenses"]}
                   stackId="a"
-                  fill="#8884d8"
+                  fill={ resolvedTheme === "dark" ? "#60a5fa" : "#2563eb"}
                 />
                 <Bar
                   dataKey={keyTranslations["other_expenses"]}
                   stackId="a"
-                  fill="#82ca9d"
+                  fill={ resolvedTheme === "dark" ? "#fbbf24" : "#d97706"}
                 />
                 <Bar
                   dataKey={keyTranslations["incomes"]}
                   stackId="a"
-                  fill="#da3"
+                  fill={ resolvedTheme === "dark" ? "#34d399" : "#059669"}
                 />
                 <Legend />
                 <Tooltip />
               </BarChart>
             </ResponsiveContainer>
-          </div>
+          </div></CardContent></Card>
         </div>
       </div>
 
@@ -523,7 +556,7 @@ export function Summary({
                                     ).cost.map((entry, index) => (
                                       <Cell
                                         key={`cell-${index}`}
-                                        fill={COLORS[index % COLORS.length]}
+                                        fill={returnPlotColors(resolvedTheme)[index % returnPlotColors(resolvedTheme).length]}
                                       />
                                     ))}
                                   </Pie>
@@ -696,7 +729,7 @@ export function Summary({
                                     ).income.map((entry, index) => (
                                       <Cell
                                         key={`cell-${index}`}
-                                        fill={COLORS[index % COLORS.length]}
+                                        fill={returnPlotColors(resolvedTheme)[index % returnPlotColors(resolvedTheme).length]}
                                       />
                                     ))}
                                   </Pie>
@@ -823,6 +856,7 @@ export function Summary({
                           stackId="a"
                           fill="#8884d8"
                         />
+                        <Brush dataKey="date" height={30} stroke="#8884d8" />
                         <Tooltip />
                       </BarChart>
                     </ResponsiveContainer>
@@ -847,6 +881,7 @@ export function Summary({
                           stackId="a"
                           fill="#da3"
                         />
+                        <Brush dataKey="date" height={30} stroke="#8884d8" />
                         <Tooltip />
                       </BarChart>
                     </ResponsiveContainer>
@@ -871,6 +906,7 @@ export function Summary({
                           stackId="a"
                           fill="#3a3"
                         />
+                        <Brush dataKey="date" height={30} stroke="#8884d8" />
                         <Tooltip />
                       </BarChart>
                     </ResponsiveContainer>
