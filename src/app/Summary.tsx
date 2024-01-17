@@ -332,7 +332,7 @@ export function Summary({
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
       <a
-        href="https://flowbite.com/"
+        href="#"
         class="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <HsKrkIcon theme={resolvedTheme} className="h-20 w-20" />
