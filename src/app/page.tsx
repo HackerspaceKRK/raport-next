@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Summary data={details.data as any} legend={details.legend} />
+      <Summary data={details.data as any} legend={details.legend} stats={details.stats}/>
     </main>
   )
 }

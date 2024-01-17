@@ -18,6 +18,8 @@ import {
 
 import { useTheme } from "next-themes";
 
+import { DateTime } from "luxon";
+
 import {
   TableHeader,
   TableRow,
@@ -170,6 +172,20 @@ interface PlotSummary {
 
 type Summary = Record<string, MonthDetails>;
 
+interface StatsMonths {
+  [key: string]: string;
+}
+
+interface Operations {
+  all: string;
+  months: StatsMonths;
+}
+
+interface Stats {
+  parsing_date: string;
+  operations: Operations;
+}
+
 const keyTranslations: Record<string, string> = {
   darowizny_celowe: "Darowizny Celowe",
   darowizny_inne: "Darowizny Inne",
@@ -196,7 +212,7 @@ const keyTranslations: Record<string, string> = {
   name: "Nazwa",
   details: "Opis",
   venue_expenses: "Wydatki na lokal",
-  other_expenses: "Inne wydatki",
+  other_expenses: "Pozostałe wydatki",
   incomes: "Wpływy",
   saldo: "Saldo",
   balance: "Bilans",
@@ -205,9 +221,11 @@ const keyTranslations: Record<string, string> = {
 export function Summary({
   data,
   legend,
+  stats,
 }: {
   data: Summary;
   legend: DataLegend;
+  stats: Stats;
 }) {
   function getTranslations(key: string): string {
     return (legend as any)[key] || keyTranslations[key] || key;
@@ -236,7 +254,7 @@ export function Summary({
     [years]
   );
 
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme("dark");
   const { resolvedTheme } = useTheme();
 
   function returnPlotColors(theme) {
@@ -329,18 +347,21 @@ export function Summary({
     return r;
   }
 
+  console.log(DateTime.fromFormat("05", "MM").setLocale("pl").toFormat("LLLL"));
+
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
-      <a
-        href="#"
-        class="flex items-center space-x-3 rtl:space-x-reverse"
-      >
-        <HsKrkIcon theme={resolvedTheme} className="h-20 w-20" />
+      <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <HsKrkIcon
+          theme={resolvedTheme}
+          className="h-20 w-20 dark:icon-white"
+        />
         <h1 className="flex items-center text-5xl font-extrabold dark:text-white">
           Podsumowanie Finansowe
         </h1>
-        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-          Opracowane 2024-01-01 21:37 na podstawie 2137 przetworzonych operacji
+        <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+          Opracowane {stats.parsing_date} na podstawie {stats.operations.all}{" "}
+          przetworzonych operacji
         </p>
       </a>
 
@@ -392,7 +413,9 @@ export function Summary({
                     return (
                       <TableRow key={currentYear + month}>
                         <TableCell>
-                          {moment(month, "MM").format("MMMM")}
+                          {DateTime.fromFormat(month, "LL")
+                            .setLocale("pl")
+                            .toFormat("LLLL")}
                         </TableCell>
                         {Object.entries(summary).map(([key, value], index) => (
                           <TableCell
@@ -499,7 +522,13 @@ export function Summary({
               <CardContent>
                 <Card>
                   <CardHeader>
-                    <CardTitle>Koszty</CardTitle>
+                    <CardTitle>
+                      Koszty (
+                      {DateTime.fromFormat(currentMonth, "LL")
+                        .setLocale("pl")
+                        .toFormat("LLLL")}{" "}
+                      {currentYear}){" "}
+                    </CardTitle>
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -674,7 +703,13 @@ export function Summary({
 
                 <Card>
                   <CardHeader>
-                    <CardTitle>Wpływy</CardTitle>
+                    <CardTitle>
+                      Wpływy (
+                      {DateTime.fromFormat(currentMonth, "LL")
+                        .setLocale("pl")
+                        .toFormat("LLLL")}{" "}
+                      {currentYear})
+                    </CardTitle>
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
