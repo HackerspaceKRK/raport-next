@@ -1,36 +1,28 @@
 "use client";
 import React, { useState, useMemo } from "react";
 import moment from "moment";
-import { 
-  LineChart, 
-  Line,
+import {
   Cell,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  ComposedChart,
   BarChart,
   Bar,
   PieChart,
-  Pie
-} from 'recharts';
+  Pie,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
-
-import {
-  TableCaption,
   TableHeader,
   TableRow,
   TableHead,
   TableBody,
   TableCell,
   Table,
+  TableFooter,
 } from "@/components/ui/table";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
@@ -39,16 +31,37 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
 
 import Decimal from "decimal.js";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const COLORS = ['#f87171','#fca5a5', '#00C49F', '#bef264', '#FFBB28', '#fde68a', '#f0fdfa', '#38bdf8', '#4f46e5', '#a855f7', '#b3d23c', '#1e1b4b'];
+const COLORS = [
+  "#f87171",
+  "#fca5a5",
+  "#00C49F",
+  "#bef264",
+  "#FFBB28",
+  "#fde68a",
+  "#f0fdfa",
+  "#38bdf8",
+  "#4f46e5",
+  "#a855f7",
+  "#b3d23c",
+  "#1e1b4b",
+];
 
-type Legend = Record<string, string>;
+type DataLegend = Record<string, string>;
 
 interface Income {
   // Decimal
@@ -133,11 +146,11 @@ type MonthDetails = {
 };
 
 interface PlotSummary {
-	date: string;
-	incomes: string;
+  date: string;
+  incomes: string;
   venue_expenses: string;
-	other_expenses: string;
-	saldo: string;
+  other_expenses: string;
+  saldo: string;
 }
 
 type Summary = Record<string, MonthDetails>;
@@ -166,15 +179,24 @@ const keyTranslations: Record<string, string> = {
   value: "Wartość",
   category: "Kategoria",
   name: "Nazwa",
-  details: "Opis"
+  details: "Opis",
+  venue_expenses: "Wydatki na lokal",
+  other_expenses: "Inne wydatki",
+  incomes: "Wpływy",
+  saldo: "Saldo",
+  balance: "Bilans",
 };
 
-export function Summary({ data, legend }: { data: Summary; legend: Legend}) {
+export function Summary({
+  data,
+  legend,
+}: {
+  data: Summary;
+  legend: DataLegend;
+}) {
   function getTranslations(key: string): string {
     return (legend as any)[key] || keyTranslations[key] || key;
   }
-
-  // console.log(data)
 
   const years = useMemo(() => {
     const newYears: Record<string, string[]> = {};
@@ -218,42 +240,67 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend}) {
 
   Object.entries(currentDataset.koszty); //?
 
+  function renameKeys(obj, newKeys) {
+    const keyValues = Object.keys(obj).map((key) => {
+      const newKey = newKeys[key] || key;
+      return { [newKey]: obj[key] };
+    });
+    return Object.assign({}, ...keyValues);
+  }
 
   function getPlotDataset(year: string) {
-    const listOfPlotDatasets: PlotSummary[] = []
+    const listOfPlotDatasets: PlotSummary[] = [];
     years[year].map((month) => {
       const currentData = getDataset(year, month);
       const { plot } = currentData;
-      listOfPlotDatasets.push(plot)
+      console.log(plot);
+      listOfPlotDatasets.push(renameKeys(plot, keyTranslations));
+    });
 
-    })
+    return listOfPlotDatasets;
+  }
+
+  function getWholePlotDataset() {
+    const listOfPlotDatasets: PlotSummary[] = [];
+    Object.keys(years).map((year) => {
+      years[year].map((month) => {
+        const currentData = getDataset(year, month);
+        const { plot } = currentData;
+        listOfPlotDatasets.push(renameKeys(plot, keyTranslations));
+      });
+    });
 
     return listOfPlotDatasets;
   }
 
   function getPieChartDataset(year: string, month: string) {
-    const inc = []
-    const cos = []
-    const k = [ { name: 'Group A', value: 400.12 }, { name: 'Group B', value: 300 }, { name: 'Group C', value: 300 }, { name: 'Group D', value: 200 } ];
-    
-    Object.entries(getDataset(year,month).income).map(([key,value],index) => {
-      if(Math.abs(Number(value))!= 0) {
-        inc.push({'name': getTranslations(key), 'value': Math.abs(Number(value))})
+    const inc = [];
+    const cos = [];
+
+    Object.entries(getDataset(year, month).income).map(
+      ([key, value], index) => {
+        if (Math.abs(Number(value)) != 0) {
+          inc.push({
+            name: getTranslations(key),
+            value: Math.abs(Number(value)),
+          });
+        }
       }
-    })
-    
-    Object.entries(getDataset(year,month).koszty).map(([key,value],index) => {
-      if(Math.abs(Number(value))!= 0) {
-        cos.push({'name': getTranslations(key), 'value': Math.abs(Number(value))})
+    );
+
+    Object.entries(getDataset(year, month).koszty).map(
+      ([key, value], index) => {
+        if (Math.abs(Number(value)) != 0) {
+          cos.push({
+            name: getTranslations(key),
+            value: Math.abs(Number(value)),
+          });
+        }
       }
-    })
-    
-    const r = {'income': inc, 'cost': cos} ;
-    console.log(r.income);
-    console.log(r.cost);
-    console.log(k);
-    console.log(typeof(r.income[0].value))
-    return(r);
+    );
+
+    const r = { income: inc, cost: cos };
+    return r;
   }
 
   return (
@@ -281,50 +328,90 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend}) {
           </SelectContent>
         </Select>
       </div>
-      <BarChart width={1500} height={400} data={getPlotDataset(currentYear)} accessibilityLayer stackOffset="sign">
-          <XAxis dataKey="date"/>
-          <YAxis/>
-          <CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
-          <Bar dataKey="venue_expenses" stackId="a" fill="#8884d8" />
-          <Bar dataKey="other_expenses" stackId="a" fill="#82ca9d" />
-          <Bar dataKey="incomes" stackId="a" fill="#da3" />
-          <Tooltip/>
-		  </BarChart>
 
-      <Table>
-        <TableCaption>Podsumowanie roku {currentYear}</TableCaption>
-        <TableHeader>
-          <TableRow>
-            <TableHead>Miesiąc</TableHead>
-            {Object.keys(currentDataset.summary).map((x) => (
-              <TableHead key={getTranslations(x)}>
-                {getTranslations(x)}
-              </TableHead>
-            ))}
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {years[currentYear].map((month) => {
-            const currentData = getDataset(currentYear, month);
-            const { summary } = currentData;
-            return (
-              <TableRow key={currentYear + month}>
-                <TableCell>{moment(month, "MM").format("MMMM")}</TableCell>
-                {Object.entries(summary).map(([key, value], index) => (
-                  <TableCell key={currentYear + month + key} className={ key === "bilans" || key === "safe_threshold_difference" ? ( value > 0 ? "text-[#a3e635]" : "text-[#f87171]") : ""}>
-                    {new Decimal(value).toFixed(2)} zł
-                  </TableCell>
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="col-span-2">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Miesiąc</TableHead>
+                {Object.keys(currentDataset.summary).map((x) => (
+                  <TableHead key={getTranslations(x)}>
+                    {getTranslations(x)}
+                  </TableHead>
                 ))}
               </TableRow>
-            );
-          })}
-        </TableBody>
-      </Table>
-      
+            </TableHeader>
+            <TableBody>
+              {years[currentYear].map((month) => {
+                const currentData = getDataset(currentYear, month);
+                const { summary } = currentData;
+                return (
+                  <TableRow key={currentYear + month}>
+                    <TableCell>{moment(month, "MM").format("MMMM")}</TableCell>
+                    {Object.entries(summary).map(([key, value], index) => (
+                      <TableCell
+                        key={currentYear + month + key}
+                        className={
+                          key === "bilans" ||
+                          key === "safe_threshold_difference"
+                            ? value > 0
+                              ? "text-[#a3e635]"
+                              : "text-[#f87171]"
+                            : ""
+                        }
+                      >
+                        {new Decimal(value).toFixed(2)} zł
+                      </TableCell>
+                    ))}
+                  </TableRow>
+                );
+              })}
+            </TableBody>
+          </Table>
+        </div>
+        <div className="col-span-2">
+          <div style={{ width: "100%", height: "100%" }}>
+            <ResponsiveContainer>
+              <BarChart
+                data={getPlotDataset(currentYear)}
+                accessibilityLayer
+                stackOffset="sign"
+              >
+                <XAxis dataKey="date" />
+                <YAxis />
+                <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
+                <Bar
+                  dataKey={keyTranslations["venue_expenses"]}
+                  stackId="a"
+                  fill="#8884d8"
+                />
+                <Bar
+                  dataKey={keyTranslations["other_expenses"]}
+                  stackId="a"
+                  fill="#82ca9d"
+                />
+                <Bar
+                  dataKey={keyTranslations["incomes"]}
+                  stackId="a"
+                  fill="#da3"
+                />
+                <Legend />
+                <Tooltip />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+      </div>
 
       <div className="flex flex-1 flex-col gap-4">
         <div className="flex justify-end">
-          <Select value={currentMonth} onValueChange={(value) => {   setCurrentMonth(value); }} >
+          <Select
+            value={currentMonth}
+            onValueChange={(value) => {
+              setCurrentMonth(value);
+            }}
+          >
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder={`Rok: ${currentMonth}`} />
             </SelectTrigger>
@@ -339,151 +426,458 @@ export function Summary({ data, legend }: { data: Summary; legend: Legend}) {
             </SelectContent>
           </Select>
         </div>
-        
-        <PieChart width={1500} height={600}>
-        <Pie
-          label
-          data={getPieChartDataset(currentYear,currentMonth).cost}
-          paddingAngle={5}
-          cx="20%" cy="50%" 
-        >
-          {(getPieChartDataset(currentYear,currentMonth).cost).map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))}
+        <Tabs defaultValue="incomes_and_costs">
+          <TabsList>
+            <TabsTrigger value="incomes_and_costs">Wpływy i koszty</TabsTrigger>
+            <TabsTrigger value="charts">Wykresy</TabsTrigger>
+          </TabsList>
+          <TabsContent value="incomes_and_costs">
+            <Card>
+              <CardContent>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Koszty</CardTitle>
+                    <CardDescription></CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+                      <div>
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Podział kosztów</CardTitle>
+                            <CardDescription>na kategorie</CardDescription>
+                          </CardHeader>
+                          <CardContent>
+                            <Table className="my-4">
+                              <TableHeader>
+                                <TableRow>
+                                  {Object.values(["Kategoria", "Wartość"]).map(
+                                    (x) => (
+                                      <TableHead
+                                        key={"costs" + currentMonth + x}
+                                      >
+                                        {getTranslations(x)}
+                                      </TableHead>
+                                    )
+                                  )}
+                                </TableRow>
+                              </TableHeader>
+                              <TableBody>
+                                {Object.entries(currentDataset.koszty).map(
+                                  ([key, value], index) => (
+                                    <TableRow key={"costsRow" + key + value}>
+                                      <TableCell key={"costsKey" + key + value}>
+                                        {getTranslations(key)}
+                                      </TableCell>
+                                      <TableCell
+                                        key={"costsValue" + key + value}
+                                        className={
+                                          value === "0" ? "text-[#9ca3af]" : ""
+                                        }
+                                      >
+                                        {value} zł
+                                      </TableCell>
+                                    </TableRow>
+                                  )
+                                )}
+                              </TableBody>
+                              <TableFooter>
+                                <TableRow>
+                                  <TableCell>Suma</TableCell>
+                                  <TableCell>
+                                    {Object.values(currentDataset.koszty)
+                                      .reduce(
+                                        (a: Decimal, b: string) => a.add(b),
+                                        new Decimal(0)
+                                      )
+                                      .toFixed(2)}{" "}
+                                    zł
+                                  </TableCell>
+                                </TableRow>
+                              </TableFooter>
+                            </Table>
+                          </CardContent>
+                        </Card>
+                      </div>
+                      <div className="col-span-2">
+                        <Card>
+                          <CardContent>
+                            <div style={{ width: "100%", height: 900 }}>
+                              <ResponsiveContainer>
+                                <PieChart>
+                                  <Pie
+                                    label
+                                    data={
+                                      getPieChartDataset(
+                                        currentYear,
+                                        currentMonth
+                                      ).cost
+                                    }
+                                    paddingAngle={5}
+                                    cx="50%"
+                                    cy="50%"
+                                  >
+                                    {getPieChartDataset(
+                                      currentYear,
+                                      currentMonth
+                                    ).cost.map((entry, index) => (
+                                      <Cell
+                                        key={`cell-${index}`}
+                                        fill={COLORS[index % COLORS.length]}
+                                      />
+                                    ))}
+                                  </Pie>
+                                  <Tooltip />
+                                </PieChart>
+                              </ResponsiveContainer>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
 
-        </Pie>
-        <Pie 
-          label 
-          data={getPieChartDataset(currentYear,currentMonth).income}
-          paddingAngle={10}
-          cx="80%" cy="50%" 
-        >
-          {(getPieChartDataset(currentYear,currentMonth).income).map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))}
-        </Pie>
-        <Tooltip />
-      </PieChart>
-        
-        <Table className="my-4">
-          <TableCaption>Wydatki na miesiąc {moment(currentMonth, "MM").format("MMMM")}</TableCaption>
-          <TableHeader>
-            <TableRow>
-              {Object.keys(currentDataset.koszty).map((x) => (
-                <TableHead key={"costs" + currentMonth + x}>
-                  {getTranslations(x)}
-                </TableHead>
-              ))}
-              <TableHead>Suma</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              {Object.entries(currentDataset.koszty).map(
-                ([key, value], index) => (
-                  <TableCell key={"costs" + key + value} className={( value === "0" ? "text-[#9ca3af]" : "")}>
-                    {new Decimal(-value).toFixed(2)} zł
-                  </TableCell>
-                )
-              )}
-              <TableCell>
-                {Object.values(currentDataset.koszty)
-                  .reduce((a: Decimal, b: string) => a.add(b), new Decimal(0))
-                  .toFixed(2)}{" "}
-                zł
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-        { (currentDataset.koszty_described[0] != null) && <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Opisane wydatki:</AccordionTrigger>
-              <AccordionContent>
-                <Table className="my-4">
-                  <TableCaption>Wydatki na miesiąc {moment(currentMonth, "MM").format("MMMM")}</TableCaption>
-                  <TableHeader>
-                    <TableRow>
-                      {Object.keys(currentDataset.koszty_described[0]).map((x) => (
-                        <TableHead key={"koszty_described" + currentMonth + x}>
-                          {getTranslations(x)}
-                        </TableHead>
-                      ))}
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
+                      <div className="col-span-2">
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Opisane koszty</CardTitle>
+                          </CardHeader>
 
-                  {Object.entries(currentDataset.koszty_described).map(([key,value],index) => ( 
-                    <TableRow key={index}>
-                    {Object.keys(value).map((key,i) => (
-                      <TableCell key={i}>
-                        {value[key]}
-                      </TableCell>
-                    ))}
-                    </TableRow>
-                  ))}
-                  </TableBody>
-                </Table>
-              </AccordionContent>
-        </AccordionItem>
-      </Accordion> } 
-        <Table className="my-4">
-          <TableCaption>Wpływy na miesiąc {moment(currentMonth, "MM").format("MMMM")}</TableCaption>
-          <TableHeader>
-            <TableRow>
-              {Object.keys(currentDataset.income).map((x) => (
-                <TableHead key={"income" + currentMonth + x}>
-                  {getTranslations(x)}
-                </TableHead>
-              ))}
-              <TableHead>Suma</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              {Object.entries(currentDataset.income).map(([key, value]) => (
-                <TableCell key={"income" + key + value} className={( value === "0" ? "text-[#9ca3af]" : "")}>
-                  {new Decimal(value).toFixed(2)} zł
-                </TableCell>
-              ))}
-              <TableCell>
-                {Object.values(currentDataset.income)
-                  .reduce((a: Decimal, b: string) => a.add(b), new Decimal(0))
-                  .toFixed(2)}{" "}
-                zł
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>    
-        { (currentDataset.income_described[0] != null) && <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Opisane wpływy:</AccordionTrigger>
-            <AccordionContent>
-            <Table className="my-4">
-                <TableCaption>Wpływy na miesiąc {moment(currentMonth, "MM").format("MMMM")}</TableCaption>
-                <TableHeader>
-                  <TableRow>
-                    {Object.keys(currentDataset.income_described[0]).map((x) => (
-                      <TableHead key={"income_described" + currentMonth + x}>
-                        {getTranslations(x)}
-                      </TableHead>
-                    ))}
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
+                          <CardContent>
+                            {currentDataset.koszty_described[0] != null && (
+                              <Table className="my-4">
+                                <TableHeader>
+                                  <TableRow>
+                                    {Object.keys(
+                                      currentDataset.koszty_described[0]
+                                    ).map(
+                                      (x) =>
+                                        x != "listed" && (
+                                          <TableHead
+                                            key={
+                                              "koszty_described" +
+                                              currentMonth +
+                                              x
+                                            }
+                                          >
+                                            {getTranslations(x)}
+                                          </TableHead>
+                                        )
+                                    )}
+                                  </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                  {Object.entries(
+                                    currentDataset.koszty_described
+                                  ).map(([key, value], index) => (
+                                    <TableRow
+                                      key={"koszty_described_row" + index}
+                                    >
+                                      {Object.keys(value).map(
+                                        (k, i) =>
+                                          k != "listed" && (
+                                            <TableCell
+                                              key={
+                                                "koszty_described" +
+                                                index +
+                                                k +
+                                                i
+                                              }
+                                            >
+                                              {k === "value"
+                                                ? value[k] + " zł"
+                                                : k === "category"
+                                                ? getTranslations(value[k])
+                                                : value[k]}
+                                            </TableCell>
+                                          )
+                                      )}
+                                    </TableRow>
+                                  ))}
+                                </TableBody>
+                              </Table>
+                            )}
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
 
-                {Object.entries(currentDataset.income_described).map(([key,value],index) => (
-                  <TableRow key={index}>
-                    {Object.keys(value).map((key,i) => (
-                      <TableCell key={i}>{value[key]}</TableCell>
-                    ))}
-                  </TableRow>
-                ))}
-                
-                </TableBody>
-              </Table>
-        </AccordionContent>
-  </AccordionItem>
-</Accordion> }
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Wpływy</CardTitle>
+                    <CardDescription></CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+                      <div>
+                        {" "}
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Podział wpływów</CardTitle>
+                            <CardDescription>na kategorie</CardDescription>
+                          </CardHeader>
+                          <CardContent>
+                            <Table className="my-4">
+                              <TableHeader>
+                                <TableRow>
+                                  {Object.values(["Kategoria", "Wartość"]).map(
+                                    (x) => (
+                                      <TableHead
+                                        key={"income" + currentMonth + x}
+                                      >
+                                        {getTranslations(x)}
+                                      </TableHead>
+                                    )
+                                  )}
+                                </TableRow>
+                              </TableHeader>
+                              <TableBody>
+                                {Object.entries(currentDataset.income).map(
+                                  ([key, value], index) => (
+                                    <TableRow key={"incomeRow" + key + value}>
+                                      <TableCell
+                                        key={"incomeKey" + key + value}
+                                      >
+                                        {getTranslations(key)}
+                                      </TableCell>
+                                      <TableCell
+                                        key={"incomeValue" + key + value}
+                                        className={
+                                          value === "0" ? "text-[#9ca3af]" : ""
+                                        }
+                                      >
+                                        {value} zł
+                                      </TableCell>
+                                    </TableRow>
+                                  )
+                                )}
+                              </TableBody>
+                              <TableFooter>
+                                <TableRow>
+                                  <TableCell>Suma</TableCell>
+                                  <TableCell>
+                                    {Object.values(currentDataset.income)
+                                      .reduce(
+                                        (a: Decimal, b: string) => a.add(b),
+                                        new Decimal(0)
+                                      )
+                                      .toFixed(2)}{" "}
+                                    zł
+                                  </TableCell>
+                                </TableRow>
+                              </TableFooter>
+                            </Table>
+                          </CardContent>
+                        </Card>
+                      </div>
+
+                      <div className="col-span-2">
+                        <Card>
+                          <CardContent>
+                            <div style={{ width: "100%", height: 700 }}>
+                              <ResponsiveContainer>
+                                <PieChart>
+                                  <Pie
+                                    label
+                                    data={
+                                      getPieChartDataset(
+                                        currentYear,
+                                        currentMonth
+                                      ).income
+                                    }
+                                    paddingAngle={5}
+                                    cx="50%"
+                                    cy="50%"
+                                  >
+                                    {getPieChartDataset(
+                                      currentYear,
+                                      currentMonth
+                                    ).income.map((entry, index) => (
+                                      <Cell
+                                        key={`cell-${index}`}
+                                        fill={COLORS[index % COLORS.length]}
+                                      />
+                                    ))}
+                                  </Pie>
+                                  <Tooltip />
+                                </PieChart>
+                              </ResponsiveContainer>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+
+                      <div className="col-span-2">
+                        <Card>
+                          <CardHeader>
+                            <CardTitle>Opisane wpływy</CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            {currentDataset.income_described[0] != null && (
+                              <Table className="my-4">
+                                <TableHeader>
+                                  <TableRow>
+                                    {Object.keys(
+                                      currentDataset.income_described[0]
+                                    ).map(
+                                      (x) =>
+                                        x != "listed" && (
+                                          <TableHead
+                                            key={
+                                              "income_described" +
+                                              currentMonth +
+                                              x
+                                            }
+                                          >
+                                            {getTranslations(x)}
+                                          </TableHead>
+                                        )
+                                    )}
+                                  </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                  {Object.entries(
+                                    currentDataset.income_described
+                                  ).map(([key, value], index) => (
+                                    <TableRow
+                                      key={"income_described_row" + index}
+                                    >
+                                      {Object.keys(value).map(
+                                        (k, i) =>
+                                          k != "listed" && (
+                                            <TableCell
+                                              key={
+                                                "income_described" +
+                                                index +
+                                                k +
+                                                i
+                                              }
+                                            >
+                                              {k === "value"
+                                                ? value[k] + " zł"
+                                                : k === "category"
+                                                ? getTranslations(value[k])
+                                                : value[k]}
+                                            </TableCell>
+                                          )
+                                      )}
+                                    </TableRow>
+                                  ))}
+                                </TableBody>
+                              </Table>
+                            )}
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CardContent>
+            </Card>
+          </TabsContent>
+          <TabsContent value="charts">
+            <Card>
+              <CardContent>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Saldo w roku {currentYear}</CardTitle>
+                  </CardHeader>
+                  <div style={{ width: "100%", height: 400 }}>
+                    <ResponsiveContainer>
+                      <BarChart
+                        data={getPlotDataset(currentYear)}
+                        accessibilityLayer
+                        stackOffset="sign"
+                      >
+                        <XAxis dataKey="date" />
+                        <YAxis />
+                        <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
+                        <Bar
+                          dataKey={keyTranslations["saldo"]}
+                          stackId="a"
+                          fill="#8884d8"
+                        />
+                        <Tooltip />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Saldo ogółem</CardTitle>
+                  </CardHeader>
+                  <div style={{ width: "100%", height: 400 }}>
+                    <ResponsiveContainer>
+                      <BarChart
+                        data={getWholePlotDataset()}
+                        accessibilityLayer
+                        stackOffset="sign"
+                      >
+                        <XAxis dataKey="date" />
+                        <YAxis />
+                        <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
+                        <Bar
+                          dataKey={keyTranslations["saldo"]}
+                          stackId="a"
+                          fill="#8884d8"
+                        />
+                        <Tooltip />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Wpływy ogółem</CardTitle>
+                  </CardHeader>
+                  <div style={{ width: "100%", height: 400 }}>
+                    <ResponsiveContainer>
+                      <BarChart
+                        data={getWholePlotDataset()}
+                        accessibilityLayer
+                        stackOffset="sign"
+                      >
+                        <XAxis dataKey="date" />
+                        <YAxis />
+                        <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
+                        <Bar
+                          dataKey={keyTranslations["incomes"]}
+                          stackId="a"
+                          fill="#da3"
+                        />
+                        <Tooltip />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Bilans</CardTitle>
+                  </CardHeader>
+                  <div style={{ width: "100%", height: 400 }}>
+                    <ResponsiveContainer>
+                      <BarChart
+                        data={getWholePlotDataset()}
+                        accessibilityLayer
+                        stackOffset="sign"
+                      >
+                        <XAxis dataKey="date" />
+                        <YAxis />
+                        <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
+                        <Bar
+                          dataKey={keyTranslations["balance"]}
+                          stackId="a"
+                          fill="#3a3"
+                        />
+                        <Tooltip />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
+                </Card>
+              </CardContent>
+            </Card>
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
