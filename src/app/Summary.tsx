@@ -13,10 +13,10 @@ import {
   Pie,
   Legend,
   ResponsiveContainer,
-  Brush
+  Brush,
 } from "recharts";
 
-import { useTheme } from 'next-themes'
+import { useTheme } from "next-themes";
 
 import {
   TableHeader,
@@ -51,10 +51,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HsKrkIcon } from "@/components/HsKrkIcon";
 
 const COLORS_DARK = [
-  "#a1a1aa",
   "#f87171",
   "#fb923c",
-  "#fbbf24",
   "#fde047",
   "#a3e635",
   "#4ade80",
@@ -62,24 +60,21 @@ const COLORS_DARK = [
   "#60a5fa",
   "#a78bfa",
   "#e879f9",
-  "#fb7185"
+  "#fb7185",
 ];
 
 const COLORS_LIGHT = [
-  "#52525b",
   "#dc2626",
   "#ea580c",
   "#d97706",
-  "#ca8a04",
   "#65a30d",
   "#16a34a",
   "#0d9488",
   "#2563eb",
   "#7c3aed",
   "#c026d3",
-  "#e11d48"
+  "#e11d48",
 ];
-
 
 type DataLegend = Record<string, string>;
 
@@ -241,16 +236,20 @@ export function Summary({
     [years]
   );
 
+  const { theme, setTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
-  const { theme, setTheme } = useTheme()
-  const { resolvedTheme } = useTheme()
-  
-  function returnPlotColors(theme){
-    return theme === "dark" ? COLORS_DARK : COLORS_LIGHT
+  function returnPlotColors(theme) {
+    const resultSorted = theme === "dark" ? COLORS_DARK : COLORS_LIGHT;
+    const resultScrambled = resultSorted
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
+    return resultSorted;
   }
 
-  const [currentYear, setCurrentYear] = useState(availableYears[10]);
-  const [currentMonth, setCurrentMonth] = useState(years[currentYear][11]);
+  const [currentYear, setCurrentYear] = useState(availableYears[1]);
+  const [currentMonth, setCurrentMonth] = useState(years[currentYear][1]);
 
   function getDataset(year: string, month: string) {
     return data[`${year}-${month}`];
@@ -332,11 +331,19 @@ export function Summary({
 
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
-          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <HsKrkIcon theme={resolvedTheme} className="h-20 w-20" />
-        <h1 className="flex items-center text-5xl font-extrabold dark:text-white">Podsumowanie Finansowe</h1>
-    </a>
-      
+      <a
+        href="https://flowbite.com/"
+        class="flex items-center space-x-3 rtl:space-x-reverse"
+      >
+        <HsKrkIcon theme={resolvedTheme} className="h-20 w-20" />
+        <h1 className="flex items-center text-5xl font-extrabold dark:text-white">
+          Podsumowanie Finansowe
+        </h1>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+          Opracowane 2024-01-01 21:37 na podstawie 2137 przetworzonych operacji
+        </p>
+      </a>
+
       <div className="absolute right-0 top-0">
         <ModeToggle />
       </div>
@@ -362,79 +369,101 @@ export function Summary({
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <div className="col-span-2">
-          <Card><CardHeader><CardTitle></CardTitle></CardHeader><CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Miesiąc</TableHead>
-                {Object.keys(currentDataset.summary).map((x) => (
-                  <TableHead key={getTranslations(x)}>
-                    {getTranslations(x)}
-                  </TableHead>
-                ))}
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {years[currentYear].map((month) => {
-                const currentData = getDataset(currentYear, month);
-                const { summary } = currentData;
-                return (
-                  <TableRow key={currentYear + month}>
-                    <TableCell>{moment(month, "MM").format("MMMM")}</TableCell>
-                    {Object.entries(summary).map(([key, value], index) => (
-                      <TableCell
-                        key={currentYear + month + key}
-                        className={
-                          key === "bilans" ||
-                          key === "safe_threshold_difference"
-                            ? value > 0
-                              ? "text-lime-600 dark:text-lime-400"
-                              : "text-red-600 dark:text-red-400"
-                            : ""
-                        }
-                      >
-                        {new Decimal(value).toFixed(2)} zł
-                      </TableCell>
+          <Card>
+            <CardHeader>
+              <CardTitle></CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Miesiąc</TableHead>
+                    {Object.keys(currentDataset.summary).map((x) => (
+                      <TableHead key={getTranslations(x)}>
+                        {getTranslations(x)}
+                      </TableHead>
                     ))}
                   </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table></CardContent></Card>
+                </TableHeader>
+                <TableBody>
+                  {years[currentYear].map((month) => {
+                    const currentData = getDataset(currentYear, month);
+                    const { summary } = currentData;
+                    return (
+                      <TableRow key={currentYear + month}>
+                        <TableCell>
+                          {moment(month, "MM").format("MMMM")}
+                        </TableCell>
+                        {Object.entries(summary).map(([key, value], index) => (
+                          <TableCell
+                            key={currentYear + month + key}
+                            className={
+                              key === "bilans" ||
+                              key === "safe_threshold_difference"
+                                ? value > 0
+                                  ? "text-lime-600 dark:text-lime-400"
+                                  : "text-red-600 dark:text-red-400"
+                                : ""
+                            }
+                          >
+                            {new Decimal(value).toFixed(2)} zł
+                          </TableCell>
+                        ))}
+                      </TableRow>
+                    );
+                  })}
+                </TableBody>
+              </Table>
+            </CardContent>
+          </Card>
         </div>
         <div className="col-span-2">
-        <Card><CardHeader><CardTitle></CardTitle></CardHeader><CardContent><div style={{ width: "100%", height: 700 }}>
-          <ResponsiveContainer>
-              <BarChart
-                data={getPlotDataset(currentYear)}
-                accessibilityLayer
-                stackOffset="sign"
-              >
-                <XAxis dataKey="date" />
-                <YAxis />
-                <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
-                <Bar
-                  dataKey={keyTranslations["venue_expenses"]}
-                  stackId="a"
-                  fill={ resolvedTheme === "dark" ? "#60a5fa" : "#2563eb"}
-                />
-                <Bar
-                  dataKey={keyTranslations["other_expenses"]}
-                  stackId="a"
-                  fill={ resolvedTheme === "dark" ? "#fbbf24" : "#d97706"}
-                />
-                <Bar
-                  dataKey={keyTranslations["incomes"]}
-                  stackId="a"
-                  fill={ resolvedTheme === "dark" ? "#34d399" : "#059669"}
-                />
-                <Legend />
-                <Tooltip cursor={{ opacity: "0.3"}} 
-                  contentStyle={{ backgroundColor: (resolvedTheme === "dark"?"#000":"#FFF") }}
-                  itemStyle={{ color: (resolvedTheme === "dark" ? "#FFF" : "#000" ) }} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div></CardContent></Card>
+          <Card>
+            <CardHeader>
+              <CardTitle></CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div style={{ width: "100%", height: 700 }}>
+                <ResponsiveContainer>
+                  <BarChart
+                    data={getPlotDataset(currentYear)}
+                    accessibilityLayer
+                    stackOffset="sign"
+                  >
+                    <XAxis dataKey="date" />
+                    <YAxis />
+                    <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
+                    <Bar
+                      dataKey={keyTranslations["venue_expenses"]}
+                      stackId="a"
+                      fill={resolvedTheme === "dark" ? "#60a5fa" : "#2563eb"}
+                    />
+                    <Bar
+                      dataKey={keyTranslations["other_expenses"]}
+                      stackId="a"
+                      fill={resolvedTheme === "dark" ? "#fbbf24" : "#d97706"}
+                    />
+                    <Bar
+                      dataKey={keyTranslations["incomes"]}
+                      stackId="a"
+                      fill={resolvedTheme === "dark" ? "#34d399" : "#059669"}
+                    />
+                    <Legend />
+                    <Tooltip
+                      cursor={{ opacity: "0.3" }}
+                      contentStyle={{
+                        backgroundColor:
+                          resolvedTheme === "dark" ? "#000" : "#FFF",
+                      }}
+                      itemStyle={{
+                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                      }}
+                    />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
 
@@ -557,7 +586,13 @@ export function Summary({
                                     ).cost.map((entry, index) => (
                                       <Cell
                                         key={`cell-${index}`}
-                                        fill={returnPlotColors(resolvedTheme)[index % returnPlotColors(resolvedTheme).length]}
+                                        fill={
+                                          returnPlotColors(resolvedTheme)[
+                                            index %
+                                              returnPlotColors(resolvedTheme)
+                                                .length
+                                          ]
+                                        }
                                       />
                                     ))}
                                   </Pie>
@@ -730,7 +765,13 @@ export function Summary({
                                     ).income.map((entry, index) => (
                                       <Cell
                                         key={`cell-${index}`}
-                                        fill={returnPlotColors(resolvedTheme)[index % returnPlotColors(resolvedTheme).length]}
+                                        fill={
+                                          returnPlotColors(resolvedTheme)[
+                                            index %
+                                              returnPlotColors(resolvedTheme)
+                                                .length
+                                          ]
+                                        }
                                       />
                                     ))}
                                   </Pie>

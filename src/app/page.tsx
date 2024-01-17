@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import details from '../../detail.json'
-import cursedplot from '../../cursed-plot.json'
 import {Summary} from './Summary'
 import { Charts } from './Charts'
 
