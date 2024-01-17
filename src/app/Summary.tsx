@@ -281,7 +281,6 @@ export function Summary({
     years[year].map((month) => {
       const currentData = getDataset(year, month);
       const { plot } = currentData;
-      console.log(plot);
       listOfPlotDatasets.push(renameKeys(plot, keyTranslations));
     });
 
@@ -430,7 +429,9 @@ export function Summary({
                   fill={ resolvedTheme === "dark" ? "#34d399" : "#059669"}
                 />
                 <Legend />
-                <Tooltip />
+                <Tooltip cursor={{ opacity: "0.3"}} 
+                  contentStyle={{ backgroundColor: (resolvedTheme === "dark"?"#000":"#FFF") }}
+                  itemStyle={{ color: (resolvedTheme === "dark" ? "#FFF" : "#000" ) }} />
               </BarChart>
             </ResponsiveContainer>
           </div></CardContent></Card>
