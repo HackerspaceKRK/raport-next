@@ -527,6 +527,7 @@ export function Summary({
                                       />
                                     ))}
                                   </Pie>
+                                  <Legend />
                                   <Tooltip />
                                 </PieChart>
                               </ResponsiveContainer>
@@ -699,6 +700,7 @@ export function Summary({
                                       />
                                     ))}
                                   </Pie>
+                                  <Legend />
                                   <Tooltip />
                                 </PieChart>
                               </ResponsiveContainer>
