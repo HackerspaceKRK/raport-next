@@ -14,6 +14,8 @@ import {
   Legend,
   ResponsiveContainer,
   Brush,
+  ComposedChart,
+  Line
 } from "recharts";
 
 import { useTheme } from "next-themes";
@@ -347,8 +349,6 @@ export function Summary({
     return r;
   }
 
-  console.log(DateTime.fromFormat("05", "MM").setLocale("pl").toFormat("LLLL"));
-
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
       <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -359,11 +359,11 @@ export function Summary({
         <h1 className="flex items-center text-5xl font-extrabold dark:text-white">
           Podsumowanie Finansowe
         </h1>
+      </a>
         <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
           Opracowane {stats.parsing_date} na podstawie {stats.operations.all}{" "}
           przetworzonych operacji
         </p>
-      </a>
 
       <div className="absolute right-0 top-0">
         <ModeToggle />
@@ -387,6 +387,23 @@ export function Summary({
           </SelectContent>
         </Select>
       </div>
+
+
+
+      <div id="alert-additional-content-4" className="p-4 mb-4 text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800" role="alert">
+  <div className="flex items-center">
+    <svg className="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <span className="sr-only">Info</span>
+    <h3 className="text-lg font-medium">Te dane nie zostały jeszcze zweryfikowane</h3>
+  </div>
+  <div className="mt-2 mb-4 text-sm">
+    Dane, które wyświetla poniższy dashboard nie został jeszcze skonsultowany z naszą księgowością. Dane tu wyświetlone liczy przekomplikowany kod, w którym cały czas znajduję coraz to nowe quirki, które bywa, że zmieniają kwoty. Niektóre wpływy i koszty nie są jeszcze opisane. Traktuj to, co tu zobaczysz ze szczyptą soli. Przeglądasz na własną odpowiedzialność!
+  </div>
+</div>
+
+
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <div className="col-span-2">
@@ -448,10 +465,11 @@ export function Summary({
             <CardContent>
               <div style={{ width: "100%", height: 700 }}>
                 <ResponsiveContainer>
-                  <BarChart
+                  <ComposedChart
                     data={getPlotDataset(currentYear)}
                     accessibilityLayer
                     stackOffset="sign"
+                    syncId="summary"
                   >
                     <XAxis dataKey="date" />
                     <YAxis />
@@ -471,6 +489,7 @@ export function Summary({
                       stackId="a"
                       fill={resolvedTheme === "dark" ? "#34d399" : "#059669"}
                     />
+                    <Line type="monotone" dataKey={keyTranslations["balance"]} strokeWidth={3}  stroke="#ff0000"  />
                     <Legend />
                     <Tooltip
                       cursor={{ opacity: "0.3" }}
@@ -482,7 +501,7 @@ export function Summary({
                         color: resolvedTheme === "dark" ? "#FFF" : "#000",
                       }}
                     />
-                  </BarChart>
+                  </ComposedChart>
                 </ResponsiveContainer>
               </div>
             </CardContent>
@@ -900,6 +919,7 @@ export function Summary({
                         data={getPlotDataset(currentYear)}
                         accessibilityLayer
                         stackOffset="sign"
+                        syncId="summary"
                       >
                         <XAxis dataKey="date" />
                         <YAxis />
@@ -909,7 +929,16 @@ export function Summary({
                           stackId="a"
                           fill="#8884d8"
                         />
-                        <Tooltip />
+                                            <Tooltip
+                      cursor={{ opacity: "0.3" }}
+                      contentStyle={{
+                        backgroundColor:
+                          resolvedTheme === "dark" ? "#000" : "#FFF",
+                      }}
+                      itemStyle={{
+                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                      }}
+                    />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
@@ -924,6 +953,7 @@ export function Summary({
                         data={getWholePlotDataset()}
                         accessibilityLayer
                         stackOffset="sign"
+                        syncId="summary"
                       >
                         <XAxis dataKey="date" />
                         <YAxis />
@@ -934,7 +964,16 @@ export function Summary({
                           fill="#8884d8"
                         />
                         <Brush dataKey="date" height={30} stroke="#8884d8" />
-                        <Tooltip />
+                                            <Tooltip
+                      cursor={{ opacity: "0.3" }}
+                      contentStyle={{
+                        backgroundColor:
+                          resolvedTheme === "dark" ? "#000" : "#FFF",
+                      }}
+                      itemStyle={{
+                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                      }}
+                    />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
@@ -949,6 +988,7 @@ export function Summary({
                         data={getWholePlotDataset()}
                         accessibilityLayer
                         stackOffset="sign"
+                        syncId="summary"
                       >
                         <XAxis dataKey="date" />
                         <YAxis />
@@ -959,7 +999,16 @@ export function Summary({
                           fill="#da3"
                         />
                         <Brush dataKey="date" height={30} stroke="#8884d8" />
-                        <Tooltip />
+                                            <Tooltip
+                      cursor={{ opacity: "0.3" }}
+                      contentStyle={{
+                        backgroundColor:
+                          resolvedTheme === "dark" ? "#000" : "#FFF",
+                      }}
+                      itemStyle={{
+                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                      }}
+                    />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
@@ -974,6 +1023,7 @@ export function Summary({
                         data={getWholePlotDataset()}
                         accessibilityLayer
                         stackOffset="sign"
+                        syncId="summary"
                       >
                         <XAxis dataKey="date" />
                         <YAxis />
@@ -984,7 +1034,16 @@ export function Summary({
                           fill="#3a3"
                         />
                         <Brush dataKey="date" height={30} stroke="#8884d8" />
-                        <Tooltip />
+                                            <Tooltip
+                      cursor={{ opacity: "0.3" }}
+                      contentStyle={{
+                        backgroundColor:
+                          resolvedTheme === "dark" ? "#000" : "#FFF",
+                      }}
+                      itemStyle={{
+                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                      }}
+                    />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
