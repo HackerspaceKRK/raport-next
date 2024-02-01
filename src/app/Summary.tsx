@@ -399,7 +399,7 @@ export function Summary({
     <h3 className="text-lg font-medium">Te dane nie zostały jeszcze zweryfikowane</h3>
   </div>
   <div className="mt-2 mb-4 text-sm">
-    Dane, które wyświetla poniższy dashboard nie został jeszcze skonsultowany z naszą księgowością. Dane tu wyświetlone liczy przekomplikowany kod, w którym cały czas znajduję coraz to nowe quirki, które bywa, że zmieniają kwoty. Niektóre wpływy i koszty nie są jeszcze opisane. Traktuj to, co tu zobaczysz ze szczyptą soli. Przeglądasz na własną odpowiedzialność!
+    Dane, które wyświetla poniższy dashboard nie zostały jeszcze skonsultowane z naszą księgowością. Dane tu wyświetlone liczy przekomplikowany kod, w którym cały czas znajduję coraz to nowe quirki, które bywa, że zmieniają kwoty. Niektóre wpływy i koszty nie są jeszcze opisane. Traktuj to, co tu zobaczysz ze szczyptą soli. Przeglądasz na własną odpowiedzialność!
   </div>
 </div>
 
