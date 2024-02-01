@@ -74,3 +74,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* .light tspan,
+.light .recharts-legend-item-text {
+  text-shadow: 0.5px 0.5px black;
+} */
+
+.dark tspan {
+  text-shadow: 0.5px 0.5px white;
+}

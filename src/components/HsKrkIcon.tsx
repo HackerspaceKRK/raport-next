@@ -1,6 +1,6 @@
 export function HsKrkIcon(props: {
 	className?: string;
-	theme: "light" | "dark";
+	theme?: string;
   }) {
 	const themes = {
 	  light: {
@@ -13,7 +13,7 @@ export function HsKrkIcon(props: {
 	  },
 	};
   
-	const style = themes[props.theme] || themes.light;
+	const style = props.theme === 'dark' ? themes.dark : themes.light;
   
 	return (
 	  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91 91" {...props}>

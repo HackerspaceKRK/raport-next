@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 import moment from "moment";
 import {
   Cell,
@@ -15,7 +15,7 @@ import {
   ResponsiveContainer,
   Brush,
   ComposedChart,
-  Line
+  Line,
 } from "recharts";
 
 import { useTheme } from "next-themes";
@@ -53,6 +53,19 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { HsKrkIcon } from "@/components/HsKrkIcon";
+import {
+  ChartItem,
+  getPlotDataset,
+  getWholePlotDataset,
+} from "./charts/transformers";
+import type {
+  Summary,
+  DataLegend,
+  Stats,
+  Described,
+} from "./charts/transformers";
+
+import { keyTranslations } from "./translations";
 
 const COLORS_DARK = [
   "#f87171",
@@ -80,146 +93,6 @@ const COLORS_LIGHT = [
   "#e11d48",
 ];
 
-type DataLegend = Record<string, string>;
-
-interface Income {
-  // Decimal
-  darowizny_celowe: string;
-  // Decimal
-  darowizny_inne: string;
-  // Decimal
-  darowizny_koronawirus: string;
-  // Decimal
-  darowizny_sponsoring: string;
-  // Decimal
-  darowizny_statutowe: string;
-  // Decimal
-  eventy: string;
-  // Decimal
-  inne_wplywy: string;
-  // Decimal
-  warsztaty: string;
-}
-
-interface Costs {
-  // Decimal
-  administracyjne: string;
-  // Decimal
-  bank: string;
-  // Decimal
-  covid: string;
-  // Decimal
-  eventy: string;
-  // Decimal
-  hosting: string;
-  // Decimal
-  inne_koszty: string;
-  // Decimal
-  internet: string;
-  // Decimal
-  ksiegowosc: string;
-  // Decimal
-  lokal: string;
-  // Decimal
-  ubezpieczenia: string;
-  // Decimal
-  umowy: string;
-  // Decimal
-  zakupy: string;
-  // Decimal
-  zwroty: string;
-}
-
-interface MonthSummary {
-  // Decimal
-  bilans: string;
-  // Decimal
-  end_saldo: string;
-  // Decimal
-  safe_threshold: string;
-  // Decimal
-  safe_threshold_difference: string;
-  // Decimal
-  start_saldo: string;
-}
-
-interface Described {
-  // Decimal
-  value: string;
-  data: {
-    category: "event" | "workshops" | string;
-    metadata: {
-      details: string;
-      name: string;
-    };
-  };
-}
-
-type MonthDetails = {
-  income: Income;
-  income_described: Described[];
-  koszty: Costs;
-  koszty_described: Described[];
-  summary: MonthSummary;
-  plot: PlotSummary;
-};
-
-interface PlotSummary {
-  date: string;
-  incomes: string;
-  venue_expenses: string;
-  other_expenses: string;
-  saldo: string;
-}
-
-type Summary = Record<string, MonthDetails>;
-
-interface StatsMonths {
-  [key: string]: string;
-}
-
-interface Operations {
-  all: string;
-  months: StatsMonths;
-}
-
-interface Stats {
-  parsing_date: string;
-  operations: Operations;
-}
-
-const keyTranslations: Record<string, string> = {
-  darowizny_celowe: "Darowizny Celowe",
-  darowizny_inne: "Darowizny Inne",
-  darowizny_koronawirus: "Darowizny Koronawirus",
-  darowizny_sponsoring: "Darowizny Sponsoring",
-  darowizny_statutowe: "Darowizny Statutowe",
-  eventy: "eventy",
-  inne_wplywy: "inne Wplywy",
-  warsztaty: "warsztaty",
-  administracyjne: "administracyjne",
-  bank: "bank",
-  covid: "covid",
-  hosting: "hosting",
-  inne_koszty: "inneKoszty",
-  internet: "internet",
-  ksiegowosc: "ksiegowosc",
-  lokal: "lokal",
-  ubezpieczenia: "ubezpieczenia",
-  income: "Dochód",
-  koszty: "Koszty",
-  summary: "Suma",
-  value: "Wartość",
-  category: "Kategoria",
-  name: "Nazwa",
-  details: "Opis",
-  venue_expenses: "Wydatki na lokal",
-  other_expenses: "Pozostałe wydatki",
-  incomes: "Wpływy",
-  saldo: "Saldo",
-  balance: "Bilans",
-};
-
 export function Summary({
   data,
   legend,
@@ -229,9 +102,9 @@ export function Summary({
   legend: DataLegend;
   stats: Stats;
 }) {
-  function getTranslations(key: string): string {
+  const getTranslations = useCallback(function getTranslations(key: string): string {
     return (legend as any)[key] || keyTranslations[key] || key;
-  }
+  }, [legend])
 
   const years = useMemo(() => {
     const newYears: Record<string, string[]> = {};
@@ -256,24 +129,23 @@ export function Summary({
     [years]
   );
 
-  const { theme, setTheme } = useTheme("dark");
-  const { resolvedTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
 
-  function returnPlotColors(theme) {
-    const resultSorted = theme === "dark" ? COLORS_DARK : COLORS_LIGHT;
+  const returnPlotColors = useCallback(function returnPlotColors(theme?: string) {
+    const resultSorted = theme === "dark" ? COLORS_LIGHT : COLORS_DARK;
     const resultScrambled = resultSorted
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
-    return resultSorted;
-  }
+    return resultScrambled;
+  }, [])
 
   const [currentYear, setCurrentYear] = useState(availableYears[1]);
   const [currentMonth, setCurrentMonth] = useState(years[currentYear][1]);
 
-  function getDataset(year: string, month: string) {
+  const getDataset = useCallback(function getDataset(year: string, month: string) {
     return data[`${year}-${month}`];
-  }
+  }, [data]);
 
   function updateYear(newYear: string) {
     const hasMonthInNewYear = years[newYear].includes(currentMonth);
@@ -283,45 +155,10 @@ export function Summary({
     }
   }
 
-  const currentDataset = getDataset(currentYear, currentMonth);
 
-  Object.entries(currentDataset.koszty); //?
-
-  function renameKeys(obj, newKeys) {
-    const keyValues = Object.keys(obj).map((key) => {
-      const newKey = newKeys[key] || key;
-      return { [newKey]: obj[key] };
-    });
-    return Object.assign({}, ...keyValues);
-  }
-
-  function getPlotDataset(year: string) {
-    const listOfPlotDatasets: PlotSummary[] = [];
-    years[year].map((month) => {
-      const currentData = getDataset(year, month);
-      const { plot } = currentData;
-      listOfPlotDatasets.push(renameKeys(plot, keyTranslations));
-    });
-
-    return listOfPlotDatasets;
-  }
-
-  function getWholePlotDataset() {
-    const listOfPlotDatasets: PlotSummary[] = [];
-    Object.keys(years).map((year) => {
-      years[year].map((month) => {
-        const currentData = getDataset(year, month);
-        const { plot } = currentData;
-        listOfPlotDatasets.push(renameKeys(plot, keyTranslations));
-      });
-    });
-
-    return listOfPlotDatasets;
-  }
-
-  function getPieChartDataset(year: string, month: string) {
-    const inc = [];
-    const cos = [];
+  const getPieChartDataset = useCallback(function getPieChartDataset(year: string, month: string) {
+    const inc: ChartItem[] = [];
+    const cos: ChartItem[] = [];
 
     Object.entries(getDataset(year, month).income).map(
       ([key, value], index) => {
@@ -347,7 +184,17 @@ export function Summary({
 
     const r = { income: inc, cost: cos };
     return r;
-  }
+  }, [getDataset, getTranslations]);
+
+  const currentDataset = getDataset(currentYear, currentMonth);
+
+  const plotDataset = getPlotDataset(data, years, currentYear);
+  const wholePlotDataset = getWholePlotDataset(data, years);
+
+  const pieDataset = useMemo(() => getPieChartDataset(currentYear, currentMonth), [ currentYear, currentMonth, getPieChartDataset ]);
+
+  const plotColors = useMemo(() => returnPlotColors(resolvedTheme), [returnPlotColors, resolvedTheme]);
+
 
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
@@ -360,10 +207,10 @@ export function Summary({
           Podsumowanie Finansowe
         </h1>
       </a>
-        <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-          Opracowane {stats.parsing_date} na podstawie {stats.operations.all}{" "}
-          przetworzonych operacji
-        </p>
+      <p className="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+        Opracowane {stats.parsing_date} na podstawie {stats.operations.all}{" "}
+        przetworzonych operacji
+      </p>
 
       <div className="absolute right-0 top-0">
         <ModeToggle />
@@ -388,22 +235,35 @@ export function Summary({
         </Select>
       </div>
 
-
-
-      <div id="alert-additional-content-4" className="p-4 mb-4 text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800" role="alert">
-  <div className="flex items-center">
-    <svg className="flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-    </svg>
-    <span className="sr-only">Info</span>
-    <h3 className="text-lg font-medium">Te dane nie zostały jeszcze zweryfikowane</h3>
-  </div>
-  <div className="mt-2 mb-4 text-sm">
-    Dane, które wyświetla poniższy dashboard nie zostały jeszcze skonsultowane z naszą księgowością. Dane tu wyświetlone liczy przekomplikowany kod, w którym cały czas znajduję coraz to nowe quirki, które bywa, że zmieniają kwoty. Niektóre wpływy i koszty nie są jeszcze opisane. Traktuj to, co tu zobaczysz ze szczyptą soli. Przeglądasz na własną odpowiedzialność!
-  </div>
-</div>
-
-
+      <div
+        id="alert-additional-content-4"
+        className="p-4 mb-4 text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800"
+        role="alert"
+      >
+        <div className="flex items-center">
+          <svg
+            className="flex-shrink-0 w-4 h-4 me-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+          </svg>
+          <span className="sr-only">Info</span>
+          <h3 className="text-lg font-medium">
+            Te dane nie zostały jeszcze zweryfikowane
+          </h3>
+        </div>
+        <div className="mt-2 mb-4 text-sm">
+          Dane, które wyświetla poniższy dashboard nie zostały jeszcze
+          skonsultowane z naszą księgowością. Dane tu wyświetlone liczy
+          przekomplikowany kod, w którym cały czas znajduję coraz to nowe
+          quirki, które bywa, że zmieniają kwoty. Niektóre wpływy i koszty nie
+          są jeszcze opisane. Traktuj to, co tu zobaczysz ze szczyptą soli.
+          Przeglądasz na własną odpowiedzialność!
+        </div>
+      </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <div className="col-span-2">
@@ -440,7 +300,7 @@ export function Summary({
                             className={
                               key === "bilans" ||
                               key === "safe_threshold_difference"
-                                ? value > 0
+                                ? parseFloat(value) > 0
                                   ? "text-lime-600 dark:text-lime-400"
                                   : "text-red-600 dark:text-red-400"
                                 : ""
@@ -466,7 +326,7 @@ export function Summary({
               <div style={{ width: "100%", height: 700 }}>
                 <ResponsiveContainer>
                   <ComposedChart
-                    data={getPlotDataset(currentYear)}
+                    data={plotDataset}
                     accessibilityLayer
                     stackOffset="sign"
                     syncId="summary"
@@ -489,7 +349,12 @@ export function Summary({
                       stackId="a"
                       fill={resolvedTheme === "dark" ? "#34d399" : "#059669"}
                     />
-                    <Line type="monotone" dataKey={keyTranslations["balance"]} strokeWidth={3}  stroke="#ff0000"  />
+                    <Line
+                      type="monotone"
+                      dataKey={keyTranslations["balance"]}
+                      strokeWidth={3}
+                      stroke="#ff0000"
+                    />
                     <Legend />
                     <Tooltip
                       cursor={{ opacity: "0.3" }}
@@ -617,29 +482,18 @@ export function Summary({
                               <ResponsiveContainer>
                                 <PieChart>
                                   <Pie
+                                  dataKey={"value"}
                                     label
-                                    data={
-                                      getPieChartDataset(
-                                        currentYear,
-                                        currentMonth
-                                      ).cost
-                                    }
+                                    data={pieDataset.cost}
                                     paddingAngle={5}
                                     cx="50%"
                                     cy="50%"
                                   >
-                                    {getPieChartDataset(
-                                      currentYear,
-                                      currentMonth
-                                    ).cost.map((entry, index) => (
+                                    {pieDataset.cost.map((entry, index) => (
                                       <Cell
                                         key={`cell-${index}`}
                                         fill={
-                                          returnPlotColors(resolvedTheme)[
-                                            index %
-                                              returnPlotColors(resolvedTheme)
-                                                .length
-                                          ]
+                                          plotColors[index % plotColors.length]
                                         }
                                       />
                                     ))}
@@ -701,10 +555,16 @@ export function Summary({
                                               }
                                             >
                                               {k === "value"
-                                                ? value[k] + " zł"
+                                                ? value[
+                                                    k as any as keyof Described
+                                                  ] + " zł"
                                                 : k === "category"
-                                                ? getTranslations(value[k])
-                                                : value[k]}
+                                                ? getTranslations(
+                                                    (value as any)[k]
+                                                  )
+                                                : value[
+                                                    k as any as keyof Described
+                                                  ]}
                                             </TableCell>
                                           )
                                       )}
@@ -802,6 +662,7 @@ export function Summary({
                               <ResponsiveContainer>
                                 <PieChart>
                                   <Pie
+                                  dataKey="value"
                                     label
                                     data={
                                       getPieChartDataset(
@@ -820,11 +681,7 @@ export function Summary({
                                       <Cell
                                         key={`cell-${index}`}
                                         fill={
-                                          returnPlotColors(resolvedTheme)[
-                                            index %
-                                              returnPlotColors(resolvedTheme)
-                                                .length
-                                          ]
+                                          plotColors[index % plotColors.length]
                                         }
                                       />
                                     ))}
@@ -885,10 +742,16 @@ export function Summary({
                                               }
                                             >
                                               {k === "value"
-                                                ? value[k] + " zł"
+                                                ? value[
+                                                    k as any as keyof Described
+                                                  ] + " zł"
                                                 : k === "category"
-                                                ? getTranslations(value[k])
-                                                : value[k]}
+                                                ? getTranslations(
+                                                    (value as any)[k]
+                                                  )
+                                                : value[
+                                                    k as any as keyof Described
+                                                  ]}
                                             </TableCell>
                                           )
                                       )}
@@ -916,7 +779,7 @@ export function Summary({
                   <div style={{ width: "100%", height: 400 }}>
                     <ResponsiveContainer>
                       <BarChart
-                        data={getPlotDataset(currentYear)}
+                        data={plotDataset}
                         accessibilityLayer
                         stackOffset="sign"
                         syncId="summary"
@@ -929,16 +792,16 @@ export function Summary({
                           stackId="a"
                           fill="#8884d8"
                         />
-                                            <Tooltip
-                      cursor={{ opacity: "0.3" }}
-                      contentStyle={{
-                        backgroundColor:
-                          resolvedTheme === "dark" ? "#000" : "#FFF",
-                      }}
-                      itemStyle={{
-                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
-                      }}
-                    />
+                        <Tooltip
+                          cursor={{ opacity: "0.3" }}
+                          contentStyle={{
+                            backgroundColor:
+                              resolvedTheme === "dark" ? "#000" : "#FFF",
+                          }}
+                          itemStyle={{
+                            color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                          }}
+                        />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
@@ -950,7 +813,7 @@ export function Summary({
                   <div style={{ width: "100%", height: 400 }}>
                     <ResponsiveContainer>
                       <BarChart
-                        data={getWholePlotDataset()}
+                        data={wholePlotDataset}
                         accessibilityLayer
                         stackOffset="sign"
                         syncId="summary"
@@ -964,16 +827,16 @@ export function Summary({
                           fill="#8884d8"
                         />
                         <Brush dataKey="date" height={30} stroke="#8884d8" />
-                                            <Tooltip
-                      cursor={{ opacity: "0.3" }}
-                      contentStyle={{
-                        backgroundColor:
-                          resolvedTheme === "dark" ? "#000" : "#FFF",
-                      }}
-                      itemStyle={{
-                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
-                      }}
-                    />
+                        <Tooltip
+                          cursor={{ opacity: "0.3" }}
+                          contentStyle={{
+                            backgroundColor:
+                              resolvedTheme === "dark" ? "#000" : "#FFF",
+                          }}
+                          itemStyle={{
+                            color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                          }}
+                        />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
@@ -985,7 +848,7 @@ export function Summary({
                   <div style={{ width: "100%", height: 400 }}>
                     <ResponsiveContainer>
                       <BarChart
-                        data={getWholePlotDataset()}
+                        data={wholePlotDataset}
                         accessibilityLayer
                         stackOffset="sign"
                         syncId="summary"
@@ -999,16 +862,16 @@ export function Summary({
                           fill="#da3"
                         />
                         <Brush dataKey="date" height={30} stroke="#8884d8" />
-                                            <Tooltip
-                      cursor={{ opacity: "0.3" }}
-                      contentStyle={{
-                        backgroundColor:
-                          resolvedTheme === "dark" ? "#000" : "#FFF",
-                      }}
-                      itemStyle={{
-                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
-                      }}
-                    />
+                        <Tooltip
+                          cursor={{ opacity: "0.3" }}
+                          contentStyle={{
+                            backgroundColor:
+                              resolvedTheme === "dark" ? "#000" : "#FFF",
+                          }}
+                          itemStyle={{
+                            color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                          }}
+                        />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
@@ -1020,7 +883,7 @@ export function Summary({
                   <div style={{ width: "100%", height: 400 }}>
                     <ResponsiveContainer>
                       <BarChart
-                        data={getWholePlotDataset()}
+                        data={wholePlotDataset}
                         accessibilityLayer
                         stackOffset="sign"
                         syncId="summary"
@@ -1034,16 +897,16 @@ export function Summary({
                           fill="#3a3"
                         />
                         <Brush dataKey="date" height={30} stroke="#8884d8" />
-                                            <Tooltip
-                      cursor={{ opacity: "0.3" }}
-                      contentStyle={{
-                        backgroundColor:
-                          resolvedTheme === "dark" ? "#000" : "#FFF",
-                      }}
-                      itemStyle={{
-                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
-                      }}
-                    />
+                        <Tooltip
+                          cursor={{ opacity: "0.3" }}
+                          contentStyle={{
+                            backgroundColor:
+                              resolvedTheme === "dark" ? "#000" : "#FFF",
+                          }}
+                          itemStyle={{
+                            color: resolvedTheme === "dark" ? "#FFF" : "#000",
+                          }}
+                        />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
