@@ -77,8 +77,6 @@ export interface Described {
   category: string;
   details?: string;
   name?: string;
-  // Will be removed soon-ish
-  listed?: boolean;
 }
 
 type MonthDetails = {
@@ -116,11 +114,10 @@ export interface Stats {
   operations: Operations;
 }
 
-
 export type ChartItem = {
   name: string;
   value: number;
-}
+};
 
 function getDataset(data: Summary, year: string, month: string) {
   return data[`${year}-${month}`];

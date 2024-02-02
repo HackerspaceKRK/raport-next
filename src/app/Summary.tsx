@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useMemo, useCallback } from "react";
-import moment from "moment";
 import {
   Cell,
   XAxis,
@@ -102,9 +101,12 @@ export function Summary({
   legend: DataLegend;
   stats: Stats;
 }) {
-  const getTranslations = useCallback(function getTranslations(key: string): string {
-    return (legend as any)[key] || keyTranslations[key] || key;
-  }, [legend])
+  const getTranslations = useCallback(
+    function getTranslations(key: string): string {
+      return (legend as any)[key] || keyTranslations[key] || key;
+    },
+    [legend]
+  );
 
   const years = useMemo(() => {
     const newYears: Record<string, string[]> = {};
@@ -131,21 +133,27 @@ export function Summary({
 
   const { theme, setTheme, resolvedTheme } = useTheme();
 
-  const returnPlotColors = useCallback(function returnPlotColors(theme?: string) {
+  const returnPlotColors = useCallback(function returnPlotColors(
+    theme?: string
+  ) {
     const resultSorted = theme === "dark" ? COLORS_LIGHT : COLORS_DARK;
     const resultScrambled = resultSorted
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
     return resultScrambled;
-  }, [])
+  },
+  []);
 
   const [currentYear, setCurrentYear] = useState(availableYears[1]);
   const [currentMonth, setCurrentMonth] = useState(years[currentYear][1]);
 
-  const getDataset = useCallback(function getDataset(year: string, month: string) {
-    return data[`${year}-${month}`];
-  }, [data]);
+  const getDataset = useCallback(
+    function getDataset(year: string, month: string) {
+      return data[`${year}-${month}`];
+    },
+    [data]
+  );
 
   function updateYear(newYear: string) {
     const hasMonthInNewYear = years[newYear].includes(currentMonth);
@@ -155,46 +163,53 @@ export function Summary({
     }
   }
 
+  const getPieChartDataset = useCallback(
+    function getPieChartDataset(year: string, month: string) {
+      const inc: ChartItem[] = [];
+      const cos: ChartItem[] = [];
 
-  const getPieChartDataset = useCallback(function getPieChartDataset(year: string, month: string) {
-    const inc: ChartItem[] = [];
-    const cos: ChartItem[] = [];
-
-    Object.entries(getDataset(year, month).income).map(
-      ([key, value], index) => {
-        if (Math.abs(Number(value)) != 0) {
-          inc.push({
-            name: getTranslations(key),
-            value: Math.abs(Number(value)),
-          });
+      Object.entries(getDataset(year, month).income).map(
+        ([key, value], index) => {
+          if (Math.abs(Number(value)) != 0) {
+            inc.push({
+              name: getTranslations(key),
+              value: Math.abs(Number(value)),
+            });
+          }
         }
-      }
-    );
+      );
 
-    Object.entries(getDataset(year, month).koszty).map(
-      ([key, value], index) => {
-        if (Math.abs(Number(value)) != 0) {
-          cos.push({
-            name: getTranslations(key),
-            value: Math.abs(Number(value)),
-          });
+      Object.entries(getDataset(year, month).koszty).map(
+        ([key, value], index) => {
+          if (Math.abs(Number(value)) != 0) {
+            cos.push({
+              name: getTranslations(key),
+              value: Math.abs(Number(value)),
+            });
+          }
         }
-      }
-    );
+      );
 
-    const r = { income: inc, cost: cos };
-    return r;
-  }, [getDataset, getTranslations]);
+      const r = { income: inc, cost: cos };
+      return r;
+    },
+    [getDataset, getTranslations]
+  );
 
   const currentDataset = getDataset(currentYear, currentMonth);
 
   const plotDataset = getPlotDataset(data, years, currentYear);
   const wholePlotDataset = getWholePlotDataset(data, years);
 
-  const pieDataset = useMemo(() => getPieChartDataset(currentYear, currentMonth), [ currentYear, currentMonth, getPieChartDataset ]);
+  const pieDataset = useMemo(
+    () => getPieChartDataset(currentYear, currentMonth),
+    [currentYear, currentMonth, getPieChartDataset]
+  );
 
-  const plotColors = useMemo(() => returnPlotColors(resolvedTheme), [returnPlotColors, resolvedTheme]);
-
+  const plotColors = useMemo(
+    () => returnPlotColors(resolvedTheme),
+    [returnPlotColors, resolvedTheme]
+  );
 
   return (
     <div className="mt-4 flex flex-1 flex-col gap-4 relative">
@@ -440,22 +455,26 @@ export function Summary({
                               </TableHeader>
                               <TableBody>
                                 {Object.entries(currentDataset.koszty).map(
-                                  ([key, value], index) => (
+                                  ([key, value], index) =>
                                     parseFloat(value) < 0 && (
-                                    <TableRow key={"costsRow" + key + value}>
-                                      <TableCell key={"costsKey" + key + value}>
-                                        {getTranslations(key)}
-                                      </TableCell>
-                                      <TableCell
-                                        key={"costsValue" + key + value}
-                                        className={
-                                          value === "0" ? "text-[#9ca3af]" : ""
-                                        }
-                                      >
-                                        {value} zł
-                                      </TableCell>
-                                    </TableRow>)
-                                  )
+                                      <TableRow key={"costsRow" + key + value}>
+                                        <TableCell
+                                          key={"costsKey" + key + value}
+                                        >
+                                          {getTranslations(key)}
+                                        </TableCell>
+                                        <TableCell
+                                          key={"costsValue" + key + value}
+                                          className={
+                                            value === "0"
+                                              ? "text-[#9ca3af]"
+                                              : ""
+                                          }
+                                        >
+                                          {value} zł
+                                        </TableCell>
+                                      </TableRow>
+                                    )
                                 )}
                               </TableBody>
                               <TableFooter>
@@ -483,7 +502,7 @@ export function Summary({
                               <ResponsiveContainer>
                                 <PieChart>
                                   <Pie
-                                  dataKey={"value"}
+                                    dataKey={"value"}
                                     label
                                     data={pieDataset.cost}
                                     paddingAngle={5}
@@ -618,24 +637,26 @@ export function Summary({
                               </TableHeader>
                               <TableBody>
                                 {Object.entries(currentDataset.income).map(
-                                  ([key, value], index) => (
-                                    parseFloat(value) > 0 && 
-                                    (<TableRow key={"incomeRow" + key + value}>
-                                      <TableCell
-                                        key={"incomeKey" + key + value}
-                                      >
-                                        {getTranslations(key)}
-                                      </TableCell>
-                                      <TableCell
-                                        key={"incomeValue" + key + value}
-                                        className={
-                                          value === "0" ? "text-[#9ca3af]" : ""
-                                        }
-                                      >
-                                        {value} zł
-                                      </TableCell>
-                                    </TableRow>)
-                                  )
+                                  ([key, value], index) =>
+                                    parseFloat(value) > 0 && (
+                                      <TableRow key={"incomeRow" + key + value}>
+                                        <TableCell
+                                          key={"incomeKey" + key + value}
+                                        >
+                                          {getTranslations(key)}
+                                        </TableCell>
+                                        <TableCell
+                                          key={"incomeValue" + key + value}
+                                          className={
+                                            value === "0"
+                                              ? "text-[#9ca3af]"
+                                              : ""
+                                          }
+                                        >
+                                          {value} zł
+                                        </TableCell>
+                                      </TableRow>
+                                    )
                                 )}
                               </TableBody>
                               <TableFooter>
@@ -664,7 +685,7 @@ export function Summary({
                               <ResponsiveContainer>
                                 <PieChart>
                                   <Pie
-                                  dataKey="value"
+                                    dataKey="value"
                                     label
                                     data={
                                       getPieChartDataset(

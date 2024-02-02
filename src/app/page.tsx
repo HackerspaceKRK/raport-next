@@ -1,20 +1,14 @@
-import Image from 'next/image'
-import details from '../../detail.json'
-import {Summary} from './Summary'
-import { Charts } from './Charts'
-
-export async function generateStaticParams() {
-  return {
-    data: details.data,
-    legend: details.legend,
-  }
-}
- 
+import details from "../../detail.json";
+import { Summary } from "./Summary";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Summary data={details.data as any} legend={details.legend} stats={details.stats}/>
+      <Summary
+        data={details.data}
+        legend={details.legend}
+        stats={details.stats}
+      />
     </main>
-  )
+  );
 }
