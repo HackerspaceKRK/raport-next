@@ -18,6 +18,10 @@ export interface Income {
   // Decimal
   inne_wplywy: string;
   // Decimal
+  korekty: string;
+  // Decimal
+  nieprzeparsowane: string;
+  // Decimal
   warsztaty: string;
 }
 
@@ -37,9 +41,13 @@ export interface Costs {
   // Decimal
   internet: string;
   // Decimal
+  korekty: string;
+  // Decimal
   ksiegowosc: string;
   // Decimal
   lokal: string;
+  // Decimal
+  nieprzeparsowane: string;
   // Decimal
   ubezpieczenia: string;
   // Decimal
@@ -65,7 +73,7 @@ export interface MonthSummary {
 
 export interface Described {
   // Decimal
-  value: string;
+  value: number;
   category: string;
   details?: string;
   name?: string;
@@ -78,16 +86,18 @@ type MonthDetails = {
   income_described: Described[];
   koszty: Costs;
   koszty_described: Described[];
-  summary: MonthSummary;
   plot: PlotSummary;
+  summary: MonthSummary;
 };
 
 export interface PlotSummary {
+  balance: string;
+  costs: string;
   date: string;
   incomes: string;
-  venue_expenses: string;
   other_expenses: string;
   saldo: string;
+  venue_expenses: string;
 }
 
 export type Summary = Record<string, MonthDetails>;

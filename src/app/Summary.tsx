@@ -441,6 +441,7 @@ export function Summary({
                               <TableBody>
                                 {Object.entries(currentDataset.koszty).map(
                                   ([key, value], index) => (
+                                    parseFloat(value) < 0 && (
                                     <TableRow key={"costsRow" + key + value}>
                                       <TableCell key={"costsKey" + key + value}>
                                         {getTranslations(key)}
@@ -453,7 +454,7 @@ export function Summary({
                                       >
                                         {value} zł
                                       </TableCell>
-                                    </TableRow>
+                                    </TableRow>)
                                   )
                                 )}
                               </TableBody>
@@ -618,7 +619,8 @@ export function Summary({
                               <TableBody>
                                 {Object.entries(currentDataset.income).map(
                                   ([key, value], index) => (
-                                    <TableRow key={"incomeRow" + key + value}>
+                                    parseFloat(value) > 0 && 
+                                    (<TableRow key={"incomeRow" + key + value}>
                                       <TableCell
                                         key={"incomeKey" + key + value}
                                       >
@@ -632,7 +634,7 @@ export function Summary({
                                       >
                                         {value} zł
                                       </TableCell>
-                                    </TableRow>
+                                    </TableRow>)
                                   )
                                 )}
                               </TableBody>
