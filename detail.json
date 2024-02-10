@@ -7857,18 +7857,6 @@
                     "listed": true
                 },
                 {
-                    "value": -1741.47,
-                    "category": "lokal",
-                    "details": "Czynsz / Media / Czynsz i media (przelew VAT)",
-                    "listed": true
-                },
-                {
-                    "value": -1931.64,
-                    "category": "lokal",
-                    "details": "Czynsz / Media / Czynsz i media (przelew VAT)",
-                    "listed": true
-                },
-                {
                     "value": -350.0,
                     "category": "administracyjne",
                     "details": "Opłata za zmianę wpisu w rejestrze fundacji",
@@ -7944,18 +7932,6 @@
                 "inne_koszty": "0"
             },
             "koszty_described": [
-                {
-                    "value": -1264.99,
-                    "category": "lokal",
-                    "details": "Czynsz / Media / Czynsz i media (przelew VAT)",
-                    "listed": true
-                },
-                {
-                    "value": -1931.64,
-                    "category": "lokal",
-                    "details": "Czynsz / Media / Czynsz i media (przelew VAT)",
-                    "listed": true
-                },
                 {
                     "value": -44.88,
                     "category": "zakupy",
@@ -9287,24 +9263,6 @@
             },
             "koszty_described": [
                 {
-                    "value": -123.0,
-                    "category": "lokal",
-                    "details": "Czynsz / Media / Czynsz i media (przelew VAT)",
-                    "listed": true
-                },
-                {
-                    "value": -1551.64,
-                    "category": "lokal",
-                    "details": "Czynsz / Media / Czynsz i media (przelew VAT)",
-                    "listed": true
-                },
-                {
-                    "value": -2209.79,
-                    "category": "lokal",
-                    "details": "Czynsz / Media / Czynsz i media (przelew VAT)",
-                    "listed": true
-                },
-                {
                     "value": -12.99,
                     "category": "zakupy",
                     "details": "Kubek nierdzewny do myjki",
@@ -9361,7 +9319,7 @@
         "2024-01": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "2760.00",
+                "darowizny_statutowe": "6943.01",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
                 "darowizny_inne": "0",
@@ -9397,23 +9355,77 @@
                 "eventy": "0",
                 "covid": "0",
                 "korekty": "0",
-                "lokal": "-2455.79",
-                "ksiegowosc": "0",
+                "lokal": "-4241.89",
+                "ksiegowosc": "-369.00",
                 "internet": "0",
                 "administracyjne": "0",
-                "bank": "-7.00",
+                "bank": "-66.20",
                 "umowy": "0",
                 "zwroty": "0",
-                "zakupy": "-1542.37",
+                "zakupy": "-2553.28",
                 "ubezpieczenia": "0",
                 "hosting": "0",
                 "inne_koszty": "0"
             },
             "koszty_described": [
                 {
-                    "value": -2455.79,
-                    "category": "lokal",
-                    "details": "Czynsz / Media / Czynsz i media (przelew VAT)",
+                    "value": -143.4,
+                    "category": "zakupy",
+                    "details": "Przedłużki i nasadki kluczy, tarcze i reduktory",
+                    "listed": true
+                },
+                {
+                    "value": -179.9,
+                    "category": "zakupy",
+                    "details": "Apteczka",
+                    "listed": true
+                },
+                {
+                    "value": -118.08,
+                    "category": "zakupy",
+                    "details": "Art. spożywcze na warsztaty z robienia pizzy",
+                    "listed": true
+                },
+                {
+                    "value": -19.99,
+                    "category": "zakupy",
+                    "details": "Woreczki strunowe",
+                    "listed": true
+                },
+                {
+                    "value": -195.93,
+                    "category": "zakupy",
+                    "details": "Pudełka SAMLA",
+                    "listed": true
+                },
+                {
+                    "value": -29.95,
+                    "category": "zakupy",
+                    "details": "Worki na śmieci",
+                    "listed": true
+                },
+                {
+                    "value": -123.0,
+                    "category": "zakupy",
+                    "details": "Argon",
+                    "listed": true
+                },
+                {
+                    "value": -19.98,
+                    "category": "zakupy",
+                    "details": "Wtyczka 230V",
+                    "listed": true
+                },
+                {
+                    "value": -135.0,
+                    "category": "zakupy",
+                    "details": "Akcesoria TIG",
+                    "listed": true
+                },
+                {
+                    "value": -45.68,
+                    "category": "zakupy",
+                    "details": "Płyn do czyszczenia PCB",
                     "listed": true
                 },
                 {
@@ -9433,30 +9445,86 @@
                     "category": "zakupy",
                     "details": "Szlifierka BOSCH",
                     "listed": true
+                },
+                {
+                    "value": -128.07,
+                    "category": "zakupy",
+                    "details": "Klucze płasko-oczkowe, klucz sata 13, filtry do odkurzacza",
+                    "listed": true
                 }
             ],
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "102913.1",
-                "bilans": "-583.90",
-                "end_saldo": "102329.20",
-                "safe_threshold_difference": "12329.20"
+                "bilans": "373.90",
+                "end_saldo": "103287.00",
+                "safe_threshold_difference": "13287.00"
             },
             "plot": {
                 "date": "2024-01-02",
-                "incomes": "3421.26",
-                "saldo": "102329.20",
-                "costs": "-4005.16",
-                "venue_expenses": "-2455.79",
-                "other_expenses": "-1549.37",
-                "balance": "-583.90"
+                "incomes": "7604.27",
+                "saldo": "103287.00",
+                "costs": "-7230.37",
+                "venue_expenses": "-4241.89",
+                "other_expenses": "-2988.48",
+                "balance": "373.90"
+            }
+        },
+        "2024-02": {
+            "income": {
+                "nieprzeparsowane": "0",
+                "darowizny_statutowe": "2560.00",
+                "darowizny_celowe": "0",
+                "darowizny_koronawirus": "0",
+                "darowizny_inne": "0",
+                "darowizny_sponsoring": "0",
+                "warsztaty": "0",
+                "eventy": "0",
+                "korekty": "0",
+                "umowy": "0",
+                "inne_wplywy": "0"
+            },
+            "income_described": [],
+            "koszty": {
+                "nieprzeparsowane": "0",
+                "eventy": "0",
+                "covid": "0",
+                "korekty": "0",
+                "lokal": "0",
+                "ksiegowosc": "0",
+                "internet": "0",
+                "administracyjne": "0",
+                "bank": "-8.00",
+                "umowy": "0",
+                "zwroty": "-260.27",
+                "zakupy": "0",
+                "ubezpieczenia": "-287.25",
+                "hosting": "0",
+                "inne_koszty": "0"
+            },
+            "koszty_described": [],
+            "summary": {
+                "safe_threshold": "90000",
+                "start_saldo": "103287.0",
+                "bilans": "2004.48",
+                "end_saldo": "105291.48",
+                "safe_threshold_difference": "15291.48"
+            },
+            "plot": {
+                "date": "2024-02-01",
+                "incomes": "2560.00",
+                "saldo": "105291.48",
+                "costs": "-555.52",
+                "venue_expenses": "0",
+                "other_expenses": "-555.52",
+                "balance": "2004.48"
             }
         }
     },
     "stats": {
-        "parsing_date": "05/02/2024 20:12",
+        "parsing_date": "09/02/2024 22:09",
         "operations": {
-            "all": "7753",
+            "all": "7867",
             "months": {
                 "2012-12": 10,
                 "2013-01": 5,
@@ -9591,7 +9659,8 @@
                 "2023-10": 110,
                 "2023-11": 104,
                 "2023-12": 117,
-                "2024-01": 42
+                "2024-01": 118,
+                "2024-02": 38
             }
         }
     }

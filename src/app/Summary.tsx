@@ -280,7 +280,7 @@ export function Summary({
         </div>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-4">
         <div className="col-span-2">
           <Card>
             <CardHeader>
@@ -431,7 +431,7 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-5">
                       <div>
                         <Card>
                           <CardHeader>
@@ -612,7 +612,7 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+                    <div className="grid gap-5 md:grid-cols-1 lg:grid-cols-5">
                       <div>
                         {" "}
                         <Card>
