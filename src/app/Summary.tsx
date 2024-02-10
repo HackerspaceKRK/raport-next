@@ -230,25 +230,6 @@ export function Summary({
       <div className="absolute right-0 top-0">
         <ModeToggle />
       </div>
-      <div className="flex gap-4 justify-end mt-4 ">
-        <Select
-          value={currentYear}
-          onValueChange={(value) => updateYear(value)}
-        >
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder={`Rok: ${currentYear}`} />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              {availableYears.map((year, index) => (
-                <SelectItem value={year} key={year}>
-                  Rok: {year}
-                </SelectItem>
-              ))}
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
 
       <div
         id="alert-additional-content-4"
@@ -390,27 +371,6 @@ export function Summary({
       </div>
 
       <div className="flex flex-1 flex-col gap-4">
-        <div className="flex justify-end">
-          <Select
-            value={currentMonth}
-            onValueChange={(value) => {
-              setCurrentMonth(value);
-            }}
-          >
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder={`Rok: ${currentMonth}`} />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                {years[currentYear].map((month, index) => (
-                  <SelectItem value={month} key={month}>
-                    Miesiąc: {month}.{currentYear}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-        </div>
         <Tabs defaultValue="incomes_and_costs">
           <TabsList>
             <TabsTrigger value="incomes_and_costs">Wpływy i koszty</TabsTrigger>
@@ -938,6 +898,49 @@ export function Summary({
             </Card>
           </TabsContent>
         </Tabs>
+        <footer className="sticky right-0 bottom-0">
+          <div className="justify-end bg-sky-500/10 m-4">
+        <div className="flex gap-4 justify-end pr-4 pt-4 pl-4">
+        <Select
+          value={currentYear}
+          onValueChange={(value) => updateYear(value)}
+        >
+          <SelectTrigger className="w-[180px]">
+            <SelectValue placeholder={`Rok: ${currentYear}`} />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectGroup>
+              {availableYears.map((year, index) => (
+                <SelectItem value={year} key={year}>
+                  Rok: {year}
+                </SelectItem>
+              ))}
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+      </div>
+      <div className="flex justify-end pr-4 pb-4 pl-4">
+          <Select
+            value={currentMonth}
+            onValueChange={(value) => {
+              setCurrentMonth(value);
+            }}
+          >
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder={`Rok: ${currentMonth}`} />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                {years[currentYear].map((month, index) => (
+                  <SelectItem value={month} key={month}>
+                    Miesiąc: {month}.{currentYear}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div></div>
+        </footer>
       </div>
     </div>
   );
