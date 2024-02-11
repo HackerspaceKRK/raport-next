@@ -60,8 +60,6 @@ export interface Costs {
 
 export interface MonthSummary {
   // Decimal
-  bilans: string;
-  // Decimal
   end_saldo: string;
   // Decimal
   safe_threshold: string;
