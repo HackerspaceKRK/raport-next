@@ -26,7 +26,7 @@
         "start_saldo": "Saldo początkowe",
         "balance": "Bilans",
         "end_saldo": "Saldo końcowe",
-        "safe_threshold_difference": "Odległość do \"bezpiecznej granicy\""
+        "safe_threshold_difference": "Po odl. buforu bezpieczeństwa"
     },
     "data": {
         "2012-12": {
@@ -73,18 +73,21 @@
                 {
                     "value": -4460.1,
                     "category": "eventy",
-                    "details": "Krakdroid? - Korekta przelewu sponsorskiego",
+                    "name": "Krakdroid?",
+                    "details": "Korekta przelewu sponsorskiego",
                     "listed": true
                 },
                 {
                     "value": -1500.0,
                     "category": "eventy",
-                    "details": "Krakdroid? - Catering",
+                    "name": "Krakdroid?",
+                    "details": "Catering",
                     "listed": true
                 },
                 {
                     "value": -840.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Ogrzewanie HSu",
                     "listed": true
                 }
@@ -289,8 +292,8 @@
                 {
                     "value": -123.0,
                     "category": "hosting",
-                    "details": "",
                     "name": "Domena hskrk.pl",
+                    "details": "",
                     "listed": true
                 }
             ],
@@ -356,10 +359,10 @@
         "2013-06": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "550.00",
+                "darowizny_statutowe": "650.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "100.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "3690.00",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -417,12 +420,14 @@
                 {
                     "value": 285.87,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 329.85,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -448,6 +453,7 @@
                 {
                     "value": -300.0,
                     "category": "administracyjne",
+                    "name": "Sąd",
                     "details": "Opłata Sądowa",
                     "listed": true
                 }
@@ -468,10 +474,10 @@
         "2013-08": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "420.00",
+                "darowizny_statutowe": "470.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "50.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "1990.76",
@@ -483,6 +489,7 @@
                 {
                     "value": 1990.76,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sponsoring",
                     "listed": true
                 }
@@ -536,6 +543,7 @@
                 {
                     "value": 300.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sponsoring",
                     "listed": true
                 }
@@ -589,6 +597,7 @@
                 {
                     "value": 417.81,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -614,6 +623,7 @@
                 {
                     "value": -306.77,
                     "category": "zwroty",
+                    "name": "",
                     "details": "Zwrot za zakup w IKEA",
                     "listed": true
                 }
@@ -649,6 +659,7 @@
                 {
                     "value": 527.76,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
@@ -662,18 +673,21 @@
                 {
                     "value": 2532.85,
                     "category": "eventy",
+                    "name": "",
                     "details": "TEDx Kraków 2013",
                     "listed": true
                 },
                 {
                     "value": 0.13,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 },
                 {
                     "value": 0.04,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -699,18 +713,21 @@
                 {
                     "value": -1332.85,
                     "category": "eventy",
-                    "details": "TEDx Kraków 2013 - Części na warsztaty elektroniczne",
+                    "name": "TEDx Kraków 2013",
+                    "details": "Części na warsztaty elektroniczne",
                     "listed": true
                 },
                 {
                     "value": -1200.0,
                     "category": "eventy",
-                    "details": "TEDx Kraków 2013 - Części na warsztaty elektroniczne",
+                    "name": "TEDx Kraków 2013",
+                    "details": "Części na warsztaty elektroniczne",
                     "listed": true
                 },
                 {
                     "value": -123.0,
                     "category": "hosting",
+                    "name": "",
                     "details": "Domena hskrk.pl",
                     "listed": true
                 }
@@ -731,10 +748,10 @@
         "2013-12": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "782.00",
+                "darowizny_statutowe": "832.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "50.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "2460.00",
                 "warsztaty": "0",
                 "eventy": "3690.00",
@@ -772,19 +789,22 @@
                 {
                     "value": -1200.0,
                     "category": "eventy",
-                    "details": "Droidcon? - Wynajem przestrzeni",
+                    "name": "Droidcon?",
+                    "details": "Wynajem przestrzeni",
                     "listed": true
                 },
                 {
                     "value": -1500.0,
                     "category": "eventy",
-                    "details": "Droidcon? - Wynajem przestrzeni",
+                    "name": "Droidcon?",
+                    "details": "Wynajem przestrzeni",
                     "listed": true
                 },
                 {
                     "value": -1500.0,
                     "category": "eventy",
-                    "details": "Droidcon? - Wynajem przestrzeni",
+                    "name": "Droidcon?",
+                    "details": "Wynajem przestrzeni",
                     "listed": true
                 }
             ],
@@ -804,10 +824,10 @@
         "2014-01": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "1120.00",
+                "darowizny_statutowe": "1320.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "200.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "4920.00",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -873,6 +893,7 @@
                 {
                     "value": 660.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -911,10 +932,10 @@
         "2014-03": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "1170.00",
+                "darowizny_statutowe": "1470.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "430.00",
+                "darowizny_inne": "130.00",
                 "darowizny_sponsoring": "4920.00",
                 "warsztaty": "0",
                 "eventy": "7872.00",
@@ -980,6 +1001,7 @@
                 {
                     "value": -290.0,
                     "category": "administracyjne",
+                    "name": "Sąd",
                     "details": "Opłata za zmianę wpisu w rejestrze fundacji",
                     "listed": true
                 }
@@ -1015,6 +1037,7 @@
                 {
                     "value": 112.98,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
@@ -1047,25 +1070,29 @@
                 {
                     "value": -1500.0,
                     "category": "eventy",
-                    "details": "Rails Girls Kraków 2014 - Nagrania i montaż",
+                    "name": "Rails Girls Kraków 2014",
+                    "details": "Nagrania i montaż",
                     "listed": true
                 },
                 {
                     "value": -500.0,
                     "category": "eventy",
-                    "details": "Rails Girls Kraków 2014 - Catering",
+                    "name": "Rails Girls Kraków 2014",
+                    "details": "Catering",
                     "listed": true
                 },
                 {
                     "value": -600.0,
                     "category": "eventy",
-                    "details": "Rails Girls Kraków 2014 - Catering",
+                    "name": "Rails Girls Kraków 2014",
+                    "details": "Catering",
                     "listed": true
                 },
                 {
                     "value": -1000.0,
                     "category": "eventy",
-                    "details": "Rails Girls Kraków 2014 - Catering",
+                    "name": "Rails Girls Kraków 2014",
+                    "details": "Catering",
                     "listed": true
                 },
                 {
@@ -1078,12 +1105,14 @@
                 {
                     "value": -80.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Naklejki i ulotki",
                     "listed": true
                 },
                 {
                     "value": -175.77,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Ikea",
                     "listed": true
                 }
@@ -1104,10 +1133,10 @@
         "2014-05": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "450.00",
+                "darowizny_statutowe": "650.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "230.00",
+                "darowizny_inne": "30.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -1180,6 +1209,7 @@
                 {
                     "value": 642.94,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -1233,6 +1263,7 @@
                 {
                     "value": 458.26,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -1271,10 +1302,10 @@
         "2014-08": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "530.00",
+                "darowizny_statutowe": "580.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "80.00",
+                "darowizny_inne": "30.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "787.80",
@@ -1286,12 +1317,14 @@
                 {
                     "value": 121.05,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 666.75,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -1345,12 +1378,14 @@
                 {
                     "value": 100.92,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 80.7,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -1390,9 +1425,9 @@
             "income": {
                 "nieprzeparsowane": "0",
                 "darowizny_statutowe": "633.00",
-                "darowizny_celowe": "0",
+                "darowizny_celowe": "200.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "400.00",
+                "darowizny_inne": "200.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "751.88",
@@ -1404,12 +1439,14 @@
                 {
                     "value": 84.1,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 667.78,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -1477,6 +1514,7 @@
                 {
                     "value": 28044.43,
                     "category": "eventy",
+                    "name": "",
                     "details": "Grant Ambasady USA",
                     "listed": true
                 }
@@ -1502,12 +1540,14 @@
                 {
                     "value": -354.38,
                     "category": "administracyjne",
+                    "name": "Sąd",
                     "details": "Opłata za zmianę wpisu w rejestrze fundacji",
                     "listed": true
                 },
                 {
                     "value": -301.35,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Druk naklejek HSKRK",
                     "listed": true
                 }
@@ -1571,6 +1611,7 @@
                 {
                     "value": 166.72,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -1808,6 +1849,7 @@
                 {
                     "value": -34.0,
                     "category": "administracyjne",
+                    "name": "UM Kraków",
                     "details": "Pełnomocnictwo dla biura księgowego",
                     "listed": true
                 }
@@ -1861,13 +1903,15 @@
                 {
                     "value": -855.12,
                     "category": "eventy",
-                    "details": "Droidcon 2015 - ?",
+                    "name": "Droidcon 2015",
+                    "details": "?",
                     "listed": true
                 },
                 {
                     "value": -855.12,
                     "category": "eventy",
-                    "details": "Droidcon 2015 - ?",
+                    "name": "Droidcon 2015",
+                    "details": "?",
                     "listed": true
                 }
             ],
@@ -1902,12 +1946,14 @@
                 {
                     "value": 381.3,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 2460.0,
                     "category": "umowy",
+                    "name": "",
                     "details": "Usługi marketingowe",
                     "listed": true
                 }
@@ -2029,12 +2075,14 @@
                 {
                     "value": 660.3,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 66.37,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -2095,6 +2143,7 @@
                 {
                     "value": -290.0,
                     "category": "administracyjne",
+                    "name": "NBP",
                     "details": "Opłata za złożenie sprawozdania finansowego",
                     "listed": true
                 }
@@ -2155,7 +2204,8 @@
                 {
                     "value": -3075.0,
                     "category": "eventy",
-                    "details": "Droidcon - Sprawy organizacyjne (?)",
+                    "name": "Droidcon",
+                    "details": "Sprawy organizacyjne (?)",
                     "listed": true
                 }
             ],
@@ -2300,6 +2350,7 @@
                 {
                     "value": -235.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Podstawy do krzeseł obrotowych",
                     "listed": true
                 }
@@ -2399,12 +2450,14 @@
                 {
                     "value": -10798.16,
                     "category": "eventy",
-                    "details": "Grant Ambasady USA - Zwrot niewykorzystanych środków",
+                    "name": "Grant USA",
+                    "details": "Zwrot niewykorzystanych środków",
                     "listed": true
                 },
                 {
                     "value": -82.0,
                     "category": "administracyjne",
+                    "name": "UM Warszawa",
                     "details": "Za wydanie pozwolenia radiowego",
                     "listed": true
                 }
@@ -2604,24 +2657,28 @@
                 {
                     "value": -2645.92,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Podloga do nowego lokalu? - ?",
                     "listed": true
                 },
                 {
                     "value": -11.34,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Włącznik (do światła)",
                     "listed": true
                 },
                 {
                     "value": -615.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Porada prawna w sprawie wynajmu lokalu na Radziwiłłowskiej",
                     "listed": true
                 },
                 {
                     "value": -790.9,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Artykuły remontowe + Odkurzacz",
                     "listed": true
                 }
@@ -2682,8 +2739,8 @@
                 {
                     "value": -1.23,
                     "category": "hosting",
-                    "details": "Weryfikacja - potwierdzenie konta na platformie crowdfundingowej na której zbieraliśmy na przeprowadzkę",
                     "name": "Wspieram.to",
+                    "details": "Weryfikacja - potwierdzenie konta na platformie crowdfundingowej na której zbieraliśmy na przeprowadzkę",
                     "listed": true
                 }
             ],
@@ -2736,13 +2793,14 @@
                 {
                     "value": -140.0,
                     "category": "administracyjne",
-                    "details": "Sprawozdanie finansowe za 2015 rok",
                     "name": "NBP",
+                    "details": "Opłata za złożenie sprawozdania finansowego",
                     "listed": true
                 },
                 {
                     "value": -450.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Blaty do labu elektronicznego i hardroomu",
                     "listed": true
                 }
@@ -2842,6 +2900,7 @@
                 {
                     "value": -76.94,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Artykuły remontowe + elektryczne",
                     "listed": true
                 }
@@ -2895,6 +2954,7 @@
                 {
                     "value": -200.16,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Wentylator + kratka",
                     "listed": true
                 }
@@ -2976,6 +3036,7 @@
                 {
                     "value": 1000.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Zwrot kaucji za lokal na Radziwiłłowskiej",
                     "listed": true
                 }
@@ -3093,8 +3154,8 @@
                 {
                     "value": -1.0,
                     "category": "hosting",
-                    "details": "Weryfikacja VoIP",
                     "name": "Halonet",
+                    "details": "Weryfikacja VoIP",
                     "listed": true
                 }
             ],
@@ -3245,12 +3306,14 @@
                 {
                     "value": -4920.0,
                     "category": "lokal",
+                    "name": "",
                     "details": "Montaż domofonu",
                     "listed": true
                 },
                 {
                     "value": -177.17,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Blaty softroom",
                     "listed": true
                 }
@@ -3312,13 +3375,15 @@
                 {
                     "value": -2788.44,
                     "category": "eventy",
-                    "details": "Rails Girls Kraków 2017 - Catering",
+                    "name": "Rails Girls Kraków 2017",
+                    "details": "Catering",
                     "listed": true
                 },
                 {
                     "value": -1200.0,
                     "category": "eventy",
-                    "details": "Rails Girls Kraków 2017 - Catering",
+                    "name": "Rails Girls Kraków 2017",
+                    "details": "Catering",
                     "listed": true
                 }
             ],
@@ -3417,6 +3482,7 @@
                 {
                     "value": -140.0,
                     "category": "administracyjne",
+                    "name": "NBP",
                     "details": "Opłata za złożenie sprawozdania finansowego",
                     "listed": true
                 }
@@ -3470,7 +3536,8 @@
                 {
                     "value": -430.5,
                     "category": "eventy",
-                    "details": "Hackerspace Woodstock 2017 - Namiot (wynajem)",
+                    "name": "Hackerspace Woodstock",
+                    "details": "Namiot (wynajem)",
                     "listed": true
                 }
             ],
@@ -3505,6 +3572,7 @@
                 {
                     "value": 583.04,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -3530,6 +3598,7 @@
                 {
                     "value": -91.96,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Worki do odkurzacza + filtr do oleju",
                     "listed": true
                 }
@@ -3565,6 +3634,7 @@
                 {
                     "value": 304.58,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -3664,12 +3734,14 @@
                 {
                     "value": 145.97,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 },
                 {
                     "value": 274.53,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -3723,6 +3795,7 @@
                 {
                     "value": 88.07,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -3828,6 +3901,7 @@
                 {
                     "value": 125.2,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -3912,6 +3986,7 @@
                 {
                     "value": -1407.31,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Access Pointy [Ubiquiti] UAP-AC-LITE-5 AP AC",
                     "listed": true
                 }
@@ -3947,6 +4022,7 @@
                 {
                     "value": 7380.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sphere.it",
                     "listed": true
                 }
@@ -3972,19 +4048,22 @@
                 {
                     "value": -418.2,
                     "category": "eventy",
-                    "details": "Noc Informatyka 2018 - Kufle",
+                    "name": "Noc Informatyka 2018",
+                    "details": "Kufle",
                     "listed": true
                 },
                 {
                     "value": -1620.0,
                     "category": "eventy",
-                    "details": "Noc Informatyka 2018 - Kufle",
+                    "name": "Noc Informatyka 2018",
+                    "details": "Kufle",
                     "listed": true
                 },
                 {
                     "value": -600.0,
                     "category": "eventy",
-                    "details": "Noc Informatyka 2018 - Budowa i obsługa strefy retroinformatycznej w ramach Nocy Informatyka 1.1",
+                    "name": "Noc Informatyka 2018",
+                    "details": "Budowa i obsługa strefy retroinformatycznej w ramach Nocy Informatyka 1.1",
                     "listed": true
                 }
             ],
@@ -4019,6 +4098,7 @@
                 {
                     "value": 5241.89,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -4044,7 +4124,8 @@
                 {
                     "value": -2158.65,
                     "category": "eventy",
-                    "details": "Rails Girls ? - Torby płócienne",
+                    "name": "Rails Girls ?",
+                    "details": "Torby płócienne",
                     "listed": true
                 }
             ],
@@ -4079,12 +4160,14 @@
                 {
                     "value": 93.84,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 },
                 {
                     "value": 85.94,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -4110,7 +4193,8 @@
                 {
                     "value": -4210.0,
                     "category": "eventy",
-                    "details": "Rails Girls Krakow 2018 - Catering",
+                    "name": "Rails Girls Krakow 2018",
+                    "details": "Catering",
                     "listed": true
                 }
             ],
@@ -4145,12 +4229,14 @@
                 {
                     "value": 469.9,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 46.7,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -4250,6 +4336,7 @@
                 {
                     "value": 143.77,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -4275,12 +4362,14 @@
                 {
                     "value": -600.0,
                     "category": "administracyjne",
+                    "name": "Sąd",
                     "details": "Opłata Sądowa",
                     "listed": true
                 },
                 {
                     "value": -173.04,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Zakup artykułów papierniczych, m.in ołówków na warsztaty \"Drawidło\"",
                     "listed": true
                 }
@@ -4334,6 +4423,7 @@
                 {
                     "value": -50.28,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Brzeszczot do metalu, emalia uniewrsalna, taśma",
                     "listed": true
                 }
@@ -4369,18 +4459,21 @@
                 {
                     "value": 1998.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 446.51,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 },
                 {
                     "value": 3736.75,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Paypal - wypłata",
                     "listed": true
                 }
@@ -4440,12 +4533,14 @@
                 {
                     "value": 888.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 1476.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Zwrot czynszu (nieaktualny numer konta)",
                     "listed": true
                 }
@@ -4471,12 +4566,14 @@
                 {
                     "value": -209.1,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Zakup licencji na Windowsy",
                     "listed": true
                 },
                 {
                     "value": -43.92,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Puszka elektryczna",
                     "listed": true
                 }
@@ -4512,6 +4609,7 @@
                 {
                     "value": 1920.9,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -4578,12 +4676,14 @@
                 {
                     "value": 452.47,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 },
                 {
                     "value": 748.94,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 }
@@ -4637,12 +4737,14 @@
                 {
                     "value": 498.6,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 470.9,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -4668,6 +4770,7 @@
                 {
                     "value": -165.2,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Akcesoria spawalnicze, płytki prototypowe",
                     "listed": true
                 }
@@ -4703,42 +4806,49 @@
                 {
                     "value": 2460.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Rails Girls Kraków 2019 - Sponsoring",
                     "listed": true
                 },
                 {
                     "value": 3136.5,
                     "category": "eventy",
+                    "name": "",
                     "details": "Rails Girls Kraków 2019 - Sponsoring",
                     "listed": true
                 },
                 {
                     "value": 249.3,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 3690.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Rails Girls Kraków 2019 - Sponsoring",
                     "listed": true
                 },
                 {
                     "value": 138.5,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 221.6,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 304.7,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -4764,24 +4874,28 @@
                 {
                     "value": -2881.89,
                     "category": "eventy",
-                    "details": "Rails Girls ? - Torby płócienne",
+                    "name": "Rails Girls ?",
+                    "details": "Torby płócienne",
                     "listed": true
                 },
                 {
                     "value": -61.98,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Nitownica",
                     "listed": true
                 },
                 {
                     "value": -95.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Breloki dostępowe",
                     "listed": true
                 },
                 {
                     "value": -486.5,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Multimetry, wkłady do mopa, rozpuszczalniki",
                     "listed": true
                 }
@@ -4817,24 +4931,28 @@
                 {
                     "value": 166.2,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 166.2,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 166.2,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 3690.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Rails Girls Kraków 2019 - Sponsoring",
                     "listed": true
                 }
@@ -4860,7 +4978,8 @@
                 {
                     "value": -7234.2,
                     "category": "eventy",
-                    "details": "Rails Girls Krakow 2019 - Catering",
+                    "name": "Rails Girls Krakow 2019",
+                    "details": "Catering",
                     "listed": true
                 }
             ],
@@ -4895,12 +5014,14 @@
                 {
                     "value": 138.5,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 1027.1,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 }
@@ -4954,6 +5075,7 @@
                 {
                     "value": 2951.14,
                     "category": "eventy",
+                    "name": "",
                     "details": "Hackerspace Polandrock 2019 - Sponsoring Vonage",
                     "listed": true
                 }
@@ -5007,6 +5129,7 @@
                 {
                     "value": -2119.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Namiot Wystawowy 5x8m",
                     "listed": true
                 }
@@ -5060,6 +5183,7 @@
                 {
                     "value": -1580.55,
                     "category": "zakupy",
+                    "name": "",
                     "details": "kamery CCTV",
                     "listed": true
                 }
@@ -5095,12 +5219,14 @@
                 {
                     "value": 585.83,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 },
                 {
                     "value": 852.38,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 }
@@ -5154,6 +5280,7 @@
                 {
                     "value": 7380.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sphere.it",
                     "listed": true
                 }
@@ -5179,12 +5306,14 @@
                 {
                     "value": -444.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Piła taśmowa?",
                     "listed": true
                 },
                 {
                     "value": -19.98,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Emalia uniwersalna",
                     "listed": true
                 }
@@ -5220,6 +5349,7 @@
                 {
                     "value": 110.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Zwrot z podatku VAT",
                     "listed": true
                 }
@@ -5245,6 +5375,7 @@
                 {
                     "value": -261.9,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Przewody, tulejki, szybkozłączki",
                     "listed": true
                 }
@@ -5280,18 +5411,21 @@
                 {
                     "value": 162.54,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 325.08,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 307.02,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -5345,30 +5479,35 @@
                 {
                     "value": 126.42,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 144.48,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 144.48,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 162.54,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 3150.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Zwrot podwójnie wysłanej pładności za szlifierkę taśmową",
                     "listed": true
                 }
@@ -5394,12 +5533,14 @@
                 {
                     "value": -3150.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Szlifierka taśmowa",
                     "listed": true
                 },
                 {
                     "value": -3150.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Szlifierka tasmowa",
                     "listed": true
                 },
@@ -5447,12 +5588,14 @@
                 {
                     "value": 126.42,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 144.48,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 }
@@ -5478,12 +5621,14 @@
                 {
                     "value": -37.57,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Gumki recepturki",
                     "listed": true
                 },
                 {
                     "value": -2629.13,
                     "category": "covid",
+                    "name": "",
                     "details": "Folia do przyłbic - Folia do przyłbic",
                     "listed": true
                 }
@@ -5519,6 +5664,7 @@
                 {
                     "value": 5690.98,
                     "category": "darowizny_koronawirus",
+                    "name": "",
                     "details": "Zbiórka Facebook - transza",
                     "listed": true
                 }
@@ -5544,84 +5690,98 @@
                 {
                     "value": -186.0,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Foliopaki i kangurki",
                     "listed": true
                 },
                 {
                     "value": -4263.43,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - >500kg folii PET",
                     "listed": true
                 },
                 {
                     "value": -226.38,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Cięcie / Sztancowanie przyłbic",
                     "listed": true
                 },
                 {
                     "value": -93.0,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Folia stretch",
                     "listed": true
                 },
                 {
                     "value": -315.0,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - 10kg gumek recepturek",
                     "listed": true
                 },
                 {
                     "value": -364.75,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Wysyłka",
                     "listed": true
                 },
                 {
                     "value": -1065.0,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Cięcie / Sztancowanie przyłbic",
                     "listed": true
                 },
                 {
                     "value": -299.8,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Wysyłka",
                     "listed": true
                 },
                 {
                     "value": -514.81,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Pudełka, stretch, środko czystości",
                     "listed": true
                 },
                 {
                     "value": -455.1,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Wykrojnik v29",
                     "listed": true
                 },
                 {
                     "value": -253.83,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Kartony i woreczki",
                     "listed": true
                 },
                 {
                     "value": -3591.97,
                     "category": "covid",
+                    "name": "",
                     "details": "Folia do przyłbic - Folia do przyłbic",
                     "listed": true
                 },
                 {
                     "value": -300.5,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Gumki recepturki",
                     "listed": true
                 },
                 {
                     "value": -1494.46,
                     "category": "covid",
+                    "name": "",
                     "details": "Folia do przyłbic - ~200kg folii PET",
                     "listed": true
                 }
@@ -5657,6 +5817,7 @@
                 {
                     "value": 6631.28,
                     "category": "darowizny_koronawirus",
+                    "name": "",
                     "details": "Zbiórka Facebook - transza",
                     "listed": true
                 }
@@ -5682,6 +5843,7 @@
                 {
                     "value": -157.75,
                     "category": "covid",
+                    "name": "",
                     "details": "Przyłbice - Cięcie / Sztancowanie przyłbic",
                     "listed": true
                 }
@@ -5816,6 +5978,7 @@
                 {
                     "value": 4305.0,
                     "category": "darowizny_sponsoring",
+                    "name": "",
                     "details": "Sponsoring SII",
                     "listed": true
                 }
@@ -5841,6 +6004,7 @@
                 {
                     "value": -55.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Toner do drukarki?",
                     "listed": true
                 }
@@ -5894,6 +6058,7 @@
                 {
                     "value": -144.31,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Art. ścierne + kleje + taśmy",
                     "listed": true
                 }
@@ -5929,6 +6094,7 @@
                 {
                     "value": 925.22,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 }
@@ -6028,6 +6194,7 @@
                 {
                     "value": 2587.49,
                     "category": "darowizny_statutowe",
+                    "name": "",
                     "details": "CAF America - grant",
                     "listed": true
                 }
@@ -6053,6 +6220,7 @@
                 {
                     "value": -69.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT",
                     "listed": true
                 }
@@ -6193,6 +6361,7 @@
                 {
                     "value": 97.56,
                     "category": "darowizny_statutowe",
+                    "name": "",
                     "details": "CAF America - grant",
                     "listed": true
                 }
@@ -6218,6 +6387,7 @@
                 {
                     "value": -250.0,
                     "category": "administracyjne",
+                    "name": "Sąd",
                     "details": "Opłata za zmianę wpisu w rejestrze fundacji",
                     "listed": true
                 }
@@ -6271,6 +6441,7 @@
                 {
                     "value": -100.0,
                     "category": "administracyjne",
+                    "name": "Sąd",
                     "details": "Opłata za zmianę wpisu w rejestrze fundacji",
                     "listed": true
                 }
@@ -6306,6 +6477,7 @@
                 {
                     "value": 35.68,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Benevity",
                     "listed": true
                 }
@@ -6451,6 +6623,7 @@
                 {
                     "value": 52.31,
                     "category": "darowizny_statutowe",
+                    "name": "",
                     "details": "CAF America - grant",
                     "listed": true
                 }
@@ -6550,6 +6723,7 @@
                 {
                     "value": 556.07,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 }
@@ -6603,6 +6777,7 @@
                 {
                     "value": 4305.0,
                     "category": "darowizny_sponsoring",
+                    "name": "",
                     "details": "Sponsoring SII",
                     "listed": true
                 }
@@ -6656,6 +6831,7 @@
                 {
                     "value": 802.75,
                     "category": "korekty",
+                    "name": "",
                     "details": "Korekta czynszu",
                     "listed": true
                 }
@@ -6694,10 +6870,10 @@
         "2022-01": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "3365.00",
+                "darowizny_statutowe": "3440.00",
                 "darowizny_celowe": "1616.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "75.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -6709,6 +6885,7 @@
                 {
                     "value": 1837.9,
                     "category": "korekty",
+                    "name": "",
                     "details": "Korekta czynszu",
                     "listed": true
                 }
@@ -6734,12 +6911,14 @@
                 {
                     "value": -1948.63,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Anycubic Photon Mono X",
                     "listed": true
                 },
                 {
                     "value": -623.61,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Czynsz / Media / Czynsz i media",
                     "listed": true
                 }
@@ -6760,10 +6939,10 @@
         "2022-02": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "3569.00",
+                "darowizny_statutowe": "3644.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "75.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -6793,6 +6972,7 @@
                 {
                     "value": -400.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Drukarki 3d prusa",
                     "listed": true
                 },
@@ -6825,10 +7005,10 @@
         "2022-03": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "3770.00",
+                "darowizny_statutowe": "3845.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "75.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -6871,10 +7051,10 @@
         "2022-04": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "4484.00",
+                "darowizny_statutowe": "4559.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "175.00",
+                "darowizny_inne": "100.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -6904,6 +7084,7 @@
                 {
                     "value": -85.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "zasilacz do serwera dell",
                     "listed": true
                 }
@@ -6924,10 +7105,10 @@
         "2022-05": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "4979.45",
+                "darowizny_statutowe": "5054.45",
                 "darowizny_celowe": "20.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "150.00",
+                "darowizny_inne": "75.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -6957,6 +7138,7 @@
                 {
                     "value": -2369.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Oscyloskop Siglent SDS 1104X-E",
                     "listed": true
                 }
@@ -6977,10 +7159,10 @@
         "2022-06": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "4744.00",
+                "darowizny_statutowe": "4819.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "150.00",
+                "darowizny_inne": "75.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "3783.60",
@@ -7018,18 +7200,21 @@
                 {
                     "value": -82.0,
                     "category": "administracyjne",
+                    "name": "COP",
                     "details": "Za wydanie pozwolenia radiowego",
                     "listed": true
                 },
                 {
                     "value": -66.47,
                     "category": "zakupy",
+                    "name": "",
                     "details": "breloki RFID",
                     "listed": true
                 },
                 {
                     "value": -79.8,
                     "category": "zakupy",
+                    "name": "",
                     "details": "benzyna ekstrakcyjna",
                     "listed": true
                 }
@@ -7050,10 +7235,10 @@
         "2022-07": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "4294.00",
+                "darowizny_statutowe": "4369.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "75.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -7083,12 +7268,14 @@
                 {
                     "value": -615.0,
                     "category": "eventy",
-                    "details": "Hackerspace PolandRock 2022 - Namiot (wynajem)",
+                    "name": "Hackerspace Polandrock",
+                    "details": "Namiot (wynajem)",
                     "listed": true
                 },
                 {
                     "value": -350.0,
                     "category": "administracyjne",
+                    "name": "Sąd",
                     "details": "KRS-Z20 - zmiana danych podmiotu",
                     "listed": true
                 }
@@ -7109,10 +7296,10 @@
         "2022-08": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "5263.00",
+                "darowizny_statutowe": "5338.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "175.00",
+                "darowizny_inne": "100.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -7142,6 +7329,7 @@
                 {
                     "value": -65.49,
                     "category": "zakupy",
+                    "name": "",
                     "details": "akcesoria TIG",
                     "listed": true
                 }
@@ -7162,10 +7350,10 @@
         "2022-09": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "5398.00",
+                "darowizny_statutowe": "5473.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "75.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "2695.00",
@@ -7177,6 +7365,7 @@
                 {
                     "value": 550.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Zestawy edukacyjne do nauki lutowania",
                     "listed": true
                 },
@@ -7272,6 +7461,7 @@
                 {
                     "value": -56.1,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT",
                     "listed": true
                 }
@@ -7292,10 +7482,10 @@
         "2022-10": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "4698.00",
+                "darowizny_statutowe": "4773.00",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "210.00",
+                "darowizny_inne": "135.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "12813.00",
@@ -7307,12 +7497,14 @@
                 {
                     "value": 6150.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sphere.it",
                     "listed": true
                 },
                 {
                     "value": 513.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
@@ -7326,12 +7518,14 @@
                 {
                     "value": 325.65,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT - czynsz",
                     "listed": true
                 },
                 {
                     "value": 361.2,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT - czynsz",
                     "listed": true
                 }
@@ -7357,36 +7551,42 @@
                 {
                     "value": -245.5,
                     "category": "eventy",
-                    "details": "10 urodziny - pizza",
+                    "name": "10 urodziny",
+                    "details": "pizza",
                     "listed": true
                 },
                 {
                     "value": -15.22,
                     "category": "eventy",
-                    "details": "10 urodziny - ciasteczka",
+                    "name": "10 urodziny",
+                    "details": "ciasteczka",
                     "listed": true
                 },
                 {
                     "value": -58.94,
                     "category": "eventy",
-                    "details": "10 urodziny - kubeczki/talerzyki",
+                    "name": "10 urodziny",
+                    "details": "kubeczki/talerzyki",
                     "listed": true
                 },
                 {
                     "value": -16.0,
                     "category": "eventy",
-                    "details": "10 urodziny - soki",
+                    "name": "10 urodziny",
+                    "details": "soki",
                     "listed": true
                 },
                 {
                     "value": -1150.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT",
                     "listed": true
                 },
                 {
                     "value": -350.0,
                     "category": "administracyjne",
+                    "name": "MS",
                     "details": "Opłata za zmianę wpisu w rejestrze fundacji",
                     "listed": true
                 }
@@ -7407,10 +7607,10 @@
         "2022-11": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "4963.00",
+                "darowizny_statutowe": "5038.00",
                 "darowizny_celowe": "2608.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "116.00",
+                "darowizny_inne": "41.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "2800.00",
@@ -7422,18 +7622,21 @@
                 {
                     "value": 2800.0,
                     "category": "eventy",
+                    "name": "",
                     "details": "Warsztaty dla DomEQ",
                     "listed": true
                 },
                 {
                     "value": 227.05,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT - czynsz",
                     "listed": true
                 },
                 {
                     "value": 361.2,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT - czynsz",
                     "listed": true
                 }
@@ -7459,25 +7662,29 @@
                 {
                     "value": -44.88,
                     "category": "zakupy",
+                    "name": "",
                     "details": "groty do lutownicy",
                     "listed": true
                 },
                 {
                     "value": -4756.96,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Koszulki HSowe z nadrukiem",
                     "listed": true
                 },
                 {
                     "value": -19.67,
                     "category": "zakupy",
+                    "name": "",
                     "details": "woreczki strunowe",
                     "listed": true
                 },
                 {
                     "value": -209.67,
                     "category": "hosting",
-                    "details": "Opłata za platformę Meetup",
+                    "name": "Meetup",
+                    "details": "Opłata za platformę",
                     "listed": true
                 }
             ],
@@ -7497,10 +7704,10 @@
         "2022-12": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "6768.00",
+                "darowizny_statutowe": "6843.00",
                 "darowizny_celowe": "733.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "215.00",
+                "darowizny_inne": "140.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "497.70",
@@ -7512,12 +7719,14 @@
                 {
                     "value": 497.7,
                     "category": "eventy",
+                    "name": "",
                     "details": "Sprzedaż biletów na wydarzenie (?)",
                     "listed": true
                 },
                 {
                     "value": 290.15,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Zbiórka Facebook",
                     "listed": true
                 }
@@ -7550,12 +7759,14 @@
                 {
                     "value": -75.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Zwrot przelewu o tytule \"uslugi seksualne :)\" - Niezgodność z dzialalnością statutową Fundacji",
                     "listed": true
                 },
                 {
                     "value": -2799.48,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Mikroskop OPTEK SZM7045T-STL2",
                     "listed": true
                 }
@@ -7576,10 +7787,10 @@
         "2023-01": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "5343.00",
+                "darowizny_statutowe": "5418.00",
                 "darowizny_celowe": "300.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "175.00",
+                "darowizny_inne": "100.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -7591,6 +7802,7 @@
                 {
                     "value": 123.48,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Benevity",
                     "listed": true
                 }
@@ -7616,24 +7828,28 @@
                 {
                     "value": -1584.61,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz / Media / Czynsz i media",
                     "listed": true
                 },
                 {
                     "value": -1931.64,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz",
                     "listed": true
                 },
                 {
                     "value": -130.58,
                     "category": "zakupy",
+                    "name": "",
                     "details": "ręczniki papierowe",
                     "listed": true
                 },
                 {
                     "value": -336.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "części do drukarek 3D",
                     "listed": true
                 }
@@ -7654,10 +7870,10 @@
         "2023-02": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "5279.00",
+                "darowizny_statutowe": "5354.00",
                 "darowizny_celowe": "343.68",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "75.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -7687,36 +7903,42 @@
                 {
                     "value": -51.75,
                     "category": "eventy",
+                    "name": "",
                     "details": "Pizza na wydarzenie w HSie",
                     "listed": true
                 },
                 {
                     "value": -1684.09,
                     "category": "lokal",
+                    "name": "",
                     "details": "Ogrzewanie (870,11), + śmieci (68,98) + woda (39,75) + prąd (404,40 + 300,85)",
                     "listed": true
                 },
                 {
                     "value": -2209.79,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz",
                     "listed": true
                 },
                 {
                     "value": -674.82,
                     "category": "zakupy",
+                    "name": "",
                     "details": "uchwyty do tokarki",
                     "listed": true
                 },
                 {
                     "value": -298.78,
                     "category": "zakupy",
+                    "name": "",
                     "details": "wiertła i gwintowniki",
                     "listed": true
                 },
                 {
                     "value": -64.6,
                     "category": "zakupy",
+                    "name": "",
                     "details": "akcesoria TIG",
                     "listed": true
                 }
@@ -7737,10 +7959,10 @@
         "2023-03": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "6583.00",
+                "darowizny_statutowe": "6658.00",
                 "darowizny_celowe": "1575.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "75.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -7752,12 +7974,14 @@
                 {
                     "value": 81.63,
                     "category": "korekty",
+                    "name": "",
                     "details": "Korekta czynszu",
                     "listed": true
                 },
                 {
                     "value": 1113.18,
                     "category": "korekty",
+                    "name": "",
                     "details": "Korekta czynszu",
                     "listed": true
                 }
@@ -7783,42 +8007,49 @@
                 {
                     "value": -1650.36,
                     "category": "lokal",
+                    "name": "",
                     "details": "Ogrzewanie (880,67) + śmieci (68,98) + prąd (418,63 + 282,08)",
                     "listed": true
                 },
                 {
                     "value": -2209.79,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz",
                     "listed": true
                 },
                 {
                     "value": -46.43,
                     "category": "zakupy",
+                    "name": "",
                     "details": "akcesoria BHP",
                     "listed": true
                 },
                 {
                     "value": -853.27,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Anycubic Wash&Cure Plus",
                     "listed": true
                 },
                 {
                     "value": -61.5,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Napełnienie butli z argonem",
                     "listed": true
                 },
                 {
                     "value": -82.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "izopropanol",
                     "listed": true
                 },
                 {
                     "value": -274.16,
                     "category": "zakupy",
+                    "name": "",
                     "details": "śruby, nakrętki",
                     "listed": true
                 }
@@ -7872,24 +8103,28 @@
                 {
                     "value": -1684.74,
                     "category": "lokal",
+                    "name": "",
                     "details": "Ogrzewanie (750,31) + śmieci (68,98) + woda (44,70) + prąd (493,05 + 327,70)",
                     "listed": true
                 },
                 {
                     "value": -2209.79,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz",
                     "listed": true
                 },
                 {
                     "value": -223.54,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Kubki z podziałką, wiertła do metalu, farby spray",
                     "listed": true
                 },
                 {
                     "value": -24.94,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Klucze fajkowe do drukarek 3D",
                     "listed": true
                 }
@@ -7925,6 +8160,7 @@
                 {
                     "value": 181.95,
                     "category": "korekty",
+                    "name": "",
                     "details": "Zwrot podwójnie wysłanego zwrotu za zakup sr. czystosci w Makro",
                     "listed": true
                 }
@@ -7950,56 +8186,64 @@
                 {
                     "value": -1005.45,
                     "category": "eventy",
-                    "details": "Hackerspace PolandRock 2023 - Układy do lutowania na warsztaty",
+                    "name": "Hackerspace Polandrock",
+                    "details": "Układy do lutowania na warsztaty",
                     "listed": true
                 },
                 {
                     "value": -2209.79,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz",
                     "listed": true
                 },
                 {
                     "value": -1340.61,
                     "category": "lokal",
+                    "name": "",
                     "details": "Ogrzewanie (567,68) + śmieci (68,98) + woda (44,70) + prąd (402,59 + 301,36)",
                     "listed": true
                 },
                 {
                     "value": -101.65,
                     "category": "zakupy",
+                    "name": "",
                     "details": "detergenty",
                     "listed": true
                 },
                 {
                     "value": -18.01,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Preparat Kontakt",
                     "listed": true
                 },
                 {
                     "value": -399.85,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Pudełka SAMLA",
                     "listed": true
                 },
                 {
                     "value": -181.95,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Środki czystości (papier toaletowy, ręczniki papierowe)",
                     "listed": true
                 },
                 {
                     "value": -181.95,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Środki czystości (papier toaletowy, ręczniki papierowe) (omyłkowo wysłany podwójnie, skorygowany, patrz wpływy)",
                     "listed": true
                 },
                 {
                     "value": -255.83,
                     "category": "hosting",
-                    "details": "Opłata za platformę",
                     "name": "Meetup",
+                    "details": "Opłata za platformę",
                     "listed": true
                 }
             ],
@@ -8052,30 +8296,35 @@
                 {
                     "value": -1477.3,
                     "category": "lokal",
+                    "name": "",
                     "details": "Ogrzewanie (313,11) + przegląd węzła cieplnego (293,37) + śmieci (68,98) + prąd (479,96 + 321,88)",
                     "listed": true
                 },
                 {
                     "value": -2209.79,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz",
                     "listed": true
                 },
                 {
                     "value": -68.75,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Kable USB",
                     "listed": true
                 },
                 {
                     "value": -545.5,
                     "category": "zakupy",
+                    "name": "",
                     "details": "części do drukarek prusa",
                     "listed": true
                 },
                 {
                     "value": -1159.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Drukarka laserowa Brother",
                     "listed": true
                 }
@@ -8129,120 +8378,140 @@
                 {
                     "value": -20000.0,
                     "category": "eventy",
-                    "details": "wynajęcie ośrodka - burzenin",
+                    "name": "Burzenin",
+                    "details": "wynajęcie ośrodka",
                     "listed": true
                 },
                 {
                     "value": -360.0,
                     "category": "eventy",
+                    "name": "Hackerspace Polandrock",
                     "details": "Druk plakatów",
                     "listed": true
                 },
                 {
                     "value": -246.0,
                     "category": "eventy",
+                    "name": "Hackerspace Polandrock",
                     "details": "Obróbka metalu do elementów stoiska",
                     "listed": true
                 },
                 {
                     "value": -239.97,
                     "category": "eventy",
-                    "details": "Stoliczki polandrock",
+                    "name": "Hackerspace Polandrock",
+                    "details": "Stoliczki",
                     "listed": true
                 },
                 {
                     "value": -1035.48,
                     "category": "lokal",
+                    "name": "",
                     "details": "Ogrzewanie (299,43) + śmieci (68,98) + prąd (379,07 + 288,00)",
                     "listed": true
                 },
                 {
                     "value": -2209.79,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz",
                     "listed": true
                 },
                 {
                     "value": -76.98,
                     "category": "zakupy",
+                    "name": "",
                     "details": "izopropanol",
                     "listed": true
                 },
                 {
                     "value": -78.8,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Benzyna ekstrakcyjna",
                     "listed": true
                 },
                 {
                     "value": -65.01,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Wentylator do hardroomu",
                     "listed": true
                 },
                 {
                     "value": -117.6,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Aceton",
                     "listed": true
                 },
                 {
                     "value": -107.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Papier osłonowy",
                     "listed": true
                 },
                 {
                     "value": -128.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "zawleczki do namiotu eventowego",
                     "listed": true
                 },
                 {
                     "value": -126.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Napełnienie butli z argonem",
                     "listed": true
                 },
                 {
                     "value": -7865.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Analizator Widma",
                     "listed": true
                 },
                 {
                     "value": -102.78,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Papier do origami na warsztaty",
                     "listed": true
                 },
                 {
                     "value": -53.98,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Taśma dwustronna i aluminiowa",
                     "listed": true
                 },
                 {
                     "value": -48.28,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Taśmy malarskie",
                     "listed": true
                 },
                 {
                     "value": -47.96,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Pisaki do tablic",
                     "listed": true
                 },
                 {
                     "value": -434.06,
                     "category": "zakupy",
+                    "name": "",
                     "details": "kolumna aktywna",
                     "listed": true
                 },
                 {
                     "value": -216.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Filament do drukarek 3D",
                     "listed": true
                 }
@@ -8292,6 +8561,7 @@
                 {
                     "value": 471.24,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Benevity",
                     "listed": true
                 }
@@ -8317,66 +8587,77 @@
                 {
                     "value": -687.0,
                     "category": "eventy",
-                    "details": "Komputery USFF - nagrody Burzenin",
+                    "name": "Burzenin",
+                    "details": "Komputery USFF - nagrody",
                     "listed": true
                 },
                 {
                     "value": -239.97,
                     "category": "eventy",
-                    "details": "Stoliczki polandrock",
+                    "name": "Hackerspace Polandrock",
+                    "details": "Stoliczki",
                     "listed": true
                 },
                 {
                     "value": -623.61,
                     "category": "eventy",
-                    "details": "zestawy do nauki lutowania - polandrock",
+                    "name": "Hackerspace Polandrock",
+                    "details": "zestawy do nauki lutowania",
                     "listed": true
                 },
                 {
                     "value": -439.0,
                     "category": "eventy",
-                    "details": "Zamówienie pizzy na organizowany w HSie modelathon",
+                    "name": "Modelathon",
+                    "details": "Zamówienie pizzy",
                     "listed": true
                 },
                 {
                     "value": -177.5,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Zakup flag dla HSKRK i innych HSów",
                     "listed": true
                 },
                 {
                     "value": -69.94,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Zmywak do tablic",
                     "listed": true
                 },
                 {
                     "value": -215.72,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Środki czystości (papier toaletowy, ręczniki papierowe)",
                     "listed": true
                 },
                 {
                     "value": -800.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Zakup routera",
                     "listed": true
                 },
                 {
                     "value": -45.98,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Zamek",
                     "listed": true
                 },
                 {
                     "value": -96.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Usługę ksera i laminowania",
                     "listed": true
                 },
                 {
                     "value": -76.2,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Baterie CR2032",
                     "listed": true
                 }
@@ -8412,6 +8693,7 @@
                 {
                     "value": 6150.0,
                     "category": "darowizny_sponsoring",
+                    "name": "",
                     "details": "Sponsoring SII",
                     "listed": true
                 }
@@ -8444,12 +8726,14 @@
                 {
                     "value": -49.95,
                     "category": "eventy",
-                    "details": "Baterie na Burzenin",
+                    "name": "Burzenin",
+                    "details": "Baterie",
                     "listed": true
                 },
                 {
                     "value": -208.85,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Keystony, Patchpanel, szczypce montażowe i śruby, kabel sieciowy",
                     "listed": true
                 }
@@ -8510,42 +8794,49 @@
                 {
                     "value": -3100.0,
                     "category": "eventy",
-                    "details": "Transport polandrock",
+                    "name": "Hackerspace Polandrock",
+                    "details": "Transport",
                     "listed": true
                 },
                 {
                     "value": -1150.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT",
                     "listed": true
                 },
                 {
                     "value": -72.56,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Opłacenie domeny hskrk.pl",
                     "listed": true
                 },
                 {
                     "value": -972.18,
                     "category": "zakupy",
+                    "name": "",
                     "details": "zbiorcza kwota za multimetry, wkrętaki iFixit, papier toaletowy, topnik, ręczniki papierowe",
                     "listed": true
                 },
                 {
                     "value": -118.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Prezenter Logitech",
                     "listed": true
                 },
                 {
                     "value": -17.45,
                     "category": "zakupy",
+                    "name": "",
                     "details": "worki na śmieci",
                     "listed": true
                 },
                 {
                     "value": -420.88,
                     "category": "zakupy",
+                    "name": "",
                     "details": "myjka ultradźwiękowa i elektrozaczep",
                     "listed": true
                 }
@@ -8599,73 +8890,85 @@
                 {
                     "value": -159.98,
                     "category": "eventy",
+                    "name": "",
                     "details": "Stoliki turystyczne na warsztaty",
                     "listed": true
                 },
                 {
                     "value": -269.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Zlew gospodarczy",
                     "listed": true
                 },
                 {
                     "value": -96.92,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Zakup brzeszczotów do metalu",
                     "listed": true
                 },
                 {
                     "value": -117.92,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Akcesoria elektryczne",
                     "listed": true
                 },
                 {
                     "value": -71.79,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Okulary BHP",
                     "listed": true
                 },
                 {
                     "value": -29.98,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Woreczki strunowe",
                     "listed": true
                 },
                 {
                     "value": -22.16,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Baterie LR44",
                     "listed": true
                 },
                 {
                     "value": -376.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "pasy ścierne",
                     "listed": true
                 },
                 {
                     "value": -123.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Napełnienie butli z argonem",
                     "listed": true
                 },
                 {
                     "value": -780.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Akumulatory do UPS",
                     "listed": true
                 },
                 {
                     "value": -510.89,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Sruby, nakrętki",
                     "listed": true
                 },
                 {
                     "value": -258.91,
                     "category": "hosting",
-                    "details": "Opłata za platformę Meetup",
+                    "name": "Meetup",
+                    "details": "Opłata za platformę",
                     "listed": true
                 }
             ],
@@ -8700,18 +9003,21 @@
                 {
                     "value": 23.0,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT - czynsz",
                     "listed": true
                 },
                 {
                     "value": 290.14,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT - czynsz",
                     "listed": true
                 },
                 {
                     "value": 413.21,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT - czynsz",
                     "listed": true
                 }
@@ -8737,36 +9043,42 @@
                 {
                     "value": -12.99,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Kubek nierdzewny do myjki",
                     "listed": true
                 },
                 {
                     "value": -131.47,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Akcesoria spawalnicze",
                     "listed": true
                 },
                 {
                     "value": -61.5,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Napełnienie butli z argonem",
                     "listed": true
                 },
                 {
                     "value": -37.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Przedłużacz 15m do odkurzacza",
                     "listed": true
                 },
                 {
                     "value": -1053.59,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Kamera termowizyjna",
                     "listed": true
                 },
                 {
                     "value": -240.07,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Klucze nasadowe z grzechotką",
                     "listed": true
                 }
@@ -8802,18 +9114,21 @@
                 {
                     "value": 423.65,
                     "category": "korekty",
+                    "name": "",
                     "details": "Przeksięgowanie VAT - czynsz",
                     "listed": true
                 },
                 {
                     "value": 37.11,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Benevity",
                     "listed": true
                 },
                 {
                     "value": 200.5,
                     "category": "inne_wplywy",
+                    "name": "",
                     "details": "Benevity",
                     "listed": true
                 }
@@ -8839,96 +9154,112 @@
                 {
                     "value": -1786.1,
                     "category": "lokal",
+                    "name": "",
                     "details": "Ogrzewanie (1002,00) + śmieci (68,98) + prąd (436,96 + 278,08)",
                     "listed": true
                 },
                 {
                     "value": -2455.79,
                     "category": "lokal",
+                    "name": "",
                     "details": "Czynsz",
                     "listed": true
                 },
                 {
                     "value": -143.4,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Przedłużki i nasadki kluczy, tarcze i reduktory",
                     "listed": true
                 },
                 {
                     "value": -179.9,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Apteczka",
                     "listed": true
                 },
                 {
                     "value": -118.08,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Art. spożywcze na warsztaty z robienia pizzy",
                     "listed": true
                 },
                 {
                     "value": -19.99,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Woreczki strunowe",
                     "listed": true
                 },
                 {
                     "value": -195.93,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Pudełka SAMLA",
                     "listed": true
                 },
                 {
                     "value": -29.95,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Worki na śmieci",
                     "listed": true
                 },
                 {
                     "value": -123.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Argon",
                     "listed": true
                 },
                 {
                     "value": -19.98,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Wtyczka 230V",
                     "listed": true
                 },
                 {
                     "value": -135.0,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Akcesoria TIG",
                     "listed": true
                 },
                 {
                     "value": -45.68,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Płyn do czyszczenia PCB",
                     "listed": true
                 },
                 {
                     "value": -309.56,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Filament do druku 3d",
                     "listed": true
                 },
                 {
                     "value": -131.94,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Rękawiczki nitrylowe",
                     "listed": true
                 },
                 {
                     "value": -972.8,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Szlifierka BOSCH",
                     "listed": true
                 },
                 {
                     "value": -128.07,
                     "category": "zakupy",
+                    "name": "",
                     "details": "Klucze płasko-oczkowe, klucz sata 13, filtry do odkurzacza",
                     "listed": true
                 }
@@ -8994,7 +9325,7 @@
         }
     },
     "stats": {
-        "parsing_date": "11/02/2024 01:51",
+        "parsing_date": "11/02/2024 04:47",
         "operations": {
             "all": "7867",
             "months": {

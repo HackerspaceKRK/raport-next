@@ -65,6 +65,7 @@ import type {
 } from "./charts/transformers";
 
 import { keyTranslations } from "./translations";
+import { Alert } from "@/components/Alert";
 
 const COLORS_DARK = [
   "#f87171",
@@ -231,158 +232,10 @@ export function Summary({
         <ModeToggle />
       </div>
 
-      <div
-        id="alert-additional-content-4"
-        className="p-4 mb-4 text-yellow-800 border border-yellow-300 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300 dark:border-yellow-800"
-        role="alert"
-      >
-        <div className="flex items-center">
-          <svg
-            className="flex-shrink-0 w-4 h-4 me-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
-          </svg>
-          <span className="sr-only">Info</span>
-          <h3 className="text-lg font-medium">
-            Te dane nie zostały jeszcze zweryfikowane
-          </h3>
-        </div>
-        <div className="mt-2 mb-4 text-sm">
-          Dane, które wyświetla poniższy dashboard nie zostały jeszcze
-          skonsultowane z naszą księgowością. Dane tu wyświetlone liczy
-          przekomplikowany kod, w którym cały czas znajduję coraz to nowe
-          quirki, które bywa, że zmieniają kwoty. Niektóre wpływy i koszty nie
-          są jeszcze opisane. Traktuj to, co tu zobaczysz ze szczyptą soli.
-          Przeglądasz na własną odpowiedzialność!
-        </div>
-      </div>
-
-      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-4">
-        <div className="col-span-2">
-          <Card>
-            <CardHeader>
-              <CardTitle></CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead>Miesiąc</TableHead>
-                    {Object.keys(currentDataset.summary).map(
-                      (x) =>
-                        x != "incomes" &&
-                        x != "costs" &&
-                        x != "venue_expenses" &&
-                        x != "other_expenses" &&
-                        x != "date" && (
-                          <TableHead key={getTranslations(x)}>
-                            {getTranslations(x)}
-                          </TableHead>
-                        )
-                    )}
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {years[currentYear].map((month) => {
-                    const currentData = getDataset(currentYear, month);
-                    const { summary } = currentData;
-                    return (
-                      <TableRow key={currentYear + month}>
-                        <TableCell>
-                          {DateTime.fromFormat(month, "LL")
-                            .setLocale("pl")
-                            .toFormat("LLLL")}
-                        </TableCell>
-                        {Object.entries(summary).map(
-                          ([key, value], index) =>
-                            key != "incomes" &&
-                            key != "costs" &&
-                            key != "venue_expenses" &&
-                            key != "other_expenses" &&
-                            key != "date" && (
-                              <TableCell
-                                key={currentYear + month + key}
-                                className={
-                                  key === "bilans" ||
-                                  key === "safe_threshold_difference"
-                                    ? parseFloat(value) > 0
-                                      ? "text-lime-600 dark:text-lime-400"
-                                      : "text-red-600 dark:text-red-400"
-                                    : ""
-                                }
-                              >
-                                {new Decimal(value).toFixed(2)} zł
-                              </TableCell>
-                            )
-                        )}
-                      </TableRow>
-                    );
-                  })}
-                </TableBody>
-              </Table>
-            </CardContent>
-          </Card>
-        </div>
-        <div className="col-span-2">
-          <Card>
-            <CardHeader>
-              <CardTitle></CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div style={{ width: "100%", height: 700 }}>
-                <ResponsiveContainer>
-                  <ComposedChart
-                    data={plotDataset}
-                    accessibilityLayer
-                    stackOffset="sign"
-                    syncId="summary"
-                  >
-                    <XAxis dataKey="date" />
-                    <YAxis />
-                    <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
-                    <Bar
-                      dataKey={keyTranslations["venue_expenses"]}
-                      stackId="a"
-                      fill={resolvedTheme === "dark" ? "#60a5fa" : "#2563eb"}
-                    />
-                    <Bar
-                      dataKey={keyTranslations["other_expenses"]}
-                      stackId="a"
-                      fill={resolvedTheme === "dark" ? "#fbbf24" : "#d97706"}
-                    />
-                    <Bar
-                      dataKey={keyTranslations["incomes"]}
-                      stackId="a"
-                      fill={resolvedTheme === "dark" ? "#34d399" : "#059669"}
-                    />
-                    <Line
-                      type="monotone"
-                      dataKey={keyTranslations["balance"]}
-                      strokeWidth={3}
-                      stroke="#ff0000"
-                    />
-                    <Legend />
-                    <Tooltip
-                      cursor={{ opacity: "0.3" }}
-                      contentStyle={{
-                        backgroundColor:
-                          resolvedTheme === "dark" ? "#000" : "#FFF",
-                      }}
-                      itemStyle={{
-                        color: resolvedTheme === "dark" ? "#FFF" : "#000",
-                      }}
-                    />
-                  </ComposedChart>
-                </ResponsiveContainer>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
+      <Alert
+        title="Te dane nie zostały jeszcze zweryfikowane"
+        text="Dane, które wyświetla poniższy dashboard nie zostały jeszcze skonsultowane z naszą księgowością. Dane tu wyświetlone liczy przekomplikowany kod, w którym cały czas znajduję coraz to nowe quirki, które bywa, że zmieniają kwoty. Niektóre wpływy i koszty nie są jeszcze opisane. Traktuj to, co tu zobaczysz ze szczyptą soli. Przeglądasz na własną odpowiedzialność!"
+      />
 
       <div className="flex flex-1 flex-col gap-4">
         <Tabs defaultValue="incomes_and_costs">
@@ -393,6 +246,147 @@ export function Summary({
           <TabsContent value="incomes_and_costs">
             <Card>
               <CardContent>
+                <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-4">
+                  <div className="col-span-2">
+                    <Card>
+                      <CardHeader>
+                        <CardTitle></CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <Table>
+                          <TableHeader>
+                            <TableRow>
+                              <TableHead>Miesiąc</TableHead>
+                              {Object.keys(currentDataset.summary).map(
+                                (x) =>
+                                  x != "incomes" &&
+                                  x != "costs" &&
+                                  x != "venue_expenses" &&
+                                  x != "other_expenses" &&
+                                  x != "date" && (
+                                    <TableHead key={getTranslations(x)}>
+                                      {getTranslations(x)}
+                                    </TableHead>
+                                  )
+                              )}
+                            </TableRow>
+                          </TableHeader>
+                          <TableBody>
+                            {years[currentYear].map((month) => {
+                              const currentData = getDataset(
+                                currentYear,
+                                month
+                              );
+                              const { summary } = currentData;
+                              return (
+                                <TableRow key={currentYear + month}>
+                                  <TableCell>
+                                    {DateTime.fromFormat(month, "LL")
+                                      .setLocale("pl")
+                                      .toFormat("LLLL")}
+                                  </TableCell>
+                                  {Object.entries(summary).map(
+                                    ([key, value], index) =>
+                                      key != "incomes" &&
+                                      key != "costs" &&
+                                      key != "venue_expenses" &&
+                                      key != "other_expenses" &&
+                                      key != "date" && (
+                                        <TableCell
+                                          key={currentYear + month + key}
+                                          className={
+                                            key === "bilans" ||
+                                            key === "safe_threshold_difference"
+                                              ? parseFloat(value) > 0
+                                                ? "text-lime-600 dark:text-lime-400"
+                                                : "text-red-600 dark:text-red-400"
+                                              : ""
+                                          }
+                                        >
+                                          {new Decimal(value).toFixed(2)} zł
+                                        </TableCell>
+                                      )
+                                  )}
+                                </TableRow>
+                              );
+                            })}
+                          </TableBody>
+                        </Table>
+                      </CardContent>
+                    </Card>
+                  </div>
+                  <div className="col-span-2">
+                    <Card>
+                      <CardHeader>
+                        <CardTitle></CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div style={{ width: "100%", height: 700 }}>
+                          <ResponsiveContainer>
+                            <ComposedChart
+                              data={plotDataset}
+                              accessibilityLayer
+                              stackOffset="sign"
+                              syncId="summary"
+                            >
+                              <XAxis dataKey="date" />
+                              <YAxis />
+                              <CartesianGrid
+                                stroke="#eee"
+                                strokeDasharray="2 2"
+                              />
+                              <Bar
+                                dataKey={keyTranslations["venue_expenses"]}
+                                stackId="a"
+                                fill={
+                                  resolvedTheme === "dark"
+                                    ? "#60a5fa"
+                                    : "#2563eb"
+                                }
+                              />
+                              <Bar
+                                dataKey={keyTranslations["other_expenses"]}
+                                stackId="a"
+                                fill={
+                                  resolvedTheme === "dark"
+                                    ? "#fbbf24"
+                                    : "#d97706"
+                                }
+                              />
+                              <Bar
+                                dataKey={keyTranslations["incomes"]}
+                                stackId="a"
+                                fill={
+                                  resolvedTheme === "dark"
+                                    ? "#34d399"
+                                    : "#059669"
+                                }
+                              />
+                              <Line
+                                type="monotone"
+                                dataKey={keyTranslations["balance"]}
+                                strokeWidth={3}
+                                stroke="#ff0000"
+                              />
+                              <Legend />
+                              <Tooltip
+                                cursor={{ opacity: "0.3" }}
+                                contentStyle={{
+                                  backgroundColor:
+                                    resolvedTheme === "dark" ? "#000" : "#FFF",
+                                }}
+                                itemStyle={{
+                                  color:
+                                    resolvedTheme === "dark" ? "#FFF" : "#000",
+                                }}
+                              />
+                            </ComposedChart>
+                          </ResponsiveContainer>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
                 <Card>
                   <CardHeader>
                     <CardTitle>
@@ -405,8 +399,8 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-5">
-                      <div>
+                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-6">
+                      <div className="col-span-2">
                         <Card>
                           <CardHeader>
                             <CardTitle>Podział kosztów</CardTitle>
@@ -472,7 +466,7 @@ export function Summary({
                       <div className="col-span-2">
                         <Card>
                           <CardContent>
-                            <div style={{ width: "100%", height: 900 }}>
+                            <div style={{ width: "100%", height: 700 }}>
                               <ResponsiveContainer>
                                 <PieChart>
                                   <Pie
@@ -586,8 +580,8 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-5 md:grid-cols-1 lg:grid-cols-5">
-                      <div>
+                    <div className="grid gap-5 md:grid-cols-1 lg:grid-cols-6">
+                      <div className="col-span-2">
                         {" "}
                         <Card>
                           <CardHeader>
