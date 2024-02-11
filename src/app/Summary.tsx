@@ -272,11 +272,18 @@ export function Summary({
                 <TableHeader>
                   <TableRow>
                     <TableHead>Miesiąc</TableHead>
-                    {Object.keys(currentDataset.summary).map((x) => (
-                      <TableHead key={getTranslations(x)}>
-                        {getTranslations(x)}
-                      </TableHead>
-                    ))}
+                    {Object.keys(currentDataset.summary).map(
+                      (x) =>
+                        x != "incomes" &&
+                        x != "costs" &&
+                        x != "venue_expenses" &&
+                        x != "other_expenses" &&
+                        x != "date" && (
+                          <TableHead key={getTranslations(x)}>
+                            {getTranslations(x)}
+                          </TableHead>
+                        )
+                    )}
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -290,21 +297,28 @@ export function Summary({
                             .setLocale("pl")
                             .toFormat("LLLL")}
                         </TableCell>
-                        {Object.entries(summary).map(([key, value], index) => (
-                          <TableCell
-                            key={currentYear + month + key}
-                            className={
-                              key === "bilans" ||
-                              key === "safe_threshold_difference"
-                                ? parseFloat(value) > 0
-                                  ? "text-lime-600 dark:text-lime-400"
-                                  : "text-red-600 dark:text-red-400"
-                                : ""
-                            }
-                          >
-                            {new Decimal(value).toFixed(2)} zł
-                          </TableCell>
-                        ))}
+                        {Object.entries(summary).map(
+                          ([key, value], index) =>
+                            key != "incomes" &&
+                            key != "costs" &&
+                            key != "venue_expenses" &&
+                            key != "other_expenses" &&
+                            key != "date" && (
+                              <TableCell
+                                key={currentYear + month + key}
+                                className={
+                                  key === "bilans" ||
+                                  key === "safe_threshold_difference"
+                                    ? parseFloat(value) > 0
+                                      ? "text-lime-600 dark:text-lime-400"
+                                      : "text-red-600 dark:text-red-400"
+                                    : ""
+                                }
+                              >
+                                {new Decimal(value).toFixed(2)} zł
+                              </TableCell>
+                            )
+                        )}
                       </TableRow>
                     );
                   })}
@@ -769,9 +783,9 @@ export function Summary({
                       >
                         <XAxis dataKey="date" />
                         <YAxis />
-                        <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
+                        <CartesianGrid stroke="#eee" strokeDasharray="3 3" />
                         <Bar
-                          dataKey={keyTranslations["saldo"]}
+                          dataKey={keyTranslations["end_saldo"]}
                           stackId="a"
                           fill="#8884d8"
                         />
@@ -795,7 +809,7 @@ export function Summary({
                   </CardHeader>
                   <div style={{ width: "100%", height: 400 }}>
                     <ResponsiveContainer>
-                      <BarChart
+                      <ComposedChart
                         data={wholePlotDataset}
                         accessibilityLayer
                         stackOffset="sign"
@@ -805,9 +819,16 @@ export function Summary({
                         <YAxis />
                         <CartesianGrid stroke="#eee" strokeDasharray="2 2" />
                         <Bar
-                          dataKey={keyTranslations["saldo"]}
+                          dataKey={keyTranslations["end_saldo"]}
                           stackId="a"
                           fill="#8884d8"
+                        />
+                        <Line
+                          type="monotone"
+                          dataKey={keyTranslations["safe_threshold"]}
+                          strokeWidth={3}
+                          stroke="#ff0000"
+                          dot={false}
                         />
                         <Brush dataKey="date" height={30} stroke="#8884d8" />
                         <Tooltip
@@ -820,7 +841,7 @@ export function Summary({
                             color: resolvedTheme === "dark" ? "#FFF" : "#000",
                           }}
                         />
-                      </BarChart>
+                      </ComposedChart>
                     </ResponsiveContainer>
                   </div>
                 </Card>
@@ -899,49 +920,50 @@ export function Summary({
           </TabsContent>
         </Tabs>
       </div>
-        <footer className="sticky right-0 bottom-0">
-          <div className="justify-end bg-sky-500/10 m-4">
-        <div className="flex gap-4 justify-end pr-4 pt-4 pl-4">
-        <Select
-          value={currentYear}
-          onValueChange={(value) => updateYear(value)}
-        >
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder={`Rok: ${currentYear}`} />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              {availableYears.map((year, index) => (
-                <SelectItem value={year} key={year}>
-                  Rok: {year}
-                </SelectItem>
-              ))}
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
-      <div className="flex justify-end pr-4 pb-4 pl-4">
-          <Select
-            value={currentMonth}
-            onValueChange={(value) => {
-              setCurrentMonth(value);
-            }}
-          >
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder={`Rok: ${currentMonth}`} />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                {years[currentYear].map((month, index) => (
-                  <SelectItem value={month} key={month}>
-                    Miesiąc: {month}.{currentYear}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-        </div></div>
-        </footer>
+      <footer className="sticky right-0 bottom-0">
+        <div className="justify-end bg-sky-500/10 m-4">
+          <div className="flex gap-4 justify-end pr-4 pt-4 pl-4">
+            <Select
+              value={currentYear}
+              onValueChange={(value) => updateYear(value)}
+            >
+              <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder={`Rok: ${currentYear}`} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  {availableYears.map((year, index) => (
+                    <SelectItem value={year} key={year}>
+                      Rok: {year}
+                    </SelectItem>
+                  ))}
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="flex justify-end pr-4 pb-4 pl-4">
+            <Select
+              value={currentMonth}
+              onValueChange={(value) => {
+                setCurrentMonth(value);
+              }}
+            >
+              <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder={`Rok: ${currentMonth}`} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  {years[currentYear].map((month, index) => (
+                    <SelectItem value={month} key={month}>
+                      Miesiąc: {month}.{currentYear}
+                    </SelectItem>
+                  ))}
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

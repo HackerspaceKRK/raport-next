@@ -69,6 +69,18 @@ export interface MonthSummary {
   safe_threshold_difference: string;
   // Decimal
   start_saldo: string;
+  // Decimal
+  balance: string;
+  // Decimal
+  costs: string;
+  // Decimal
+  date: string;
+  // Decimal
+  incomes: string;
+  // Decimal
+  other_expenses: string;
+  // Decimal
+  venue_expenses: string;
 }
 
 export interface Described {
@@ -84,19 +96,9 @@ type MonthDetails = {
   income_described: Described[];
   koszty: Costs;
   koszty_described: Described[];
-  plot: PlotSummary;
   summary: MonthSummary;
 };
 
-export interface PlotSummary {
-  balance: string;
-  costs: string;
-  date: string;
-  incomes: string;
-  other_expenses: string;
-  saldo: string;
-  venue_expenses: string;
-}
 
 export type Summary = Record<string, MonthDetails>;
 
@@ -124,13 +126,13 @@ function getDataset(data: Summary, year: string, month: string) {
 }
 
 // Dumb but works lol
-export function transform(obj: any): PlotSummary {
+export function transform(obj: any): MonthSummary {
   const translatedObject: typeof keyTranslations = {};
   for (const key of Object.keys(obj)) {
     const newValue = key in keyTranslations ? keyTranslations[key] : key;
     translatedObject[newValue] = obj[key];
   }
-  return translatedObject as any as PlotSummary;
+  return translatedObject as any as MonthSummary;
 }
 
 export function getPlotDataset(
@@ -138,11 +140,11 @@ export function getPlotDataset(
   years: Record<string, string[]>,
   year: string
 ) {
-  const listOfPlotDatasets: PlotSummary[] = [];
+  const listOfPlotDatasets: MonthSummary[] = [];
   years[year].map((month) => {
     const currentData = getDataset(data, year, month);
-    const { plot } = currentData;
-    listOfPlotDatasets.push(transform(plot));
+    const { summary } = currentData;
+    listOfPlotDatasets.push(transform(summary));
   });
 
   return listOfPlotDatasets;
@@ -152,12 +154,12 @@ export function getWholePlotDataset(
   data: Summary,
   years: Record<string, string[]>
 ) {
-  const listOfPlotDatasets: PlotSummary[] = [];
+  const listOfPlotDatasets: MonthSummary[] = [];
   Object.keys(years).map((year) => {
     years[year].map((month) => {
       const currentData = getDataset(data, year, month);
-      const { plot } = currentData;
-      listOfPlotDatasets.push(transform(plot));
+      const { summary } = currentData;
+      listOfPlotDatasets.push(transform(summary));
     });
   });
   return listOfPlotDatasets;

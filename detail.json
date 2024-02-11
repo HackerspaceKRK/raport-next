@@ -24,7 +24,7 @@
         "inne_koszty": "Inne koszty",
         "safe_threshold": "Bufor bezpieczeństwa",
         "start_saldo": "Saldo początkowe",
-        "bilans": "Bilans",
+        "balance": "Bilans",
         "end_saldo": "Saldo końcowe",
         "safe_threshold_difference": "Odległość do \"bezpiecznej granicy\""
     },
@@ -92,18 +92,14 @@
             "summary": {
                 "safe_threshold": "1000",
                 "start_saldo": "0.0",
-                "bilans": "1120.40",
+                "balance": "1120.40",
                 "end_saldo": "1120.40",
-                "safe_threshold_difference": "120.40"
-            },
-            "plot": {
+                "safe_threshold_difference": "120.40",
                 "date": "2012-12-11",
                 "incomes": "9460.10",
-                "saldo": "1120.40",
                 "costs": "-8339.70",
                 "venue_expenses": "0",
-                "other_expenses": "-8339.70",
-                "balance": "1120.40"
+                "other_expenses": "-8339.70"
             }
         },
         "2013-01": {
@@ -142,18 +138,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "1120.4",
-                "bilans": "180.80",
+                "balance": "180.80",
                 "end_saldo": "1301.20",
-                "safe_threshold_difference": "-698.80"
-            },
-            "plot": {
+                "safe_threshold_difference": "-698.80",
                 "date": "2013-01-09",
                 "incomes": "1500.00",
-                "saldo": "1301.20",
                 "costs": "-1319.20",
                 "venue_expenses": "-1000.00",
-                "other_expenses": "-319.20",
-                "balance": "180.80"
+                "other_expenses": "-319.20"
             }
         },
         "2013-02": {
@@ -192,18 +184,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "1301.1999999999998",
-                "bilans": "316.0500000000002",
+                "balance": "316.0500000000002",
                 "end_saldo": "1617.25",
-                "safe_threshold_difference": "-382.75"
-            },
-            "plot": {
+                "safe_threshold_difference": "-382.75",
                 "date": "2013-02-04",
                 "incomes": "1500.00",
-                "saldo": "1617.25",
                 "costs": "-1183.95",
                 "venue_expenses": "-1070.97",
-                "other_expenses": "-112.98",
-                "balance": "316.05"
+                "other_expenses": "-112.98"
             }
         },
         "2013-03": {
@@ -248,18 +236,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "1617.25",
-                "bilans": "2414.60",
+                "balance": "2414.60",
                 "end_saldo": "4031.85",
-                "safe_threshold_difference": "2031.85"
-            },
-            "plot": {
+                "safe_threshold_difference": "2031.85",
                 "date": "2013-03-07",
                 "incomes": "4405.00",
-                "saldo": "4031.85",
                 "costs": "-1990.40",
                 "venue_expenses": "-1000.00",
-                "other_expenses": "-990.40",
-                "balance": "2414.60"
+                "other_expenses": "-990.40"
             }
         },
         "2013-04": {
@@ -313,18 +297,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "4031.85",
-                "bilans": "-2278.04",
+                "balance": "-2278.04",
                 "end_saldo": "1753.81",
-                "safe_threshold_difference": "-246.19"
-            },
-            "plot": {
+                "safe_threshold_difference": "-246.19",
                 "date": "2013-04-08",
                 "incomes": "360.00",
-                "saldo": "1753.81",
                 "costs": "-2638.04",
                 "venue_expenses": "-1269.14",
-                "other_expenses": "-1368.90",
-                "balance": "-2278.04"
+                "other_expenses": "-1368.90"
             }
         },
         "2013-05": {
@@ -363,18 +343,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "1753.81",
-                "bilans": "-1492.70",
+                "balance": "-1492.70",
                 "end_saldo": "261.11",
-                "safe_threshold_difference": "-1738.89"
-            },
-            "plot": {
+                "safe_threshold_difference": "-1738.89",
                 "date": "2013-05-04",
                 "incomes": "396.96",
-                "saldo": "261.11",
                 "costs": "-1889.66",
                 "venue_expenses": "-1050.00",
-                "other_expenses": "-839.66",
-                "balance": "-1492.70"
+                "other_expenses": "-839.66"
             }
         },
         "2013-06": {
@@ -413,18 +389,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "261.11",
-                "bilans": "2522.06",
+                "balance": "2522.06",
                 "end_saldo": "2783.17",
-                "safe_threshold_difference": "783.17"
-            },
-            "plot": {
+                "safe_threshold_difference": "783.17",
                 "date": "2013-06-03",
                 "incomes": "4340.00",
-                "saldo": "2783.17",
                 "costs": "-1817.94",
                 "venue_expenses": "-213.38",
-                "other_expenses": "-1604.56",
-                "balance": "2522.06"
+                "other_expenses": "-1604.56"
             }
         },
         "2013-07": {
@@ -483,18 +455,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "2783.17",
-                "bilans": "-249.48",
+                "balance": "-249.48",
                 "end_saldo": "2533.69",
-                "safe_threshold_difference": "533.69"
-            },
-            "plot": {
+                "safe_threshold_difference": "533.69",
                 "date": "2013-07-01",
                 "incomes": "2670.72",
-                "saldo": "2533.69",
                 "costs": "-2920.20",
                 "venue_expenses": "-1050.00",
-                "other_expenses": "-1870.20",
-                "balance": "-249.48"
+                "other_expenses": "-1870.20"
             }
         },
         "2013-08": {
@@ -540,18 +508,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "2533.69",
-                "bilans": "-74.79",
+                "balance": "-74.79",
                 "end_saldo": "2458.90",
-                "safe_threshold_difference": "458.90"
-            },
-            "plot": {
+                "safe_threshold_difference": "458.90",
                 "date": "2013-08-01",
                 "incomes": "2460.76",
-                "saldo": "2458.90",
                 "costs": "-2535.55",
                 "venue_expenses": "-1463.59",
-                "other_expenses": "-1071.96",
-                "balance": "-74.79"
+                "other_expenses": "-1071.96"
             }
         },
         "2013-09": {
@@ -597,18 +561,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "2458.9",
-                "bilans": "-104.06",
+                "balance": "-104.06",
                 "end_saldo": "2354.84",
-                "safe_threshold_difference": "354.84"
-            },
-            "plot": {
+                "safe_threshold_difference": "354.84",
                 "date": "2013-09-02",
                 "incomes": "2675.00",
-                "saldo": "2354.84",
                 "costs": "-2779.06",
                 "venue_expenses": "-1060.00",
-                "other_expenses": "-1719.06",
-                "balance": "-104.06"
+                "other_expenses": "-1719.06"
             }
         },
         "2013-10": {
@@ -661,18 +621,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "2354.84",
-                "bilans": "908.01",
+                "balance": "908.01",
                 "end_saldo": "3262.85",
-                "safe_threshold_difference": "1262.85"
-            },
-            "plot": {
+                "safe_threshold_difference": "1262.85",
                 "date": "2013-10-01",
                 "incomes": "2992.81",
-                "saldo": "3262.85",
                 "costs": "-2084.80",
                 "venue_expenses": "-1395.53",
-                "other_expenses": "-689.27",
-                "balance": "908.01"
+                "other_expenses": "-689.27"
             }
         },
         "2013-11": {
@@ -762,18 +718,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "3262.85",
-                "bilans": "4469.73",
+                "balance": "4469.73",
                 "end_saldo": "7732.58",
-                "safe_threshold_difference": "5732.58"
-            },
-            "plot": {
+                "safe_threshold_difference": "5732.58",
                 "date": "2013-11-02",
                 "incomes": "9005.78",
-                "saldo": "7732.58",
                 "costs": "-4536.05",
                 "venue_expenses": "-1211.50",
-                "other_expenses": "-3324.55",
-                "balance": "4469.73"
+                "other_expenses": "-3324.55"
             }
         },
         "2013-12": {
@@ -839,18 +791,14 @@
             "summary": {
                 "safe_threshold": "2000",
                 "start_saldo": "7732.58",
-                "bilans": "-838.32",
+                "balance": "-838.32",
                 "end_saldo": "6894.26",
-                "safe_threshold_difference": "4894.26"
-            },
-            "plot": {
+                "safe_threshold_difference": "4894.26",
                 "date": "2013-12-02",
                 "incomes": "7228.00",
-                "saldo": "6894.26",
                 "costs": "-8066.32",
                 "venue_expenses": "-1646.59",
-                "other_expenses": "-6419.73",
-                "balance": "-838.32"
+                "other_expenses": "-6419.73"
             }
         },
         "2014-01": {
@@ -897,18 +845,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "6894.26",
-                "bilans": "-864.00",
+                "balance": "-864.00",
                 "end_saldo": "6030.26",
-                "safe_threshold_difference": "1030.26"
-            },
-            "plot": {
+                "safe_threshold_difference": "1030.26",
                 "date": "2014-01-02",
                 "incomes": "6285.48",
-                "saldo": "6030.26",
                 "costs": "-7149.48",
                 "venue_expenses": "-1687.45",
-                "other_expenses": "-5462.03",
-                "balance": "-864.00"
+                "other_expenses": "-5462.03"
             }
         },
         "2014-02": {
@@ -954,18 +898,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "6030.26",
-                "bilans": "-1961.41",
+                "balance": "-1961.41",
                 "end_saldo": "4068.85",
-                "safe_threshold_difference": "-931.15"
-            },
-            "plot": {
+                "safe_threshold_difference": "-931.15",
                 "date": "2014-02-03",
                 "incomes": "1149.99",
-                "saldo": "4068.85",
                 "costs": "-3111.40",
                 "venue_expenses": "-1110.00",
-                "other_expenses": "-2001.40",
-                "balance": "-1961.41"
+                "other_expenses": "-2001.40"
             }
         },
         "2014-03": {
@@ -1047,18 +987,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "4068.85",
-                "bilans": "11981.39",
+                "balance": "11981.39",
                 "end_saldo": "16050.24",
-                "safe_threshold_difference": "11050.24"
-            },
-            "plot": {
+                "safe_threshold_difference": "11050.24",
                 "date": "2014-03-03",
                 "incomes": "14528.49",
-                "saldo": "16050.24",
                 "costs": "-2547.10",
                 "venue_expenses": "-1110.00",
-                "other_expenses": "-1437.10",
-                "balance": "11981.39"
+                "other_expenses": "-1437.10"
             }
         },
         "2014-04": {
@@ -1155,18 +1091,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "16050.24",
-                "bilans": "-2577.92",
+                "balance": "-2577.92",
                 "end_saldo": "13472.32",
-                "safe_threshold_difference": "8472.32"
-            },
-            "plot": {
+                "safe_threshold_difference": "8472.32",
                 "date": "2014-04-01",
                 "incomes": "7567.98",
-                "saldo": "13472.32",
                 "costs": "-10145.90",
                 "venue_expenses": "-1554.92",
-                "other_expenses": "-8590.98",
-                "balance": "-2577.92"
+                "other_expenses": "-8590.98"
             }
         },
         "2014-05": {
@@ -1213,18 +1145,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "13472.32",
-                "bilans": "-4719.35",
+                "balance": "-4719.35",
                 "end_saldo": "8752.97",
-                "safe_threshold_difference": "3752.97"
-            },
-            "plot": {
+                "safe_threshold_difference": "3752.97",
                 "date": "2014-05-02",
                 "incomes": "2342.61",
-                "saldo": "8752.97",
                 "costs": "-7061.96",
                 "venue_expenses": "-1110.00",
-                "other_expenses": "-5951.96",
-                "balance": "-4719.35"
+                "other_expenses": "-5951.96"
             }
         },
         "2014-06": {
@@ -1277,18 +1205,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "8752.97",
-                "bilans": "-1688.22",
+                "balance": "-1688.22",
                 "end_saldo": "7064.75",
-                "safe_threshold_difference": "2064.75"
-            },
-            "plot": {
+                "safe_threshold_difference": "2064.75",
                 "date": "2014-06-02",
                 "incomes": "5077.94",
-                "saldo": "7064.75",
                 "costs": "-6766.16",
                 "venue_expenses": "-2571.58",
-                "other_expenses": "-4194.58",
-                "balance": "-1688.22"
+                "other_expenses": "-4194.58"
             }
         },
         "2014-07": {
@@ -1334,18 +1258,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "7064.75",
-                "bilans": "4478.78",
+                "balance": "4478.78",
                 "end_saldo": "11543.53",
-                "safe_threshold_difference": "6543.53"
-            },
-            "plot": {
+                "safe_threshold_difference": "6543.53",
                 "date": "2014-07-01",
                 "incomes": "5958.26",
-                "saldo": "11543.53",
                 "costs": "-1479.48",
                 "venue_expenses": "-50.00",
-                "other_expenses": "-1429.48",
-                "balance": "4478.78"
+                "other_expenses": "-1429.48"
             }
         },
         "2014-08": {
@@ -1397,18 +1317,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "11543.53",
-                "bilans": "-758.23",
+                "balance": "-758.23",
                 "end_saldo": "10785.30",
-                "safe_threshold_difference": "5785.30"
-            },
-            "plot": {
+                "safe_threshold_difference": "5785.30",
                 "date": "2014-08-01",
                 "incomes": "1397.80",
-                "saldo": "10785.30",
                 "costs": "-2156.03",
                 "venue_expenses": "-1110.00",
-                "other_expenses": "-1046.03",
-                "balance": "-758.23"
+                "other_expenses": "-1046.03"
             }
         },
         "2014-09": {
@@ -1460,18 +1376,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "10785.3",
-                "bilans": "1274.08",
+                "balance": "1274.08",
                 "end_saldo": "12059.38",
-                "safe_threshold_difference": "7059.38"
-            },
-            "plot": {
+                "safe_threshold_difference": "7059.38",
                 "date": "2014-09-01",
                 "incomes": "5794.62",
-                "saldo": "12059.38",
                 "costs": "-4520.54",
                 "venue_expenses": "-2084.52",
-                "other_expenses": "-2436.02",
-                "balance": "1274.08"
+                "other_expenses": "-2436.02"
             }
         },
         "2014-10": {
@@ -1523,18 +1435,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "12059.38",
-                "bilans": "-2719.88",
+                "balance": "-2719.88",
                 "end_saldo": "9339.50",
-                "safe_threshold_difference": "4339.50"
-            },
-            "plot": {
+                "safe_threshold_difference": "4339.50",
                 "date": "2014-10-01",
                 "incomes": "1784.88",
-                "saldo": "9339.50",
                 "costs": "-4504.76",
                 "venue_expenses": "-1651.70",
-                "other_expenses": "-2853.06",
-                "balance": "-2719.88"
+                "other_expenses": "-2853.06"
             }
         },
         "2014-11": {
@@ -1607,18 +1515,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "9339.5",
-                "bilans": "30181.31",
+                "balance": "30181.31",
                 "end_saldo": "39520.81",
-                "safe_threshold_difference": "34520.81"
-            },
-            "plot": {
+                "safe_threshold_difference": "34520.81",
                 "date": "2014-11-03",
                 "incomes": "38922.50",
-                "saldo": "39520.81",
                 "costs": "-8741.19",
                 "venue_expenses": "-1110.00",
-                "other_expenses": "-7631.19",
-                "balance": "30181.31"
+                "other_expenses": "-7631.19"
             }
         },
         "2014-12": {
@@ -1812,18 +1716,14 @@
             "summary": {
                 "safe_threshold": "5000",
                 "start_saldo": "39520.810000000005",
-                "bilans": "4788.149999999995",
+                "balance": "4788.149999999995",
                 "end_saldo": "44308.96",
-                "safe_threshold_difference": "39308.96"
-            },
-            "plot": {
+                "safe_threshold_difference": "39308.96",
                 "date": "2014-12-01",
                 "incomes": "32789.54",
-                "saldo": "44308.96",
                 "costs": "-28001.39",
                 "venue_expenses": "-1692.66",
-                "other_expenses": "-26308.73",
-                "balance": "4788.15"
+                "other_expenses": "-26308.73"
             }
         },
         "2015-01": {
@@ -1862,18 +1762,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "44308.96",
-                "bilans": "-2495.56",
+                "balance": "-2495.56",
                 "end_saldo": "41813.40",
-                "safe_threshold_difference": "31813.40"
-            },
-            "plot": {
+                "safe_threshold_difference": "31813.40",
                 "date": "2015-01-02",
                 "incomes": "1160.00",
-                "saldo": "41813.40",
                 "costs": "-3655.56",
                 "venue_expenses": "-1110.00",
-                "other_expenses": "-2545.56",
-                "balance": "-2495.56"
+                "other_expenses": "-2545.56"
             }
         },
         "2015-02": {
@@ -1919,18 +1815,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "41813.4",
-                "bilans": "-4227.82",
+                "balance": "-4227.82",
                 "end_saldo": "37585.58",
-                "safe_threshold_difference": "27585.58"
-            },
-            "plot": {
+                "safe_threshold_difference": "27585.58",
                 "date": "2015-02-02",
                 "incomes": "520.00",
-                "saldo": "37585.58",
                 "costs": "-4747.82",
                 "venue_expenses": "-1608.15",
-                "other_expenses": "-3139.67",
-                "balance": "-4227.82"
+                "other_expenses": "-3139.67"
             }
         },
         "2015-03": {
@@ -1982,18 +1874,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "37585.58",
-                "bilans": "-7034.49",
+                "balance": "-7034.49",
                 "end_saldo": "30551.09",
-                "safe_threshold_difference": "20551.09"
-            },
-            "plot": {
+                "safe_threshold_difference": "20551.09",
                 "date": "2015-03-02",
                 "incomes": "1185.00",
-                "saldo": "30551.09",
                 "costs": "-8219.49",
                 "venue_expenses": "-2604.21",
-                "other_expenses": "-5615.28",
-                "balance": "-7034.49"
+                "other_expenses": "-5615.28"
             }
         },
         "2015-04": {
@@ -2067,18 +1955,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "30551.09",
-                "bilans": "-3454.32",
+                "balance": "-3454.32",
                 "end_saldo": "27096.77",
-                "safe_threshold_difference": "17096.77"
-            },
-            "plot": {
+                "safe_threshold_difference": "17096.77",
                 "date": "2015-04-01",
                 "incomes": "5785.30",
-                "saldo": "27096.77",
                 "costs": "-9239.62",
                 "venue_expenses": "-1170.00",
-                "other_expenses": "-8069.62",
-                "balance": "-3454.32"
+                "other_expenses": "-8069.62"
             }
         },
         "2015-05": {
@@ -2117,18 +2001,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "27096.77",
-                "bilans": "6531.25",
+                "balance": "6531.25",
                 "end_saldo": "33628.02",
-                "safe_threshold_difference": "23628.02"
-            },
-            "plot": {
+                "safe_threshold_difference": "23628.02",
                 "date": "2015-05-04",
                 "incomes": "12008.00",
-                "saldo": "33628.02",
                 "costs": "-5476.75",
                 "venue_expenses": "0",
-                "other_expenses": "-5476.75",
-                "balance": "6531.25"
+                "other_expenses": "-5476.75"
             }
         },
         "2015-06": {
@@ -2222,18 +2102,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "33628.02",
-                "bilans": "-2794.86",
+                "balance": "-2794.86",
                 "end_saldo": "30833.16",
-                "safe_threshold_difference": "20833.16"
-            },
-            "plot": {
+                "safe_threshold_difference": "20833.16",
                 "date": "2015-06-01",
                 "incomes": "4083.17",
-                "saldo": "30833.16",
                 "costs": "-6878.03",
                 "venue_expenses": "-2170.00",
-                "other_expenses": "-4708.03",
-                "balance": "-2794.86"
+                "other_expenses": "-4708.03"
             }
         },
         "2015-07": {
@@ -2286,18 +2162,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "30833.16",
-                "bilans": "-3350.68",
+                "balance": "-3350.68",
                 "end_saldo": "27482.48",
-                "safe_threshold_difference": "17482.48"
-            },
-            "plot": {
+                "safe_threshold_difference": "17482.48",
                 "date": "2015-07-01",
                 "incomes": "4148.00",
-                "saldo": "27482.48",
                 "costs": "-7498.68",
                 "venue_expenses": "-1110.00",
-                "other_expenses": "-6388.68",
-                "balance": "-3350.68"
+                "other_expenses": "-6388.68"
             }
         },
         "2015-08": {
@@ -2336,18 +2208,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "27482.48",
-                "bilans": "-2356.46",
+                "balance": "-2356.46",
                 "end_saldo": "25126.02",
-                "safe_threshold_difference": "15126.02"
-            },
-            "plot": {
+                "safe_threshold_difference": "15126.02",
                 "date": "2015-08-03",
                 "incomes": "600.00",
-                "saldo": "25126.02",
                 "costs": "-2956.46",
                 "venue_expenses": "-1569.81",
-                "other_expenses": "-1386.65",
-                "balance": "-2356.46"
+                "other_expenses": "-1386.65"
             }
         },
         "2015-09": {
@@ -2386,18 +2254,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "25126.02",
-                "bilans": "2266.27",
+                "balance": "2266.27",
                 "end_saldo": "27392.29",
-                "safe_threshold_difference": "17392.29"
-            },
-            "plot": {
+                "safe_threshold_difference": "17392.29",
                 "date": "2015-09-01",
                 "incomes": "5430.00",
-                "saldo": "27392.29",
                 "costs": "-3163.73",
                 "venue_expenses": "-1671.95",
-                "other_expenses": "-1491.78",
-                "balance": "2266.27"
+                "other_expenses": "-1491.78"
             }
         },
         "2015-10": {
@@ -2443,18 +2307,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "27392.29",
-                "bilans": "-331.58",
+                "balance": "-331.58",
                 "end_saldo": "27060.71",
-                "safe_threshold_difference": "17060.71"
-            },
-            "plot": {
+                "safe_threshold_difference": "17060.71",
                 "date": "2015-10-01",
                 "incomes": "1340.00",
-                "saldo": "27060.71",
                 "costs": "-1671.58",
                 "venue_expenses": "-1150.00",
-                "other_expenses": "-521.58",
-                "balance": "-331.58"
+                "other_expenses": "-521.58"
             }
         },
         "2015-11": {
@@ -2493,18 +2353,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "27060.71",
-                "bilans": "5336.45",
+                "balance": "5336.45",
                 "end_saldo": "32397.16",
-                "safe_threshold_difference": "22397.16"
-            },
-            "plot": {
+                "safe_threshold_difference": "22397.16",
                 "date": "2015-11-02",
                 "incomes": "9444.99",
-                "saldo": "32397.16",
                 "costs": "-4108.54",
                 "venue_expenses": "-1863.94",
-                "other_expenses": "-2244.60",
-                "balance": "5336.45"
+                "other_expenses": "-2244.60"
             }
         },
         "2015-12": {
@@ -2556,18 +2412,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "32397.16",
-                "bilans": "-6650.41",
+                "balance": "-6650.41",
                 "end_saldo": "25746.75",
-                "safe_threshold_difference": "15746.75"
-            },
-            "plot": {
+                "safe_threshold_difference": "15746.75",
                 "date": "2015-12-01",
                 "incomes": "10658.00",
-                "saldo": "25746.75",
                 "costs": "-17308.41",
                 "venue_expenses": "-1150.00",
-                "other_expenses": "-16158.41",
-                "balance": "-6650.41"
+                "other_expenses": "-16158.41"
             }
         },
         "2016-01": {
@@ -2614,18 +2466,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "25746.75",
-                "bilans": "3741.31",
+                "balance": "3741.31",
                 "end_saldo": "29488.06",
-                "safe_threshold_difference": "19488.06"
-            },
-            "plot": {
+                "safe_threshold_difference": "19488.06",
                 "date": "2016-01-04",
                 "incomes": "6673.03",
-                "saldo": "29488.06",
                 "costs": "-2931.72",
                 "venue_expenses": "-1839.57",
-                "other_expenses": "-1092.15",
-                "balance": "3741.31"
+                "other_expenses": "-1092.15"
             }
         },
         "2016-02": {
@@ -2664,18 +2512,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "29488.06",
-                "bilans": "342.33",
+                "balance": "342.33",
                 "end_saldo": "29830.39",
-                "safe_threshold_difference": "19830.39"
-            },
-            "plot": {
+                "safe_threshold_difference": "19830.39",
                 "date": "2016-02-01",
                 "incomes": "3230.00",
-                "saldo": "29830.39",
                 "costs": "-2887.67",
                 "venue_expenses": "-1150.00",
-                "other_expenses": "-1737.67",
-                "balance": "342.33"
+                "other_expenses": "-1737.67"
             }
         },
         "2016-03": {
@@ -2714,18 +2558,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "29830.39",
-                "bilans": "-2945.69",
+                "balance": "-2945.69",
                 "end_saldo": "26884.70",
-                "safe_threshold_difference": "16884.70"
-            },
-            "plot": {
+                "safe_threshold_difference": "16884.70",
                 "date": "2016-03-01",
                 "incomes": "2730.00",
-                "saldo": "26884.70",
                 "costs": "-5675.69",
                 "venue_expenses": "-3220.79",
-                "other_expenses": "-2454.90",
-                "balance": "-2945.69"
+                "other_expenses": "-2454.90"
             }
         },
         "2016-04": {
@@ -2789,18 +2629,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "26884.7",
-                "bilans": "-6093.83",
+                "balance": "-6093.83",
                 "end_saldo": "20790.87",
-                "safe_threshold_difference": "10790.87"
-            },
-            "plot": {
+                "safe_threshold_difference": "10790.87",
                 "date": "2016-04-01",
                 "incomes": "770.00",
-                "saldo": "20790.87",
                 "costs": "-6863.83",
                 "venue_expenses": "0",
-                "other_expenses": "-6863.83",
-                "balance": "-6093.83"
+                "other_expenses": "-6863.83"
             }
         },
         "2016-05": {
@@ -2854,18 +2690,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "20790.870000000003",
-                "bilans": "3307.199999999997",
+                "balance": "3307.199999999997",
                 "end_saldo": "24098.07",
-                "safe_threshold_difference": "14098.07"
-            },
-            "plot": {
+                "safe_threshold_difference": "14098.07",
                 "date": "2016-05-02",
                 "incomes": "8814.54",
-                "saldo": "24098.07",
                 "costs": "-5507.34",
                 "venue_expenses": "-4291.37",
-                "other_expenses": "-1215.97",
-                "balance": "3307.20"
+                "other_expenses": "-1215.97"
             }
         },
         "2016-06": {
@@ -2918,18 +2750,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "24098.07",
-                "bilans": "-4861.19",
+                "balance": "-4861.19",
                 "end_saldo": "19236.88",
-                "safe_threshold_difference": "9236.88"
-            },
-            "plot": {
+                "safe_threshold_difference": "9236.88",
                 "date": "2016-06-01",
                 "incomes": "2066.75",
-                "saldo": "19236.88",
                 "costs": "-6927.94",
                 "venue_expenses": "-2536.00",
-                "other_expenses": "-4391.94",
-                "balance": "-4861.19"
+                "other_expenses": "-4391.94"
             }
         },
         "2016-07": {
@@ -2968,18 +2796,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "19236.88",
-                "bilans": "81.11",
+                "balance": "81.11",
                 "end_saldo": "19317.99",
-                "safe_threshold_difference": "9317.99"
-            },
-            "plot": {
+                "safe_threshold_difference": "9317.99",
                 "date": "2016-07-01",
                 "incomes": "3745.20",
-                "saldo": "19317.99",
                 "costs": "-3664.09",
                 "venue_expenses": "-1476.00",
-                "other_expenses": "-2188.09",
-                "balance": "81.11"
+                "other_expenses": "-2188.09"
             }
         },
         "2016-08": {
@@ -3025,18 +2849,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "19317.99",
-                "bilans": "-1599.19",
+                "balance": "-1599.19",
                 "end_saldo": "17718.80",
-                "safe_threshold_difference": "7718.80"
-            },
-            "plot": {
+                "safe_threshold_difference": "7718.80",
                 "date": "2016-08-01",
                 "incomes": "3350.00",
-                "saldo": "17718.80",
                 "costs": "-4949.19",
                 "venue_expenses": "-3324.56",
-                "other_expenses": "-1624.63",
-                "balance": "-1599.19"
+                "other_expenses": "-1624.63"
             }
         },
         "2016-09": {
@@ -3082,18 +2902,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "17718.8",
-                "bilans": "-5464.19",
+                "balance": "-5464.19",
                 "end_saldo": "12254.61",
-                "safe_threshold_difference": "2254.61"
-            },
-            "plot": {
+                "safe_threshold_difference": "2254.61",
                 "date": "2016-09-01",
                 "incomes": "695.84",
-                "saldo": "12254.61",
                 "costs": "-6160.03",
                 "venue_expenses": "-2636.43",
-                "other_expenses": "-3523.60",
-                "balance": "-5464.19"
+                "other_expenses": "-3523.60"
             }
         },
         "2016-10": {
@@ -3132,18 +2948,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "12254.61",
-                "bilans": "-1012.00",
+                "balance": "-1012.00",
                 "end_saldo": "11242.61",
-                "safe_threshold_difference": "1242.61"
-            },
-            "plot": {
+                "safe_threshold_difference": "1242.61",
                 "date": "2016-10-03",
                 "incomes": "3300.00",
-                "saldo": "11242.61",
                 "costs": "-4312.00",
                 "venue_expenses": "-3773.72",
-                "other_expenses": "-538.28",
-                "balance": "-1012.00"
+                "other_expenses": "-538.28"
             }
         },
         "2016-11": {
@@ -3189,18 +3001,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "11242.61",
-                "bilans": "2262.08",
+                "balance": "2262.08",
                 "end_saldo": "13504.69",
-                "safe_threshold_difference": "3504.69"
-            },
-            "plot": {
+                "safe_threshold_difference": "3504.69",
                 "date": "2016-11-02",
                 "incomes": "5000.00",
-                "saldo": "13504.69",
                 "costs": "-2737.92",
                 "venue_expenses": "-1769.69",
-                "other_expenses": "-968.23",
-                "balance": "2262.08"
+                "other_expenses": "-968.23"
             }
         },
         "2016-12": {
@@ -3239,18 +3047,14 @@
             "summary": {
                 "safe_threshold": "10000",
                 "start_saldo": "13504.69",
-                "bilans": "1163.32",
+                "balance": "1163.32",
                 "end_saldo": "14668.01",
-                "safe_threshold_difference": "4668.01"
-            },
-            "plot": {
+                "safe_threshold_difference": "4668.01",
                 "date": "2016-12-01",
                 "incomes": "3050.00",
-                "saldo": "14668.01",
                 "costs": "-1886.68",
                 "venue_expenses": "-1476.00",
-                "other_expenses": "-410.68",
-                "balance": "1163.32"
+                "other_expenses": "-410.68"
             }
         },
         "2017-01": {
@@ -3297,18 +3101,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "14668.01",
-                "bilans": "-2520.73",
+                "balance": "-2520.73",
                 "end_saldo": "12147.28",
-                "safe_threshold_difference": "-2852.72"
-            },
-            "plot": {
+                "safe_threshold_difference": "-2852.72",
                 "date": "2017-01-02",
                 "incomes": "890.00",
-                "saldo": "12147.28",
                 "costs": "-3410.73",
                 "venue_expenses": "-2528.80",
-                "other_expenses": "-881.93",
-                "balance": "-2520.73"
+                "other_expenses": "-881.93"
             }
         },
         "2017-02": {
@@ -3353,18 +3153,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "12147.28",
-                "bilans": "439.40",
+                "balance": "439.40",
                 "end_saldo": "12586.68",
-                "safe_threshold_difference": "-2413.32"
-            },
-            "plot": {
+                "safe_threshold_difference": "-2413.32",
                 "date": "2017-02-01",
                 "incomes": "3680.00",
-                "saldo": "12586.68",
                 "costs": "-3240.60",
                 "venue_expenses": "-3031.26",
-                "other_expenses": "-209.34",
-                "balance": "439.40"
+                "other_expenses": "-209.34"
             }
         },
         "2017-03": {
@@ -3403,18 +3199,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "12586.68",
-                "bilans": "-2453.34",
+                "balance": "-2453.34",
                 "end_saldo": "10133.34",
-                "safe_threshold_difference": "-4866.66"
-            },
-            "plot": {
+                "safe_threshold_difference": "-4866.66",
                 "date": "2017-03-01",
                 "incomes": "840.00",
-                "saldo": "10133.34",
                 "costs": "-3293.34",
                 "venue_expenses": "-2383.11",
-                "other_expenses": "-910.23",
-                "balance": "-2453.34"
+                "other_expenses": "-910.23"
             }
         },
         "2017-04": {
@@ -3466,18 +3258,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "10133.34",
-                "bilans": "-2588.22",
+                "balance": "-2588.22",
                 "end_saldo": "7545.12",
-                "safe_threshold_difference": "-7454.88"
-            },
-            "plot": {
+                "safe_threshold_difference": "-7454.88",
                 "date": "2017-04-03",
                 "incomes": "5124.63",
-                "saldo": "7545.12",
                 "costs": "-7712.85",
                 "venue_expenses": "-6944.20",
-                "other_expenses": "-768.65",
-                "balance": "-2588.22"
+                "other_expenses": "-768.65"
             }
         },
         "2017-05": {
@@ -3537,18 +3325,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "7545.12",
-                "bilans": "4571.61",
+                "balance": "4571.61",
                 "end_saldo": "12116.73",
-                "safe_threshold_difference": "-2883.27"
-            },
-            "plot": {
+                "safe_threshold_difference": "-2883.27",
                 "date": "2017-05-02",
                 "incomes": "16377.50",
-                "saldo": "12116.73",
                 "costs": "-11805.89",
                 "venue_expenses": "-2409.37",
-                "other_expenses": "-9396.52",
-                "balance": "4571.61"
+                "other_expenses": "-9396.52"
             }
         },
         "2017-06": {
@@ -3587,18 +3371,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "12116.73",
-                "bilans": "402.59",
+                "balance": "402.59",
                 "end_saldo": "12519.32",
-                "safe_threshold_difference": "-2480.68"
-            },
-            "plot": {
+                "safe_threshold_difference": "-2480.68",
                 "date": "2017-06-01",
                 "incomes": "3920.00",
-                "saldo": "12519.32",
                 "costs": "-3517.41",
                 "venue_expenses": "-2106.34",
-                "other_expenses": "-1411.07",
-                "balance": "402.59"
+                "other_expenses": "-1411.07"
             }
         },
         "2017-07": {
@@ -3644,18 +3424,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "12519.32",
-                "bilans": "3439.75",
+                "balance": "3439.75",
                 "end_saldo": "15959.07",
-                "safe_threshold_difference": "959.07"
-            },
-            "plot": {
+                "safe_threshold_difference": "959.07",
                 "date": "2017-07-03",
                 "incomes": "6054.50",
-                "saldo": "15959.07",
                 "costs": "-2614.75",
                 "venue_expenses": "-1881.05",
-                "other_expenses": "-733.70",
-                "balance": "3439.75"
+                "other_expenses": "-733.70"
             }
         },
         "2017-08": {
@@ -3701,18 +3477,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "15959.07",
-                "bilans": "908.26",
+                "balance": "908.26",
                 "end_saldo": "16867.33",
-                "safe_threshold_difference": "1867.33"
-            },
-            "plot": {
+                "safe_threshold_difference": "1867.33",
                 "date": "2017-08-01",
                 "incomes": "3570.00",
-                "saldo": "16867.33",
                 "costs": "-2661.74",
                 "venue_expenses": "-1669.11",
-                "other_expenses": "-992.63",
-                "balance": "908.26"
+                "other_expenses": "-992.63"
             }
         },
         "2017-09": {
@@ -3765,18 +3537,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "16867.33",
-                "bilans": "2161.24",
+                "balance": "2161.24",
                 "end_saldo": "19028.57",
-                "safe_threshold_difference": "4028.57"
-            },
-            "plot": {
+                "safe_threshold_difference": "4028.57",
                 "date": "2017-09-01",
                 "incomes": "4453.04",
-                "saldo": "19028.57",
                 "costs": "-2291.80",
                 "venue_expenses": "-1669.41",
-                "other_expenses": "-622.39",
-                "balance": "2161.24"
+                "other_expenses": "-622.39"
             }
         },
         "2017-10": {
@@ -3822,18 +3590,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "19028.57",
-                "bilans": "637.05",
+                "balance": "637.05",
                 "end_saldo": "19665.62",
-                "safe_threshold_difference": "4665.62"
-            },
-            "plot": {
+                "safe_threshold_difference": "4665.62",
                 "date": "2017-10-02",
                 "incomes": "3674.58",
-                "saldo": "19665.62",
                 "costs": "-3037.53",
                 "venue_expenses": "-1648.97",
-                "other_expenses": "-1388.56",
-                "balance": "637.05"
+                "other_expenses": "-1388.56"
             }
         },
         "2017-11": {
@@ -3872,18 +3636,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "19665.62",
-                "bilans": "2064.53",
+                "balance": "2064.53",
                 "end_saldo": "21730.15",
-                "safe_threshold_difference": "6730.15"
-            },
-            "plot": {
+                "safe_threshold_difference": "6730.15",
                 "date": "2017-11-02",
                 "incomes": "4144.99",
-                "saldo": "21730.15",
                 "costs": "-2080.46",
                 "venue_expenses": "-1665.08",
-                "other_expenses": "-415.38",
-                "balance": "2064.53"
+                "other_expenses": "-415.38"
             }
         },
         "2017-12": {
@@ -3935,18 +3695,14 @@
             "summary": {
                 "safe_threshold": "15000",
                 "start_saldo": "21730.15",
-                "bilans": "2712.18",
+                "balance": "2712.18",
                 "end_saldo": "24442.33",
-                "safe_threshold_difference": "9442.33"
-            },
-            "plot": {
+                "safe_threshold_difference": "9442.33",
                 "date": "2017-12-01",
                 "incomes": "5402.50",
-                "saldo": "24442.33",
                 "costs": "-2690.32",
                 "venue_expenses": "-2013.06",
-                "other_expenses": "-677.26",
-                "balance": "2712.18"
+                "other_expenses": "-677.26"
             }
         },
         "2018-01": {
@@ -3992,18 +3748,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "24442.33",
-                "bilans": "1722.71",
+                "balance": "1722.71",
                 "end_saldo": "26165.04",
-                "safe_threshold_difference": "6165.04"
-            },
-            "plot": {
+                "safe_threshold_difference": "6165.04",
                 "date": "2018-01-02",
                 "incomes": "5828.07",
-                "saldo": "26165.04",
                 "costs": "-4105.36",
                 "venue_expenses": "-2106.99",
-                "other_expenses": "-1998.37",
-                "balance": "1722.71"
+                "other_expenses": "-1998.37"
             }
         },
         "2018-02": {
@@ -4042,18 +3794,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "26165.04",
-                "bilans": "1998.35",
+                "balance": "1998.35",
                 "end_saldo": "28163.39",
-                "safe_threshold_difference": "8163.39"
-            },
-            "plot": {
+                "safe_threshold_difference": "8163.39",
                 "date": "2018-02-01",
                 "incomes": "4690.00",
-                "saldo": "28163.39",
                 "costs": "-2691.65",
                 "venue_expenses": "-2273.27",
-                "other_expenses": "-418.38",
-                "balance": "1998.35"
+                "other_expenses": "-418.38"
             }
         },
         "2018-03": {
@@ -4118,18 +3866,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "28163.39",
-                "bilans": "868.91",
+                "balance": "868.91",
                 "end_saldo": "29032.30",
-                "safe_threshold_difference": "9032.30"
-            },
-            "plot": {
+                "safe_threshold_difference": "9032.30",
                 "date": "2018-03-01",
                 "incomes": "4815.20",
-                "saldo": "29032.30",
                 "costs": "-3946.29",
                 "venue_expenses": "-2071.57",
-                "other_expenses": "-1874.72",
-                "balance": "868.91"
+                "other_expenses": "-1874.72"
             }
         },
         "2018-04": {
@@ -4175,18 +3919,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "29032.3",
-                "bilans": "4175.10",
+                "balance": "4175.10",
                 "end_saldo": "33207.40",
-                "safe_threshold_difference": "13207.40"
-            },
-            "plot": {
+                "safe_threshold_difference": "13207.40",
                 "date": "2018-04-03",
                 "incomes": "9270.00",
-                "saldo": "33207.40",
                 "costs": "-5094.90",
                 "venue_expenses": "-2754.16",
-                "other_expenses": "-2340.74",
-                "balance": "4175.10"
+                "other_expenses": "-2340.74"
             }
         },
         "2018-05": {
@@ -4251,18 +3991,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "33207.4",
-                "bilans": "4452.91",
+                "balance": "4452.91",
                 "end_saldo": "37660.31",
-                "safe_threshold_difference": "17660.31"
-            },
-            "plot": {
+                "safe_threshold_difference": "17660.31",
                 "date": "2018-05-02",
                 "incomes": "15306.60",
-                "saldo": "37660.31",
                 "costs": "-10853.69",
                 "venue_expenses": "-2447.74",
-                "other_expenses": "-8405.95",
-                "balance": "4452.91"
+                "other_expenses": "-8405.95"
             }
         },
         "2018-06": {
@@ -4315,18 +4051,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "37660.31",
-                "bilans": "11142.18",
+                "balance": "11142.18",
                 "end_saldo": "48802.49",
-                "safe_threshold_difference": "28802.49"
-            },
-            "plot": {
+                "safe_threshold_difference": "28802.49",
                 "date": "2018-06-01",
                 "incomes": "21545.86",
-                "saldo": "48802.49",
                 "costs": "-10403.68",
                 "venue_expenses": "-1791.02",
-                "other_expenses": "-8612.66",
-                "balance": "11142.18"
+                "other_expenses": "-8612.66"
             }
         },
         "2018-07": {
@@ -4385,18 +4117,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "48802.49",
-                "bilans": "-3209.93",
+                "balance": "-3209.93",
                 "end_saldo": "45592.56",
-                "safe_threshold_difference": "25592.56"
-            },
-            "plot": {
+                "safe_threshold_difference": "25592.56",
                 "date": "2018-07-02",
                 "incomes": "7119.78",
-                "saldo": "45592.56",
                 "costs": "-10329.71",
                 "venue_expenses": "-1808.39",
-                "other_expenses": "-8521.32",
-                "balance": "-3209.93"
+                "other_expenses": "-8521.32"
             }
         },
         "2018-08": {
@@ -4448,18 +4176,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "45592.56",
-                "bilans": "392.61",
+                "balance": "392.61",
                 "end_saldo": "45985.17",
-                "safe_threshold_difference": "25985.17"
-            },
-            "plot": {
+                "safe_threshold_difference": "25985.17",
                 "date": "2018-08-01",
                 "incomes": "4639.60",
-                "saldo": "45985.17",
                 "costs": "-4246.99",
                 "venue_expenses": "-2071.00",
-                "other_expenses": "-2175.99",
-                "balance": "392.61"
+                "other_expenses": "-2175.99"
             }
         },
         "2018-09": {
@@ -4498,18 +4222,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "45985.17",
-                "bilans": "-161.52",
+                "balance": "-161.52",
                 "end_saldo": "45823.65",
-                "safe_threshold_difference": "25823.65"
-            },
-            "plot": {
+                "safe_threshold_difference": "25823.65",
                 "date": "2018-09-03",
                 "incomes": "2429.00",
-                "saldo": "45823.65",
                 "costs": "-2590.52",
                 "venue_expenses": "-1580.35",
-                "other_expenses": "-1010.17",
-                "balance": "-161.52"
+                "other_expenses": "-1010.17"
             }
         },
         "2018-10": {
@@ -4568,18 +4288,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "45823.65",
-                "bilans": "-1281.02",
+                "balance": "-1281.02",
                 "end_saldo": "44542.63",
-                "safe_threshold_difference": "24542.63"
-            },
-            "plot": {
+                "safe_threshold_difference": "24542.63",
                 "date": "2018-10-01",
                 "incomes": "5995.77",
-                "saldo": "44542.63",
                 "costs": "-7276.79",
                 "venue_expenses": "-1897.34",
-                "other_expenses": "-5379.45",
-                "balance": "-1281.02"
+                "other_expenses": "-5379.45"
             }
         },
         "2018-11": {
@@ -4625,18 +4341,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "44542.63",
-                "bilans": "-2161.41",
+                "balance": "-2161.41",
                 "end_saldo": "42381.22",
-                "safe_threshold_difference": "22381.22"
-            },
-            "plot": {
+                "safe_threshold_difference": "22381.22",
                 "date": "2018-11-02",
                 "incomes": "2049.00",
-                "saldo": "42381.22",
                 "costs": "-4210.41",
                 "venue_expenses": "-1871.33",
-                "other_expenses": "-2339.08",
-                "balance": "-2161.41"
+                "other_expenses": "-2339.08"
             }
         },
         "2018-12": {
@@ -4694,18 +4406,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "42381.22",
-                "bilans": "4420.98",
+                "balance": "4420.98",
                 "end_saldo": "46802.20",
-                "safe_threshold_difference": "26802.20"
-            },
-            "plot": {
+                "safe_threshold_difference": "26802.20",
                 "date": "2018-12-03",
                 "incomes": "8061.26",
-                "saldo": "46802.20",
                 "costs": "-3640.28",
                 "venue_expenses": "-2753.51",
-                "other_expenses": "-886.77",
-                "balance": "4420.98"
+                "other_expenses": "-886.77"
             }
         },
         "2019-01": {
@@ -4776,18 +4484,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "46802.2",
-                "bilans": "-2155.62",
+                "balance": "-2155.62",
                 "end_saldo": "44646.58",
-                "safe_threshold_difference": "24646.58"
-            },
-            "plot": {
+                "safe_threshold_difference": "24646.58",
                 "date": "2019-01-02",
                 "incomes": "5599.00",
-                "saldo": "44646.58",
                 "costs": "-7754.62",
                 "venue_expenses": "-3253.47",
-                "other_expenses": "-4501.15",
-                "balance": "-2155.62"
+                "other_expenses": "-4501.15"
             }
         },
         "2019-02": {
@@ -4846,18 +4550,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "44646.58",
-                "bilans": "-1497.40",
+                "balance": "-1497.40",
                 "end_saldo": "43149.18",
-                "safe_threshold_difference": "23149.18"
-            },
-            "plot": {
+                "safe_threshold_difference": "23149.18",
                 "date": "2019-02-01",
                 "incomes": "6365.40",
-                "saldo": "43149.18",
                 "costs": "-7862.80",
                 "venue_expenses": "-3405.22",
-                "other_expenses": "-4457.58",
-                "balance": "-1497.40"
+                "other_expenses": "-4457.58"
             }
         },
         "2019-03": {
@@ -4909,18 +4609,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "43149.18",
-                "bilans": "1744.82",
+                "balance": "1744.82",
                 "end_saldo": "44894.00",
-                "safe_threshold_difference": "24894.00"
-            },
-            "plot": {
+                "safe_threshold_difference": "24894.00",
                 "date": "2019-03-01",
                 "incomes": "5352.41",
-                "saldo": "44894.00",
                 "costs": "-3607.59",
                 "venue_expenses": "-2683.40",
-                "other_expenses": "-924.19",
-                "balance": "1744.82"
+                "other_expenses": "-924.19"
             }
         },
         "2019-04": {
@@ -4979,18 +4675,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "44894.0",
-                "bilans": "654.19",
+                "balance": "654.19",
                 "end_saldo": "45548.19",
-                "safe_threshold_difference": "25548.19"
-            },
-            "plot": {
+                "safe_threshold_difference": "25548.19",
                 "date": "2019-04-01",
                 "incomes": "4376.64",
-                "saldo": "45548.19",
                 "costs": "-3722.45",
                 "venue_expenses": "-2388.64",
-                "other_expenses": "-1333.81",
-                "balance": "654.19"
+                "other_expenses": "-1333.81"
             }
         },
         "2019-05": {
@@ -5097,18 +4789,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "45548.19",
-                "bilans": "7422.04",
+                "balance": "7422.04",
                 "end_saldo": "52970.23",
-                "safe_threshold_difference": "32970.23"
-            },
-            "plot": {
+                "safe_threshold_difference": "32970.23",
                 "date": "2019-05-02",
                 "incomes": "15553.10",
-                "saldo": "52970.23",
                 "costs": "-8131.06",
                 "venue_expenses": "-2582.31",
-                "other_expenses": "-5548.75",
-                "balance": "7422.04"
+                "other_expenses": "-5548.75"
             }
         },
         "2019-06": {
@@ -5179,18 +4867,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "52970.23",
-                "bilans": "23.00",
+                "balance": "23.00",
                 "end_saldo": "52993.23",
-                "safe_threshold_difference": "32993.23"
-            },
-            "plot": {
+                "safe_threshold_difference": "32993.23",
                 "date": "2019-06-03",
                 "incomes": "15634.60",
-                "saldo": "52993.23",
                 "costs": "-15611.60",
                 "venue_expenses": "-2497.13",
-                "other_expenses": "-13114.47",
-                "balance": "23.00"
+                "other_expenses": "-13114.47"
             }
         },
         "2019-07": {
@@ -5242,18 +4926,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "52993.23",
-                "bilans": "1092.83",
+                "balance": "1092.83",
                 "end_saldo": "54086.06",
-                "safe_threshold_difference": "34086.06"
-            },
-            "plot": {
+                "safe_threshold_difference": "34086.06",
                 "date": "2019-07-01",
                 "incomes": "4215.60",
-                "saldo": "54086.06",
                 "costs": "-3122.77",
                 "venue_expenses": "-2348.01",
-                "other_expenses": "-774.76",
-                "balance": "1092.83"
+                "other_expenses": "-774.76"
             }
         },
         "2019-08": {
@@ -5334,18 +5014,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "54086.06",
-                "bilans": "-2190.66",
+                "balance": "-2190.66",
                 "end_saldo": "51895.40",
-                "safe_threshold_difference": "31895.40"
-            },
-            "plot": {
+                "safe_threshold_difference": "31895.40",
                 "date": "2019-08-01",
                 "incomes": "6509.14",
-                "saldo": "51895.40",
                 "costs": "-8699.80",
                 "venue_expenses": "-2115.95",
-                "other_expenses": "-6583.85",
-                "balance": "-2190.66"
+                "other_expenses": "-6583.85"
             }
         },
         "2019-09": {
@@ -5391,18 +5067,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "51895.4",
-                "bilans": "1952.37",
+                "balance": "1952.37",
                 "end_saldo": "53847.77",
-                "safe_threshold_difference": "33847.77"
-            },
-            "plot": {
+                "safe_threshold_difference": "33847.77",
                 "date": "2019-09-02",
                 "incomes": "6315.00",
-                "saldo": "53847.77",
                 "costs": "-4362.63",
                 "venue_expenses": "-2373.90",
-                "other_expenses": "-1988.73",
-                "balance": "1952.37"
+                "other_expenses": "-1988.73"
             }
         },
         "2019-10": {
@@ -5454,18 +5126,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "53847.77",
-                "bilans": "-498.43",
+                "balance": "-498.43",
                 "end_saldo": "53349.34",
-                "safe_threshold_difference": "33349.34"
-            },
-            "plot": {
+                "safe_threshold_difference": "33349.34",
                 "date": "2019-10-01",
                 "incomes": "4943.21",
-                "saldo": "53349.34",
                 "costs": "-5441.64",
                 "venue_expenses": "-2251.67",
-                "other_expenses": "-3189.97",
-                "balance": "-498.43"
+                "other_expenses": "-3189.97"
             }
         },
         "2019-11": {
@@ -5524,18 +5192,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "53349.34",
-                "bilans": "8860.09",
+                "balance": "8860.09",
                 "end_saldo": "62209.43",
-                "safe_threshold_difference": "42209.43"
-            },
-            "plot": {
+                "safe_threshold_difference": "42209.43",
                 "date": "2019-11-04",
                 "incomes": "10745.00",
-                "saldo": "62209.43",
                 "costs": "-1884.91",
                 "venue_expenses": "-581.52",
-                "other_expenses": "-1303.39",
-                "balance": "8860.09"
+                "other_expenses": "-1303.39"
             }
         },
         "2019-12": {
@@ -5588,18 +5252,14 @@
             "summary": {
                 "safe_threshold": "20000",
                 "start_saldo": "62209.43",
-                "bilans": "3614.62",
+                "balance": "3614.62",
                 "end_saldo": "65824.05",
-                "safe_threshold_difference": "45824.05"
-            },
-            "plot": {
+                "safe_threshold_difference": "45824.05",
                 "date": "2019-12-02",
                 "incomes": "5681.94",
-                "saldo": "65824.05",
                 "costs": "-2067.32",
                 "venue_expenses": "-824.31",
-                "other_expenses": "-1243.01",
-                "balance": "3614.62"
+                "other_expenses": "-1243.01"
             }
         },
         "2020-01": {
@@ -5657,18 +5317,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "65824.05",
-                "bilans": "-2671.01",
+                "balance": "-2671.01",
                 "end_saldo": "63153.04",
-                "safe_threshold_difference": "13153.04"
-            },
-            "plot": {
+                "safe_threshold_difference": "13153.04",
                 "date": "2020-01-02",
                 "incomes": "5539.64",
-                "saldo": "63153.04",
                 "costs": "-8210.65",
                 "venue_expenses": "-6099.65",
-                "other_expenses": "-2111.00",
-                "balance": "-2671.01"
+                "other_expenses": "-2111.00"
             }
         },
         "2020-02": {
@@ -5763,18 +5419,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "63153.04",
-                "bilans": "639.73",
+                "balance": "639.73",
                 "end_saldo": "63792.77",
-                "safe_threshold_difference": "13792.77"
-            },
-            "plot": {
+                "safe_threshold_difference": "13792.77",
                 "date": "2020-02-01",
                 "incomes": "11725.05",
-                "saldo": "63792.77",
                 "costs": "-11085.32",
                 "venue_expenses": "-2604.09",
-                "other_expenses": "-8481.23",
-                "balance": "639.73"
+                "other_expenses": "-8481.23"
             }
         },
         "2020-03": {
@@ -5839,18 +5491,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "63792.77",
-                "bilans": "-44.82",
+                "balance": "-44.82",
                 "end_saldo": "63747.95",
-                "safe_threshold_difference": "13747.95"
-            },
-            "plot": {
+                "safe_threshold_difference": "13747.95",
                 "date": "2020-03-02",
                 "incomes": "6119.90",
-                "saldo": "63747.95",
                 "costs": "-6164.72",
                 "venue_expenses": "-2835.99",
-                "other_expenses": "-3328.73",
-                "balance": "-44.82"
+                "other_expenses": "-3328.73"
             }
         },
         "2020-04": {
@@ -5981,18 +5629,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "63747.95",
-                "bilans": "67.30",
+                "balance": "67.30",
                 "end_saldo": "63815.25",
-                "safe_threshold_difference": "13815.25"
-            },
-            "plot": {
+                "safe_threshold_difference": "13815.25",
                 "date": "2020-04-01",
                 "incomes": "17769.98",
-                "saldo": "63815.25",
                 "costs": "-17702.68",
                 "venue_expenses": "-2679.12",
-                "other_expenses": "-15023.56",
-                "balance": "67.30"
+                "other_expenses": "-15023.56"
             }
         },
         "2020-05": {
@@ -6045,18 +5689,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "63815.25",
-                "bilans": "4337.00",
+                "balance": "4337.00",
                 "end_saldo": "68152.25",
-                "safe_threshold_difference": "18152.25"
-            },
-            "plot": {
+                "safe_threshold_difference": "18152.25",
                 "date": "2020-05-04",
                 "incomes": "8676.28",
-                "saldo": "68152.25",
                 "costs": "-4339.28",
                 "venue_expenses": "-2588.60",
-                "other_expenses": "-1750.68",
-                "balance": "4337.00"
+                "other_expenses": "-1750.68"
             }
         },
         "2020-06": {
@@ -6095,18 +5735,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "68152.25",
-                "bilans": "-1369.68",
+                "balance": "-1369.68",
                 "end_saldo": "66782.57",
-                "safe_threshold_difference": "16782.57"
-            },
-            "plot": {
+                "safe_threshold_difference": "16782.57",
                 "date": "2020-06-01",
                 "incomes": "2375.00",
-                "saldo": "66782.57",
                 "costs": "-3744.68",
                 "venue_expenses": "-2401.62",
-                "other_expenses": "-1343.06",
-                "balance": "-1369.68"
+                "other_expenses": "-1343.06"
             }
         },
         "2020-07": {
@@ -6152,18 +5788,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "66782.57",
-                "bilans": "3790.47",
+                "balance": "3790.47",
                 "end_saldo": "70573.04",
-                "safe_threshold_difference": "20573.04"
-            },
-            "plot": {
+                "safe_threshold_difference": "20573.04",
                 "date": "2020-07-01",
                 "incomes": "7294.00",
-                "saldo": "70573.04",
                 "costs": "-3503.53",
                 "venue_expenses": "-2364.77",
-                "other_expenses": "-1138.76",
-                "balance": "3790.47"
+                "other_expenses": "-1138.76"
             }
         },
         "2020-08": {
@@ -6216,18 +5848,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "70573.04",
-                "bilans": "869.34",
+                "balance": "869.34",
                 "end_saldo": "71442.38",
-                "safe_threshold_difference": "21442.38"
-            },
-            "plot": {
+                "safe_threshold_difference": "21442.38",
                 "date": "2020-08-03",
                 "incomes": "7272.86",
-                "saldo": "71442.38",
                 "costs": "-6403.52",
                 "venue_expenses": "-2358.36",
-                "other_expenses": "-4045.16",
-                "balance": "869.34"
+                "other_expenses": "-4045.16"
             }
         },
         "2020-09": {
@@ -6273,18 +5901,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "71442.38",
-                "bilans": "-862.08",
+                "balance": "-862.08",
                 "end_saldo": "70580.30",
-                "safe_threshold_difference": "20580.30"
-            },
-            "plot": {
+                "safe_threshold_difference": "20580.30",
                 "date": "2020-09-01",
                 "incomes": "2769.00",
-                "saldo": "70580.30",
                 "costs": "-3631.08",
                 "venue_expenses": "-2260.01",
-                "other_expenses": "-1371.07",
-                "balance": "-862.08"
+                "other_expenses": "-1371.07"
             }
         },
         "2020-10": {
@@ -6330,18 +5954,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "70580.3",
-                "bilans": "-108.61",
+                "balance": "-108.61",
                 "end_saldo": "70471.69",
-                "safe_threshold_difference": "20471.69"
-            },
-            "plot": {
+                "safe_threshold_difference": "20471.69",
                 "date": "2020-10-01",
                 "incomes": "4695.22",
-                "saldo": "70471.69",
                 "costs": "-4803.83",
                 "venue_expenses": "-2275.63",
-                "other_expenses": "-2528.20",
-                "balance": "-108.61"
+                "other_expenses": "-2528.20"
             }
         },
         "2020-11": {
@@ -6380,18 +6000,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "70471.69",
-                "bilans": "-1001.38",
+                "balance": "-1001.38",
                 "end_saldo": "69470.31",
-                "safe_threshold_difference": "19470.31"
-            },
-            "plot": {
+                "safe_threshold_difference": "19470.31",
                 "date": "2020-11-02",
                 "incomes": "2584.00",
-                "saldo": "69470.31",
                 "costs": "-3585.38",
                 "venue_expenses": "-2267.73",
-                "other_expenses": "-1317.65",
-                "balance": "-1001.38"
+                "other_expenses": "-1317.65"
             }
         },
         "2020-12": {
@@ -6444,18 +6060,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "69470.31",
-                "bilans": "5477.41",
+                "balance": "5477.41",
                 "end_saldo": "74947.72",
-                "safe_threshold_difference": "24947.72"
-            },
-            "plot": {
+                "safe_threshold_difference": "24947.72",
                 "date": "2020-12-01",
                 "incomes": "5996.49",
-                "saldo": "74947.72",
                 "costs": "-519.08",
                 "venue_expenses": "0",
-                "other_expenses": "-519.08",
-                "balance": "5477.41"
+                "other_expenses": "-519.08"
             }
         },
         "2021-01": {
@@ -6494,18 +6106,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "74947.72",
-                "bilans": "-4648.26",
+                "balance": "-4648.26",
                 "end_saldo": "70299.46",
-                "safe_threshold_difference": "20299.46"
-            },
-            "plot": {
+                "safe_threshold_difference": "20299.46",
                 "date": "2021-01-04",
                 "incomes": "2889.00",
-                "saldo": "70299.46",
                 "costs": "-7537.26",
                 "venue_expenses": "-5471.44",
-                "other_expenses": "-2065.82",
-                "balance": "-4648.26"
+                "other_expenses": "-2065.82"
             }
         },
         "2021-02": {
@@ -6557,18 +6165,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "70299.46",
-                "bilans": "-1829.33",
+                "balance": "-1829.33",
                 "end_saldo": "68470.13",
-                "safe_threshold_difference": "18470.13"
-            },
-            "plot": {
+                "safe_threshold_difference": "18470.13",
                 "date": "2021-02-01",
                 "incomes": "2404.00",
-                "saldo": "68470.13",
                 "costs": "-4233.33",
                 "venue_expenses": "-2504.16",
-                "other_expenses": "-1729.17",
-                "balance": "-1829.33"
+                "other_expenses": "-1729.17"
             }
         },
         "2021-03": {
@@ -6621,18 +6225,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "68470.13",
-                "bilans": "-2274.73",
+                "balance": "-2274.73",
                 "end_saldo": "66195.40",
-                "safe_threshold_difference": "16195.40"
-            },
-            "plot": {
+                "safe_threshold_difference": "16195.40",
                 "date": "2021-03-01",
                 "incomes": "3066.56",
-                "saldo": "66195.40",
                 "costs": "-5341.29",
                 "venue_expenses": "-3452.94",
-                "other_expenses": "-1888.35",
-                "balance": "-2274.73"
+                "other_expenses": "-1888.35"
             }
         },
         "2021-04": {
@@ -6678,18 +6278,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "66195.4",
-                "bilans": "-775.22",
+                "balance": "-775.22",
                 "end_saldo": "65420.18",
-                "safe_threshold_difference": "15420.18"
-            },
-            "plot": {
+                "safe_threshold_difference": "15420.18",
                 "date": "2021-04-01",
                 "incomes": "3185.55",
-                "saldo": "65420.18",
                 "costs": "-3960.77",
                 "venue_expenses": "-2985.48",
-                "other_expenses": "-975.29",
-                "balance": "-775.22"
+                "other_expenses": "-975.29"
             }
         },
         "2021-05": {
@@ -6735,18 +6331,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "65420.18",
-                "bilans": "-521.96",
+                "balance": "-521.96",
                 "end_saldo": "64898.22",
-                "safe_threshold_difference": "14898.22"
-            },
-            "plot": {
+                "safe_threshold_difference": "14898.22",
                 "date": "2021-05-04",
                 "incomes": "2890.68",
-                "saldo": "64898.22",
                 "costs": "-3412.64",
                 "venue_expenses": "-2867.48",
-                "other_expenses": "-545.16",
-                "balance": "-521.96"
+                "other_expenses": "-545.16"
             }
         },
         "2021-06": {
@@ -6785,18 +6377,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "64898.22",
-                "bilans": "830.25",
+                "balance": "830.25",
                 "end_saldo": "65728.47",
-                "safe_threshold_difference": "15728.47"
-            },
-            "plot": {
+                "safe_threshold_difference": "15728.47",
                 "date": "2021-06-01",
                 "incomes": "4310.00",
-                "saldo": "65728.47",
                 "costs": "-3479.75",
                 "venue_expenses": "-2782.45",
-                "other_expenses": "-697.30",
-                "balance": "830.25"
+                "other_expenses": "-697.30"
             }
         },
         "2021-07": {
@@ -6835,18 +6423,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "65728.47",
-                "bilans": "240.69",
+                "balance": "240.69",
                 "end_saldo": "65969.16",
-                "safe_threshold_difference": "15969.16"
-            },
-            "plot": {
+                "safe_threshold_difference": "15969.16",
                 "date": "2021-07-01",
                 "incomes": "3245.00",
-                "saldo": "65969.16",
                 "costs": "-3004.31",
                 "venue_expenses": "-2334.89",
-                "other_expenses": "-669.42",
-                "balance": "240.69"
+                "other_expenses": "-669.42"
             }
         },
         "2021-08": {
@@ -6892,18 +6476,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "65969.16",
-                "bilans": "306.61",
+                "balance": "306.61",
                 "end_saldo": "66275.77",
-                "safe_threshold_difference": "16275.77"
-            },
-            "plot": {
+                "safe_threshold_difference": "16275.77",
                 "date": "2021-08-02",
                 "incomes": "2802.31",
-                "saldo": "66275.77",
                 "costs": "-2495.70",
                 "venue_expenses": "-2065.10",
-                "other_expenses": "-430.60",
-                "balance": "306.61"
+                "other_expenses": "-430.60"
             }
         },
         "2021-09": {
@@ -6942,18 +6522,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "66275.77",
-                "bilans": "937.93",
+                "balance": "937.93",
                 "end_saldo": "67213.70",
-                "safe_threshold_difference": "17213.70"
-            },
-            "plot": {
+                "safe_threshold_difference": "17213.70",
                 "date": "2021-09-01",
                 "incomes": "3620.00",
-                "saldo": "67213.70",
                 "costs": "-2682.07",
                 "venue_expenses": "-2030.86",
-                "other_expenses": "-651.21",
-                "balance": "937.93"
+                "other_expenses": "-651.21"
             }
         },
         "2021-10": {
@@ -6999,18 +6575,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "67213.7",
-                "bilans": "1421.59",
+                "balance": "1421.59",
                 "end_saldo": "68635.29",
-                "safe_threshold_difference": "18635.29"
-            },
-            "plot": {
+                "safe_threshold_difference": "18635.29",
                 "date": "2021-10-01",
                 "incomes": "4276.07",
-                "saldo": "68635.29",
                 "costs": "-2854.48",
                 "venue_expenses": "-2308.20",
-                "other_expenses": "-546.28",
-                "balance": "1421.59"
+                "other_expenses": "-546.28"
             }
         },
         "2021-11": {
@@ -7056,18 +6628,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "68635.29",
-                "bilans": "3903.28",
+                "balance": "3903.28",
                 "end_saldo": "72538.57",
-                "safe_threshold_difference": "22538.57"
-            },
-            "plot": {
+                "safe_threshold_difference": "22538.57",
                 "date": "2021-11-02",
                 "incomes": "7420.00",
-                "saldo": "72538.57",
                 "costs": "-3516.72",
                 "venue_expenses": "-2522.23",
-                "other_expenses": "-994.49",
-                "balance": "3903.28"
+                "other_expenses": "-994.49"
             }
         },
         "2021-12": {
@@ -7113,18 +6681,14 @@
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "72538.57",
-                "bilans": "-455.62",
+                "balance": "-455.62",
                 "end_saldo": "72082.95",
-                "safe_threshold_difference": "22082.95"
-            },
-            "plot": {
+                "safe_threshold_difference": "22082.95",
                 "date": "2021-12-01",
                 "incomes": "5512.75",
-                "saldo": "72082.95",
                 "costs": "-5968.37",
                 "venue_expenses": "-5396.90",
-                "other_expenses": "-571.47",
-                "balance": "-455.62"
+                "other_expenses": "-571.47"
             }
         },
         "2022-01": {
@@ -7183,18 +6747,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "72082.95",
-                "bilans": "-52.70",
+                "balance": "-52.70",
                 "end_saldo": "72030.25",
-                "safe_threshold_difference": "-7969.75"
-            },
-            "plot": {
+                "safe_threshold_difference": "-7969.75",
                 "date": "2022-01-03",
                 "incomes": "6893.90",
-                "saldo": "72030.25",
                 "costs": "-6946.60",
                 "venue_expenses": "-3739.97",
-                "other_expenses": "-3206.63",
-                "balance": "-52.70"
+                "other_expenses": "-3206.63"
             }
         },
         "2022-02": {
@@ -7252,18 +6812,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "72030.25",
-                "bilans": "-2092.81",
+                "balance": "-2092.81",
                 "end_saldo": "69937.44",
-                "safe_threshold_difference": "-10062.56"
-            },
-            "plot": {
+                "safe_threshold_difference": "-10062.56",
                 "date": "2022-02-01",
                 "incomes": "3644.00",
-                "saldo": "69937.44",
                 "costs": "-5736.81",
                 "venue_expenses": "-3635.54",
-                "other_expenses": "-2101.27",
-                "balance": "-2092.81"
+                "other_expenses": "-2101.27"
             }
         },
         "2022-03": {
@@ -7302,18 +6858,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "69937.44",
-                "bilans": "60.03",
+                "balance": "60.03",
                 "end_saldo": "69997.47",
-                "safe_threshold_difference": "-10002.53"
-            },
-            "plot": {
+                "safe_threshold_difference": "-10002.53",
                 "date": "2022-03-01",
                 "incomes": "3845.00",
-                "saldo": "69997.47",
                 "costs": "-3784.97",
                 "venue_expenses": "-3231.92",
-                "other_expenses": "-553.05",
-                "balance": "60.03"
+                "other_expenses": "-553.05"
             }
         },
         "2022-04": {
@@ -7359,18 +6911,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "69997.47",
-                "bilans": "4100.60",
+                "balance": "4100.60",
                 "end_saldo": "74098.07",
-                "safe_threshold_difference": "-5901.93"
-            },
-            "plot": {
+                "safe_threshold_difference": "-5901.93",
                 "date": "2022-04-01",
                 "incomes": "4659.00",
-                "saldo": "74098.07",
                 "costs": "-558.40",
                 "venue_expenses": "0",
-                "other_expenses": "-558.40",
-                "balance": "4100.60"
+                "other_expenses": "-558.40"
             }
         },
         "2022-05": {
@@ -7416,18 +6964,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "74098.07",
-                "bilans": "-3898.74",
+                "balance": "-3898.74",
                 "end_saldo": "70199.33",
-                "safe_threshold_difference": "-9800.67"
-            },
-            "plot": {
+                "safe_threshold_difference": "-9800.67",
                 "date": "2022-05-02",
                 "incomes": "5399.45",
-                "saldo": "70199.33",
                 "costs": "-9298.19",
                 "venue_expenses": "-6329.91",
-                "other_expenses": "-2968.28",
-                "balance": "-3898.74"
+                "other_expenses": "-2968.28"
             }
         },
         "2022-06": {
@@ -7493,18 +7037,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "70199.33",
-                "bilans": "5269.46",
+                "balance": "5269.46",
                 "end_saldo": "75468.79",
-                "safe_threshold_difference": "-4531.21"
-            },
-            "plot": {
+                "safe_threshold_difference": "-4531.21",
                 "date": "2022-06-01",
                 "incomes": "8677.60",
-                "saldo": "75468.79",
                 "costs": "-3408.14",
                 "venue_expenses": "-2408.71",
-                "other_expenses": "-999.43",
-                "balance": "5269.46"
+                "other_expenses": "-999.43"
             }
         },
         "2022-07": {
@@ -7556,18 +7096,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "75468.79",
-                "bilans": "-463.31",
+                "balance": "-463.31",
                 "end_saldo": "75005.48",
-                "safe_threshold_difference": "-4994.52"
-            },
-            "plot": {
+                "safe_threshold_difference": "-4994.52",
                 "date": "2022-07-01",
                 "incomes": "4369.00",
-                "saldo": "75005.48",
                 "costs": "-4832.31",
                 "venue_expenses": "-3123.21",
-                "other_expenses": "-1709.10",
-                "balance": "-463.31"
+                "other_expenses": "-1709.10"
             }
         },
         "2022-08": {
@@ -7613,18 +7149,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "75005.48",
-                "bilans": "1806.47",
+                "balance": "1806.47",
                 "end_saldo": "76811.95",
-                "safe_threshold_difference": "-3188.05"
-            },
-            "plot": {
+                "safe_threshold_difference": "-3188.05",
                 "date": "2022-08-01",
                 "incomes": "5966.99",
-                "saldo": "76811.95",
                 "costs": "-4160.52",
                 "venue_expenses": "-2904.65",
-                "other_expenses": "-1255.87",
-                "balance": "1806.47"
+                "other_expenses": "-1255.87"
             }
         },
         "2022-09": {
@@ -7747,18 +7279,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "76811.95",
-                "bilans": "4269.40",
+                "balance": "4269.40",
                 "end_saldo": "81081.35",
-                "safe_threshold_difference": "1081.35"
-            },
-            "plot": {
+                "safe_threshold_difference": "1081.35",
                 "date": "2022-09-01",
                 "incomes": "10988.09",
-                "saldo": "81081.35",
                 "costs": "-6718.69",
                 "venue_expenses": "-3102.28",
-                "other_expenses": "-3616.41",
-                "balance": "4269.40"
+                "other_expenses": "-3616.41"
             }
         },
         "2022-10": {
@@ -7866,18 +7394,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "81081.35",
-                "bilans": "12280.01",
+                "balance": "12280.01",
                 "end_saldo": "93361.36",
-                "safe_threshold_difference": "13361.36"
-            },
-            "plot": {
+                "safe_threshold_difference": "13361.36",
                 "date": "2022-10-03",
                 "incomes": "18407.85",
-                "saldo": "93361.36",
                 "costs": "-6127.84",
                 "venue_expenses": "-3673.11",
-                "other_expenses": "-2454.73",
-                "balance": "12280.01"
+                "other_expenses": "-2454.73"
             }
         },
         "2022-11": {
@@ -7960,18 +7484,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "93361.36",
-                "bilans": "2093.82",
+                "balance": "2093.82",
                 "end_saldo": "95455.18",
-                "safe_threshold_difference": "15455.18"
-            },
-            "plot": {
+                "safe_threshold_difference": "15455.18",
                 "date": "2022-11-02",
                 "incomes": "11075.25",
-                "saldo": "95455.18",
                 "costs": "-8981.43",
                 "venue_expenses": "-3196.63",
-                "other_expenses": "-5784.80",
-                "balance": "2093.82"
+                "other_expenses": "-5784.80"
             }
         },
         "2022-12": {
@@ -8043,18 +7563,14 @@
             "summary": {
                 "safe_threshold": "80000",
                 "start_saldo": "95455.18",
-                "bilans": "-2895.05",
+                "balance": "-2895.05",
                 "end_saldo": "92560.13",
-                "safe_threshold_difference": "12560.13"
-            },
-            "plot": {
+                "safe_threshold_difference": "12560.13",
                 "date": "2022-12-01",
                 "incomes": "8578.85",
-                "saldo": "92560.13",
                 "costs": "-11473.90",
                 "venue_expenses": "-3117.12",
-                "other_expenses": "-8356.78",
-                "balance": "-2895.05"
+                "other_expenses": "-8356.78"
             }
         },
         "2023-01": {
@@ -8125,18 +7641,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "92560.13",
-                "bilans": "1010.52",
+                "balance": "1010.52",
                 "end_saldo": "93570.65",
-                "safe_threshold_difference": "3570.65"
-            },
-            "plot": {
+                "safe_threshold_difference": "3570.65",
                 "date": "2023-01-02",
                 "incomes": "6277.48",
-                "saldo": "93570.65",
                 "costs": "-5266.96",
                 "venue_expenses": "-3516.25",
-                "other_expenses": "-1750.71",
-                "balance": "1010.52"
+                "other_expenses": "-1750.71"
             }
         },
         "2023-02": {
@@ -8212,18 +7724,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "93570.65",
-                "bilans": "-999.33",
+                "balance": "-999.33",
                 "end_saldo": "92571.32",
-                "safe_threshold_difference": "2571.32"
-            },
-            "plot": {
+                "safe_threshold_difference": "2571.32",
                 "date": "2023-02-01",
                 "incomes": "5815.27",
-                "saldo": "92571.32",
                 "costs": "-6814.60",
                 "venue_expenses": "-3893.88",
-                "other_expenses": "-2920.72",
-                "balance": "-999.33"
+                "other_expenses": "-2920.72"
             }
         },
         "2023-03": {
@@ -8318,18 +7826,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "92571.32",
-                "bilans": "3703.87",
+                "balance": "3703.87",
                 "end_saldo": "96275.19",
-                "safe_threshold_difference": "6275.19"
-            },
-            "plot": {
+                "safe_threshold_difference": "6275.19",
                 "date": "2023-03-01",
                 "incomes": "9427.81",
-                "saldo": "96275.19",
                 "costs": "-5723.94",
                 "venue_expenses": "-3860.15",
-                "other_expenses": "-1863.79",
-                "balance": "3703.87"
+                "other_expenses": "-1863.79"
             }
         },
         "2023-04": {
@@ -8393,18 +7897,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "96275.19",
-                "bilans": "1237.79",
+                "balance": "1237.79",
                 "end_saldo": "97512.98",
-                "safe_threshold_difference": "7512.98"
-            },
-            "plot": {
+                "safe_threshold_difference": "7512.98",
                 "date": "2023-04-01",
                 "incomes": "5927.00",
-                "saldo": "97512.98",
                 "costs": "-4689.21",
                 "venue_expenses": "-3894.53",
-                "other_expenses": "-794.68",
-                "balance": "1237.79"
+                "other_expenses": "-794.68"
             }
         },
         "2023-05": {
@@ -8506,18 +8006,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "97512.98",
-                "bilans": "582.76",
+                "balance": "582.76",
                 "end_saldo": "98095.74",
-                "safe_threshold_difference": "8095.74"
-            },
-            "plot": {
+                "safe_threshold_difference": "8095.74",
                 "date": "2023-05-02",
                 "incomes": "6708.95",
-                "saldo": "98095.74",
                 "costs": "-6126.19",
                 "venue_expenses": "-3550.40",
-                "other_expenses": "-2575.79",
-                "balance": "582.76"
+                "other_expenses": "-2575.79"
             }
         },
         "2023-06": {
@@ -8587,18 +8083,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "98095.74",
-                "bilans": "3041.46",
+                "balance": "3041.46",
                 "end_saldo": "101137.20",
-                "safe_threshold_difference": "11137.20"
-            },
-            "plot": {
+                "safe_threshold_difference": "11137.20",
                 "date": "2023-06-01",
                 "incomes": "8929.00",
-                "saldo": "101137.20",
                 "costs": "-5887.54",
                 "venue_expenses": "-3687.09",
-                "other_expenses": "-2200.45",
-                "balance": "3041.46"
+                "other_expenses": "-2200.45"
             }
         },
         "2023-07": {
@@ -8758,18 +8250,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "101137.2",
-                "bilans": "-28015.49",
+                "balance": "-28015.49",
                 "end_saldo": "73121.71",
-                "safe_threshold_difference": "-16878.29"
-            },
-            "plot": {
+                "safe_threshold_difference": "-16878.29",
                 "date": "2023-07-03",
                 "incomes": "6228.00",
-                "saldo": "73121.71",
                 "costs": "-34243.49",
                 "venue_expenses": "-3245.27",
-                "other_expenses": "-30998.22",
-                "balance": "-28015.49"
+                "other_expenses": "-30998.22"
             }
         },
         "2023-08": {
@@ -8896,18 +8384,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "73121.71",
-                "bilans": "20437.75",
+                "balance": "20437.75",
                 "end_saldo": "93559.46",
-                "safe_threshold_difference": "3559.46"
-            },
-            "plot": {
+                "safe_threshold_difference": "3559.46",
                 "date": "2023-08-01",
                 "incomes": "27878.24",
-                "saldo": "93559.46",
                 "costs": "-7440.49",
                 "venue_expenses": "-3239.11",
-                "other_expenses": "-4201.38",
-                "balance": "20437.75"
+                "other_expenses": "-4201.38"
             }
         },
         "2023-09": {
@@ -8973,18 +8457,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "93559.46",
-                "bilans": "9173.89",
+                "balance": "9173.89",
                 "end_saldo": "102733.35",
-                "safe_threshold_difference": "12733.35"
-            },
-            "plot": {
+                "safe_threshold_difference": "12733.35",
                 "date": "2023-09-01",
                 "incomes": "13653.00",
-                "saldo": "102733.35",
                 "costs": "-4479.11",
                 "venue_expenses": "-3375.74",
-                "other_expenses": "-1103.37",
-                "balance": "9173.89"
+                "other_expenses": "-1103.37"
             }
         },
         "2023-10": {
@@ -9073,18 +8553,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "102733.35",
-                "bilans": "-1818.97",
+                "balance": "-1818.97",
                 "end_saldo": "100914.38",
-                "safe_threshold_difference": "10914.38"
-            },
-            "plot": {
+                "safe_threshold_difference": "10914.38",
                 "date": "2023-10-02",
                 "incomes": "13110.00",
-                "saldo": "100914.38",
                 "costs": "-14928.97",
                 "venue_expenses": "-3648.80",
-                "other_expenses": "-11280.17",
-                "balance": "-1818.97"
+                "other_expenses": "-11280.17"
             }
         },
         "2023-11": {
@@ -9196,18 +8672,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "100914.38",
-                "bilans": "-789.56",
+                "balance": "-789.56",
                 "end_saldo": "100124.82",
-                "safe_threshold_difference": "10124.82"
-            },
-            "plot": {
+                "safe_threshold_difference": "10124.82",
                 "date": "2023-11-02",
                 "incomes": "6163.00",
-                "saldo": "100124.82",
                 "costs": "-6952.56",
                 "venue_expenses": "-3363.94",
-                "other_expenses": "-3588.62",
-                "balance": "-789.56"
+                "other_expenses": "-3588.62"
             }
         },
         "2023-12": {
@@ -9302,18 +8774,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "100124.82",
-                "bilans": "2788.28",
+                "balance": "2788.28",
                 "end_saldo": "102913.10",
-                "safe_threshold_difference": "12913.10"
-            },
-            "plot": {
+                "safe_threshold_difference": "12913.10",
                 "date": "2023-12-01",
                 "incomes": "8640.13",
-                "saldo": "102913.10",
                 "costs": "-5851.85",
                 "venue_expenses": "-3884.43",
-                "other_expenses": "-1967.42",
-                "balance": "2788.28"
+                "other_expenses": "-1967.42"
             }
         },
         "2024-01": {
@@ -9368,6 +8836,18 @@
                 "inne_koszty": "0"
             },
             "koszty_described": [
+                {
+                    "value": -1786.1,
+                    "category": "lokal",
+                    "details": "Ogrzewanie (1002,00) + śmieci (68,98) + prąd (436,96 + 278,08)",
+                    "listed": true
+                },
+                {
+                    "value": -2455.79,
+                    "category": "lokal",
+                    "details": "Czynsz",
+                    "listed": true
+                },
                 {
                     "value": -143.4,
                     "category": "zakupy",
@@ -9456,18 +8936,14 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "102913.1",
-                "bilans": "373.90",
+                "balance": "373.90",
                 "end_saldo": "103287.00",
-                "safe_threshold_difference": "13287.00"
-            },
-            "plot": {
+                "safe_threshold_difference": "13287.00",
                 "date": "2024-01-02",
                 "incomes": "7604.27",
-                "saldo": "103287.00",
                 "costs": "-7230.37",
                 "venue_expenses": "-4241.89",
-                "other_expenses": "-2988.48",
-                "balance": "373.90"
+                "other_expenses": "-2988.48"
             }
         },
         "2024-02": {
@@ -9506,23 +8982,19 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "103287.0",
-                "bilans": "2004.48",
+                "balance": "2004.48",
                 "end_saldo": "105291.48",
-                "safe_threshold_difference": "15291.48"
-            },
-            "plot": {
+                "safe_threshold_difference": "15291.48",
                 "date": "2024-02-01",
                 "incomes": "2560.00",
-                "saldo": "105291.48",
                 "costs": "-555.52",
                 "venue_expenses": "0",
-                "other_expenses": "-555.52",
-                "balance": "2004.48"
+                "other_expenses": "-555.52"
             }
         }
     },
     "stats": {
-        "parsing_date": "09/02/2024 22:09",
+        "parsing_date": "11/02/2024 01:51",
         "operations": {
             "all": "7867",
             "months": {

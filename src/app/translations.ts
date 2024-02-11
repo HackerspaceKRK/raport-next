@@ -18,6 +18,7 @@ export const keyTranslations: Record<string, string> = {
   ubezpieczenia: "ubezpieczenia",
   income: "Dochód",
   koszty: "Koszty",
+  costs: "Koszty",
   summary: "Suma",
   value: "Wartość",
   category: "Kategoria",
@@ -27,5 +28,8 @@ export const keyTranslations: Record<string, string> = {
   other_expenses: "Pozostałe wydatki",
   incomes: "Wpływy",
   saldo: "Saldo",
+  end_saldo: "Saldo na koniec miesiąca",
+  start_saldo: "Saldo na początek miesiąca",
+  safe_threshold: "Bufor bezpieczeństwa",
   balance: "Bilans",
 };
