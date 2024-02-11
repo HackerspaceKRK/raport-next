@@ -898,6 +898,7 @@ export function Summary({
             </Card>
           </TabsContent>
         </Tabs>
+      </div>
         <footer className="sticky right-0 bottom-0">
           <div className="justify-end bg-sky-500/10 m-4">
         <div className="flex gap-4 justify-end pr-4 pt-4 pl-4">
@@ -941,7 +942,6 @@ export function Summary({
           </Select>
         </div></div>
         </footer>
-      </div>
     </div>
   );
 }
