@@ -399,8 +399,8 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-6">
-                      <div className="col-span-2">
+                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
+                      <div>
                         <Card>
                           <CardHeader>
                             <CardTitle>Podział kosztów</CardTitle>
@@ -463,7 +463,7 @@ export function Summary({
                           </CardContent>
                         </Card>
                       </div>
-                      <div className="col-span-2">
+                      <div>
                         <Card>
                           <CardContent>
                             <div style={{ width: "100%", height: 700 }}>
@@ -580,8 +580,8 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-5 md:grid-cols-1 lg:grid-cols-6">
-                      <div className="col-span-2">
+                    <div className="grid gap-5 md:grid-cols-1 lg:grid-cols-2">
+                      <div>
                         {" "}
                         <Card>
                           <CardHeader>
@@ -646,7 +646,7 @@ export function Summary({
                         </Card>
                       </div>
 
-                      <div className="col-span-2">
+                      <div>
                         <Card>
                           <CardContent>
                             <div style={{ width: "100%", height: 700 }}>
@@ -921,14 +921,14 @@ export function Summary({
               value={currentYear}
               onValueChange={(value) => updateYear(value)}
             >
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-[100px]">
                 <SelectValue placeholder={`Rok: ${currentYear}`} />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
                   {availableYears.map((year, index) => (
                     <SelectItem value={year} key={year}>
-                      Rok: {year}
+                      {year}
                     </SelectItem>
                   ))}
                 </SelectGroup>
@@ -942,14 +942,16 @@ export function Summary({
                 setCurrentMonth(value);
               }}
             >
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-[100px]">
                 <SelectValue placeholder={`Rok: ${currentMonth}`} />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
                   {years[currentYear].map((month, index) => (
                     <SelectItem value={month} key={month}>
-                      Miesiąc: {month}.{currentYear}
+                      {DateTime.fromFormat(month, "LL")
+                        .setLocale("pl")
+                        .toFormat("LLLL")}
                     </SelectItem>
                   ))}
                 </SelectGroup>

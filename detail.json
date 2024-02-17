@@ -11,6 +11,7 @@
         "korekty": "Korekty/przeksięgowania",
         "umowy": "Umowy",
         "inne_wplywy": "Inne wpływy",
+        "nieprzyporzadkowane_wplywy": "Nieprzyporządkowane wpływy",
         "covid": "COVID19",
         "lokal": "Lokal",
         "ksiegowosc": "Księgowość",
@@ -22,6 +23,7 @@
         "ubezpieczenia": "Ubezpieczenie",
         "hosting": "Hosting",
         "inne_koszty": "Inne koszty",
+        "nieprzyporzadkowane_koszty": "Nieprzyporządkowane koszty",
         "safe_threshold": "Bufor bezpieczeństwa",
         "start_saldo": "Saldo początkowe",
         "balance": "Bilans",
@@ -41,7 +43,8 @@
                 "eventy": "5960.10",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -67,7 +70,8 @@
                 "zakupy": "-840.00",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-150.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-150.00"
             },
             "koszty_described": [
                 {
@@ -117,7 +121,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -135,7 +140,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -163,7 +169,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -181,7 +188,8 @@
                 "zakupy": "-112.58",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -209,7 +217,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "210.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "210.00"
             },
             "income_described": [
                 {
@@ -233,7 +242,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -261,7 +271,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -286,7 +297,8 @@
                 "zakupy": "-40.04",
                 "ubezpieczenia": "0",
                 "hosting": "-123.00",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -322,7 +334,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "6.96"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "6.96"
             },
             "income_described": [],
             "koszty": {
@@ -340,7 +353,8 @@
                 "zakupy": "-87.00",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-30.75"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-30.75"
             },
             "koszty_described": [],
             "summary": {
@@ -368,7 +382,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -386,7 +401,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -414,7 +430,8 @@
                 "eventy": "615.72",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -447,7 +464,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-150.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-150.00"
             },
             "koszty_described": [
                 {
@@ -483,7 +501,8 @@
                 "eventy": "1990.76",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -509,7 +528,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-11.07"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-11.07"
             },
             "koszty_described": [],
             "summary": {
@@ -537,7 +557,8 @@
                 "eventy": "300.00",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -563,7 +584,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-650.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-650.00"
             },
             "koszty_described": [],
             "summary": {
@@ -591,7 +613,8 @@
                 "eventy": "417.81",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -617,7 +640,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -653,7 +677,8 @@
                 "eventy": "6750.61",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0.17"
+                "inne_wplywy": "0.17",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -707,7 +732,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-123.00",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -757,7 +783,8 @@
                 "eventy": "3690.00",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "246.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "246.00"
             },
             "income_described": [
                 {
@@ -783,7 +810,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-181.43"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-181.43"
             },
             "koszty_described": [
                 {
@@ -833,7 +861,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "45.48"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "45.48"
             },
             "income_described": [],
             "koszty": {
@@ -851,7 +880,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -887,7 +917,8 @@
                 "eventy": "660.00",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "79.99"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "79.99"
             },
             "income_described": [
                 {
@@ -913,7 +944,8 @@
                 "zakupy": "-550.15",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -941,7 +973,8 @@
                 "eventy": "7872.00",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "136.49"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "136.49"
             },
             "income_described": [
                 {
@@ -995,7 +1028,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-142.96"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-142.96"
             },
             "koszty_described": [
                 {
@@ -1031,7 +1065,8 @@
                 "eventy": "112.98",
                 "korekty": "0",
                 "umowy": "3690.00",
-                "inne_wplywy": "615.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "615.00"
             },
             "income_described": [
                 {
@@ -1064,7 +1099,8 @@
                 "zakupy": "-255.77",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -1142,7 +1178,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "492.00",
-                "inne_wplywy": "1170.61"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "1170.61"
             },
             "income_described": [
                 {
@@ -1168,7 +1205,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1434.21"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1434.21"
             },
             "koszty_described": [],
             "summary": {
@@ -1196,7 +1234,8 @@
                 "eventy": "1942.94",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -1229,7 +1268,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1953.72"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1953.72"
             },
             "koszty_described": [],
             "summary": {
@@ -1257,7 +1297,8 @@
                 "eventy": "458.26",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -1283,7 +1324,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -1311,7 +1353,8 @@
                 "eventy": "787.80",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -1344,7 +1387,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-102.40",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -1372,7 +1416,8 @@
                 "eventy": "181.62",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -1405,7 +1450,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1229.75"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1229.75"
             },
             "koszty_described": [],
             "summary": {
@@ -1433,7 +1479,8 @@
                 "eventy": "751.88",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -1466,7 +1513,8 @@
                 "zakupy": "-438.60",
                 "ubezpieczenia": "0",
                 "hosting": "-6.91",
-                "inne_koszty": "-468.20"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-468.20"
             },
             "koszty_described": [],
             "summary": {
@@ -1494,7 +1542,8 @@
                 "eventy": "35822.50",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "100.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "100.00"
             },
             "income_described": [
                 {
@@ -1534,7 +1583,8 @@
                 "zakupy": "-2711.88",
                 "ubezpieczenia": "0",
                 "hosting": "-17.58",
-                "inne_koszty": "-1568.16"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1568.16"
             },
             "koszty_described": [
                 {
@@ -1577,7 +1627,8 @@
                 "eventy": "31603.84",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "578.70"
+                "inne_wplywy": "166.72",
+                "nieprzyporzadkowane_wplywy": "411.98"
             },
             "income_described": [
                 {
@@ -1631,7 +1682,8 @@
                 "zakupy": "-357.38",
                 "ubezpieczenia": "0",
                 "hosting": "-30.96",
-                "inne_koszty": "-532.71"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-532.71"
             },
             "koszty_described": [
                 {
@@ -1779,7 +1831,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "90.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "90.00"
             },
             "income_described": [],
             "koszty": {
@@ -1797,7 +1850,8 @@
                 "zakupy": "-29.38",
                 "ubezpieczenia": "0",
                 "hosting": "-37.56",
-                "inne_koszty": "-1974.35"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1974.35"
             },
             "koszty_described": [],
             "summary": {
@@ -1825,7 +1879,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -1843,7 +1898,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-38.81",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -1879,7 +1935,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "155.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "155.00"
             },
             "income_described": [],
             "koszty": {
@@ -1897,7 +1954,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-162.50",
-                "inne_koszty": "-620.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-620.00"
             },
             "koszty_described": [
                 {
@@ -1940,7 +1998,8 @@
                 "eventy": "381.30",
                 "korekty": "0",
                 "umowy": "2460.00",
-                "inne_wplywy": "2214.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "2214.00"
             },
             "income_described": [
                 {
@@ -1973,7 +2032,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-186.30"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-186.30"
             },
             "koszty_described": [
                 {
@@ -2023,7 +2083,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "3890.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "3890.00"
             },
             "income_described": [],
             "koszty": {
@@ -2041,7 +2102,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-5342.01"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-5342.01"
             },
             "koszty_described": [],
             "summary": {
@@ -2069,7 +2131,8 @@
                 "eventy": "660.30",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "2362.87"
+                "inne_wplywy": "66.37",
+                "nieprzyporzadkowane_wplywy": "2296.50"
             },
             "income_described": [
                 {
@@ -2102,7 +2165,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-256.90"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-256.90"
             },
             "koszty_described": [
                 {
@@ -2173,7 +2237,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "615.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "615.00"
             },
             "income_described": [],
             "koszty": {
@@ -2191,7 +2256,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-152.06"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-152.06"
             },
             "koszty_described": [
                 {
@@ -2234,7 +2300,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -2252,7 +2319,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-13.50",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -2280,7 +2348,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -2298,7 +2367,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -2326,7 +2396,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "150.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "150.00"
             },
             "income_described": [],
             "koszty": {
@@ -2344,7 +2415,8 @@
                 "zakupy": "-235.00",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -2380,7 +2452,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1402.99"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "1402.99"
             },
             "income_described": [],
             "koszty": {
@@ -2398,7 +2471,8 @@
                 "zakupy": "-505.13",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-48.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-48.00"
             },
             "koszty_described": [],
             "summary": {
@@ -2426,7 +2500,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -2444,7 +2519,8 @@
                 "zakupy": "-1576.79",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1727.74"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1727.74"
             },
             "koszty_described": [
                 {
@@ -2487,7 +2563,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "2970.03"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "2970.03"
             },
             "income_described": [],
             "koszty": {
@@ -2505,7 +2582,8 @@
                 "zakupy": "-43.05",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -2541,7 +2619,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "20.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "20.00"
             },
             "income_described": [],
             "koszty": {
@@ -2559,7 +2638,8 @@
                 "zakupy": "-631.17",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -2587,7 +2667,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "500.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "500.00"
             },
             "income_described": [],
             "koszty": {
@@ -2605,7 +2686,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-123.00",
-                "inne_koszty": "-1491.57"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1491.57"
             },
             "koszty_described": [],
             "summary": {
@@ -2633,7 +2715,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -2651,7 +2734,8 @@
                 "zakupy": "-4063.16",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-491.92"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-491.92"
             },
             "koszty_described": [
                 {
@@ -2708,7 +2792,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "615.40"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "615.40"
             },
             "income_described": [
                 {
@@ -2733,7 +2818,8 @@
                 "zakupy": "-892.61",
                 "ubezpieczenia": "0",
                 "hosting": "-1.23",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -2769,7 +2855,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1666.75"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "1666.75"
             },
             "income_described": [],
             "koszty": {
@@ -2787,7 +2874,8 @@
                 "zakupy": "-450.00",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-879.24"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-879.24"
             },
             "koszty_described": [
                 {
@@ -2830,7 +2918,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "295.20"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "295.20"
             },
             "income_described": [],
             "koszty": {
@@ -2848,7 +2937,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -2876,7 +2966,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -2894,7 +2985,8 @@
                 "zakupy": "-76.94",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-743.16"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-743.16"
             },
             "koszty_described": [
                 {
@@ -2930,7 +3022,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "305.84"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "305.84"
             },
             "income_described": [],
             "koszty": {
@@ -2948,7 +3041,8 @@
                 "zakupy": "-941.16",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1528.41"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1528.41"
             },
             "koszty_described": [
                 {
@@ -2984,7 +3078,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -3002,7 +3097,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-123.00",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3030,7 +3126,8 @@
                 "eventy": "0",
                 "korekty": "1000.00",
                 "umowy": "0",
-                "inne_wplywy": "1100.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "1100.00"
             },
             "income_described": [
                 {
@@ -3056,7 +3153,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3084,7 +3182,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -3102,7 +3201,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3130,7 +3230,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -3148,7 +3249,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-1.00",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -3184,7 +3286,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "30.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "30.00"
             },
             "income_described": [
                 {
@@ -3208,7 +3311,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3236,7 +3340,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -3254,7 +3359,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-123.00",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3282,7 +3388,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "3214.63"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "3214.63"
             },
             "income_described": [],
             "koszty": {
@@ -3300,7 +3407,8 @@
                 "zakupy": "-177.17",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-544.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-544.00"
             },
             "koszty_described": [
                 {
@@ -3343,7 +3451,8 @@
                 "eventy": "922.50",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "7430.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "7430.00"
             },
             "income_described": [
                 {
@@ -3369,7 +3478,8 @@
                 "zakupy": "-62.04",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -3412,7 +3522,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -3430,7 +3541,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3458,7 +3570,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1684.50"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "1684.50"
             },
             "income_described": [],
             "koszty": {
@@ -3476,7 +3589,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -3512,7 +3626,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -3530,7 +3645,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -3566,7 +3682,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "583.04"
+                "inne_wplywy": "583.04",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -3592,7 +3709,8 @@
                 "zakupy": "-177.96",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -3628,7 +3746,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "304.58"
+                "inne_wplywy": "304.58",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -3654,7 +3773,8 @@
                 "zakupy": "-532.83",
                 "ubezpieczenia": "0",
                 "hosting": "-123.00",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3682,7 +3802,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -3700,7 +3821,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3728,7 +3850,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1212.50"
+                "inne_wplywy": "420.50",
+                "nieprzyporzadkowane_wplywy": "792.00"
             },
             "income_described": [
                 {
@@ -3761,7 +3884,8 @@
                 "zakupy": "-100.88",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3789,7 +3913,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "88.07"
+                "inne_wplywy": "88.07",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -3815,7 +3940,8 @@
                 "zakupy": "-1093.54",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3843,7 +3969,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -3861,7 +3988,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -3889,7 +4017,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "125.20"
+                "inne_wplywy": "125.20",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -3921,7 +4050,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "-1090.46",
                 "hosting": "-123.00",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -3962,7 +4092,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "4920.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "4920.00"
             },
             "income_described": [],
             "koszty": {
@@ -3980,7 +4111,8 @@
                 "zakupy": "-1407.31",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-511.90"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-511.90"
             },
             "koszty_described": [
                 {
@@ -4016,7 +4148,8 @@
                 "eventy": "7380.00",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1230.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "1230.00"
             },
             "income_described": [
                 {
@@ -4042,7 +4175,8 @@
                 "zakupy": "-3320.10",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-2022.72"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-2022.72"
             },
             "koszty_described": [
                 {
@@ -4092,7 +4226,8 @@
                 "eventy": "5241.89",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "9518.97"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "9518.97"
             },
             "income_described": [
                 {
@@ -4118,7 +4253,8 @@
                 "zakupy": "-476.67",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1756.80"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1756.80"
             },
             "koszty_described": [
                 {
@@ -4154,7 +4290,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "2779.78"
+                "inne_wplywy": "179.78",
+                "nieprzyporzadkowane_wplywy": "2600.00"
             },
             "income_described": [
                 {
@@ -4187,7 +4324,8 @@
                 "zakupy": "-278.58",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-519.43"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-519.43"
             },
             "koszty_described": [
                 {
@@ -4223,7 +4361,8 @@
                 "eventy": "469.90",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "2039.70"
+                "inne_wplywy": "46.70",
+                "nieprzyporzadkowane_wplywy": "1993.00"
             },
             "income_described": [
                 {
@@ -4256,7 +4395,8 @@
                 "zakupy": "-1312.48",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-162.36"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-162.36"
             },
             "koszty_described": [],
             "summary": {
@@ -4284,7 +4424,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "369.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "369.00"
             },
             "income_described": [],
             "koszty": {
@@ -4302,7 +4443,8 @@
                 "zakupy": "-87.11",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-246.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-246.00"
             },
             "koszty_described": [],
             "summary": {
@@ -4330,7 +4472,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "2115.77"
+                "inne_wplywy": "143.77",
+                "nieprzyporzadkowane_wplywy": "1972.00"
             },
             "income_described": [
                 {
@@ -4356,7 +4499,8 @@
                 "zakupy": "-1908.62",
                 "ubezpieczenia": "0",
                 "hosting": "-104.55",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -4399,7 +4543,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "69.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "69.00"
             },
             "income_described": [],
             "koszty": {
@@ -4417,7 +4562,8 @@
                 "zakupy": "-177.93",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1569.19"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1569.19"
             },
             "koszty_described": [
                 {
@@ -4453,7 +4599,8 @@
                 "eventy": "1998.00",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "4183.26"
+                "inne_wplywy": "4183.26",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -4493,7 +4640,8 @@
                 "zakupy": "-143.51",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -4521,7 +4669,8 @@
                 "eventy": "888.00",
                 "korekty": "1476.00",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -4560,7 +4709,8 @@
                 "zakupy": "-2518.00",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1569.57"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1569.57"
             },
             "koszty_described": [
                 {
@@ -4603,7 +4753,8 @@
                 "eventy": "1920.90",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1414.50"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "1414.50"
             },
             "income_described": [
                 {
@@ -4629,7 +4780,8 @@
                 "zakupy": "-426.42",
                 "ubezpieczenia": "-1071.31",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -4670,7 +4822,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1447.41"
+                "inne_wplywy": "1201.41",
+                "nieprzyporzadkowane_wplywy": "246.00"
             },
             "income_described": [
                 {
@@ -4703,7 +4856,8 @@
                 "zakupy": "-32.40",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-111.34"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-111.34"
             },
             "koszty_described": [],
             "summary": {
@@ -4728,10 +4882,11 @@
                 "darowizny_inne": "50.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
-                "eventy": "969.50",
+                "eventy": "999.50",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "30.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -4764,7 +4919,8 @@
                 "zakupy": "-492.79",
                 "ubezpieczenia": "0",
                 "hosting": "-125.46",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -4797,10 +4953,11 @@
                 "darowizny_inne": "0",
                 "darowizny_sponsoring": "1845.00",
                 "warsztaty": "0",
-                "eventy": "10200.60",
+                "eventy": "10290.60",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1042.50"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "952.50"
             },
             "income_described": [
                 {
@@ -4868,7 +5025,8 @@
                 "zakupy": "-643.48",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1615.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1615.00"
             },
             "koszty_described": [
                 {
@@ -4922,10 +5080,11 @@
                 "darowizny_inne": "50.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
-                "eventy": "4188.60",
+                "eventy": "4278.60",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "8331.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "8241.00"
             },
             "income_described": [
                 {
@@ -4972,7 +5131,8 @@
                 "zakupy": "-117.51",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-2821.18"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-2821.18"
             },
             "koszty_described": [
                 {
@@ -5008,7 +5168,8 @@
                 "eventy": "138.50",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1027.10"
+                "inne_wplywy": "1027.10",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -5041,7 +5202,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -5069,7 +5231,8 @@
                 "eventy": "2951.14",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -5095,7 +5258,8 @@
                 "zakupy": "-2119.00",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1309.40"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1309.40"
             },
             "koszty_described": [
                 {
@@ -5159,7 +5323,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "2500.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "2500.00"
             },
             "income_described": [],
             "koszty": {
@@ -5177,7 +5342,8 @@
                 "zakupy": "-1580.55",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -5213,7 +5379,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "1738.21"
+                "inne_wplywy": "1438.21",
+                "nieprzyporzadkowane_wplywy": "300.00"
             },
             "income_described": [
                 {
@@ -5246,7 +5413,8 @@
                 "zakupy": "-1147.94",
                 "ubezpieczenia": "0",
                 "hosting": "-55.34",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -5274,7 +5442,8 @@
                 "eventy": "7380.00",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -5300,7 +5469,8 @@
                 "zakupy": "-463.98",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -5343,7 +5513,8 @@
                 "eventy": "0",
                 "korekty": "110.00",
                 "umowy": "0",
-                "inne_wplywy": "2626.94"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "2626.94"
             },
             "income_described": [
                 {
@@ -5369,7 +5540,8 @@
                 "zakupy": "-797.73",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -5405,7 +5577,8 @@
                 "eventy": "794.64",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -5445,7 +5618,8 @@
                 "zakupy": "-498.41",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-766.84"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-766.84"
             },
             "koszty_described": [],
             "summary": {
@@ -5473,7 +5647,8 @@
                 "eventy": "577.92",
                 "korekty": "3200.00",
                 "umowy": "0",
-                "inne_wplywy": "4410.63"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "4410.63"
             },
             "income_described": [
                 {
@@ -5527,7 +5702,8 @@
                 "zakupy": "-6881.08",
                 "ubezpieczenia": "-1063.77",
                 "hosting": "0",
-                "inne_koszty": "-69.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-69.00"
             },
             "koszty_described": [
                 {
@@ -5582,7 +5758,8 @@
                 "eventy": "270.90",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -5615,7 +5792,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -5658,7 +5836,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -5684,7 +5863,8 @@
                 "zakupy": "-159.88",
                 "ubezpieczenia": "0",
                 "hosting": "-110.68",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -5811,7 +5991,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -5837,7 +6018,8 @@
                 "zakupy": "-416.52",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-656.84"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-656.84"
             },
             "koszty_described": [
                 {
@@ -5873,7 +6055,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -5891,7 +6074,8 @@
                 "zakupy": "-935.88",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -5919,7 +6103,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "60.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "60.00"
             },
             "income_described": [
                 {
@@ -5944,7 +6129,8 @@
                 "zakupy": "-573.97",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-156.41"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-156.41"
             },
             "koszty_described": [],
             "summary": {
@@ -5972,7 +6158,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "507.86"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "507.86"
             },
             "income_described": [
                 {
@@ -5998,7 +6185,8 @@
                 "zakupy": "-2897.24",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-387.94"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-387.94"
             },
             "koszty_described": [
                 {
@@ -6034,7 +6222,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6052,7 +6241,8 @@
                 "zakupy": "-633.31",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -6088,7 +6278,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "925.22"
+                "inne_wplywy": "925.22",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -6114,7 +6305,8 @@
                 "zakupy": "-931.27",
                 "ubezpieczenia": "0",
                 "hosting": "-55.34",
-                "inne_koszty": "-1077.49"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1077.49"
             },
             "koszty_described": [],
             "summary": {
@@ -6142,7 +6334,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6160,7 +6353,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-472.77"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-472.77"
             },
             "koszty_described": [],
             "summary": {
@@ -6188,7 +6382,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "369.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "369.00"
             },
             "income_described": [
                 {
@@ -6214,7 +6409,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-42.90"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-42.90"
             },
             "koszty_described": [
                 {
@@ -6250,7 +6446,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6268,7 +6465,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-1238.77"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-1238.77"
             },
             "koszty_described": [],
             "summary": {
@@ -6296,7 +6494,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6314,7 +6513,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "-1061.66",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -6355,7 +6555,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -6377,11 +6578,12 @@
                 "administracyjne": "-250.00",
                 "bank": "-61.70",
                 "umowy": "0",
-                "zwroty": "-545.14",
-                "zakupy": "0",
+                "zwroty": "-388.17",
+                "zakupy": "-156.97",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-662.51"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-662.51"
             },
             "koszty_described": [
                 {
@@ -6389,6 +6591,13 @@
                     "category": "administracyjne",
                     "name": "Sąd",
                     "details": "Opłata za zmianę wpisu w rejestrze fundacji",
+                    "listed": true
+                },
+                {
+                    "value": -156.97,
+                    "category": "zakupy",
+                    "name": "",
+                    "details": "Zakup filamentów PLA do drukarek 3D",
                     "listed": true
                 }
             ],
@@ -6417,7 +6626,8 @@
                 "eventy": "0",
                 "korekty": "315.55",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6435,7 +6645,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-344.99"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-344.99"
             },
             "koszty_described": [
                 {
@@ -6471,7 +6682,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "35.68"
+                "inne_wplywy": "35.68",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -6497,7 +6709,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -6525,7 +6738,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6543,7 +6757,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -6571,7 +6786,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6585,13 +6801,22 @@
                 "administracyjne": "0",
                 "bank": "-63.80",
                 "umowy": "0",
-                "zwroty": "-59.50",
-                "zakupy": "0",
+                "zwroty": "0",
+                "zakupy": "-59.50",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-177.12"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-177.12"
             },
-            "koszty_described": [],
+            "koszty_described": [
+                {
+                    "value": -59.5,
+                    "category": "zakupy",
+                    "name": "",
+                    "details": "Gaśnica proszkowa",
+                    "listed": true
+                }
+            ],
             "summary": {
                 "safe_threshold": "50000",
                 "start_saldo": "65728.47",
@@ -6617,7 +6842,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -6643,7 +6869,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -6671,7 +6898,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6689,7 +6917,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-164.11"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-164.11"
             },
             "koszty_described": [],
             "summary": {
@@ -6717,7 +6946,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "631.07"
+                "inne_wplywy": "556.07",
+                "nieprzyporzadkowane_wplywy": "75.00"
             },
             "income_described": [
                 {
@@ -6743,7 +6973,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "-110.68",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -6771,7 +7002,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -6797,7 +7029,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -6825,7 +7058,8 @@
                 "eventy": "0",
                 "korekty": "802.75",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -6851,7 +7085,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-142.77"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-142.77"
             },
             "koszty_described": [],
             "summary": {
@@ -6879,7 +7114,8 @@
                 "eventy": "0",
                 "korekty": "1837.90",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -6905,7 +7141,8 @@
                 "zakupy": "-2572.24",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -6948,7 +7185,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -6966,7 +7204,8 @@
                 "zakupy": "-400.00",
                 "ubezpieczenia": "-1061.66",
                 "hosting": "0",
-                "inne_koszty": "-209.81"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-209.81"
             },
             "koszty_described": [
                 {
@@ -7014,7 +7253,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -7032,7 +7272,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-126.85"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-126.85"
             },
             "koszty_described": [],
             "summary": {
@@ -7060,7 +7301,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -7078,7 +7320,8 @@
                 "zakupy": "-134.80",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7114,7 +7357,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "250.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "250.00"
             },
             "income_described": [],
             "koszty": {
@@ -7132,7 +7376,8 @@
                 "zakupy": "-2541.08",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7168,7 +7413,8 @@
                 "eventy": "3783.60",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -7194,7 +7440,8 @@
                 "zakupy": "-491.53",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7244,7 +7491,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -7262,7 +7510,8 @@
                 "zakupy": "-71.46",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7305,7 +7554,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "528.99"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "528.99"
             },
             "income_described": [],
             "koszty": {
@@ -7323,7 +7573,8 @@
                 "zakupy": "-652.05",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-177.12"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-177.12"
             },
             "koszty_described": [
                 {
@@ -7331,6 +7582,13 @@
                     "category": "zakupy",
                     "name": "",
                     "details": "akcesoria TIG",
+                    "listed": true
+                },
+                {
+                    "value": -346.56,
+                    "category": "zakupy",
+                    "name": "",
+                    "details": "Zakup sklejki",
                     "listed": true
                 }
             ],
@@ -7356,10 +7614,11 @@
                 "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
-                "eventy": "2695.00",
+                "eventy": "3179.50",
                 "korekty": "2335.59",
                 "umowy": "0",
-                "inne_wplywy": "484.50"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -7377,10 +7636,24 @@
                     "listed": true
                 },
                 {
+                    "value": 184.5,
+                    "category": "eventy",
+                    "name": "Burzenin",
+                    "details": "Sponsoring",
+                    "listed": true
+                },
+                {
                     "value": 1845.0,
                     "category": "eventy",
                     "name": "Burzenin",
                     "details": "sponsor",
+                    "listed": true
+                },
+                {
+                    "value": 300.0,
+                    "category": "eventy",
+                    "name": "Burzenin",
+                    "details": "Sponsoring",
                     "listed": true
                 },
                 {
@@ -7413,7 +7686,8 @@
                 "zakupy": "-124.88",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7491,7 +7765,8 @@
                 "eventy": "12813.00",
                 "korekty": "686.85",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -7545,7 +7820,8 @@
                 "zakupy": "-193.47",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7616,7 +7892,8 @@
                 "eventy": "2800.00",
                 "korekty": "588.25",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -7656,7 +7933,8 @@
                 "zakupy": "-4821.51",
                 "ubezpieczenia": "0",
                 "hosting": "-209.67",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7707,15 +7985,23 @@
                 "darowizny_statutowe": "6843.00",
                 "darowizny_celowe": "733.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "140.00",
+                "darowizny_inne": "215.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "497.70",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "365.15"
+                "inne_wplywy": "290.15",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
+                {
+                    "value": 75.0,
+                    "category": "darowizny_inne",
+                    "name": "",
+                    "details": "Nieprawidłowa darowizna tytułem \"usługi seksualne\"",
+                    "listed": true
+                },
                 {
                     "value": 497.7,
                     "category": "eventy",
@@ -7746,7 +8032,8 @@
                 "zakupy": "-2843.98",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7796,7 +8083,8 @@
                 "eventy": "0",
                 "korekty": "336.00",
                 "umowy": "0",
-                "inne_wplywy": "123.48"
+                "inne_wplywy": "123.48",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -7822,7 +8110,8 @@
                 "zakupy": "-518.05",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7877,11 +8166,20 @@
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
-                "korekty": "51.47",
+                "korekty": "117.59",
                 "umowy": "0",
-                "inne_wplywy": "66.12"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
-            "income_described": [],
+            "income_described": [
+                {
+                    "value": 66.12,
+                    "category": "korekty",
+                    "name": "",
+                    "details": "Zwrot castorama",
+                    "listed": true
+                }
+            ],
             "koszty": {
                 "nieprzeparsowane": "0",
                 "eventy": "-51.75",
@@ -7897,7 +8195,8 @@
                 "zakupy": "-1130.67",
                 "ubezpieczenia": "-1061.66",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -7968,7 +8267,8 @@
                 "eventy": "0",
                 "korekty": "1194.81",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -8001,7 +8301,8 @@
                 "zakupy": "-1364.33",
                 "ubezpieczenia": "0",
                 "hosting": "-72.56",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8079,7 +8380,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -8097,7 +8399,8 @@
                 "zakupy": "-369.08",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8154,7 +8457,8 @@
                 "eventy": "0",
                 "korekty": "181.95",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -8180,7 +8484,8 @@
                 "zakupy": "-883.41",
                 "ubezpieczenia": "0",
                 "hosting": "-255.83",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8272,7 +8577,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -8290,7 +8596,8 @@
                 "zakupy": "-1773.25",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8354,7 +8661,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -8372,7 +8680,8 @@
                 "zakupy": "-9711.15",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8538,12 +8847,20 @@
                 "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
-                "eventy": "0",
+                "eventy": "100.00",
                 "korekty": "20687.00",
                 "umowy": "0",
-                "inne_wplywy": "571.24"
+                "inne_wplywy": "471.24",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
+                {
+                    "value": 100.0,
+                    "category": "eventy",
+                    "name": "Burzenin",
+                    "details": "Sponsoring",
+                    "listed": true
+                },
                 {
                     "value": 20000.0,
                     "category": "korekty",
@@ -8572,7 +8889,7 @@
                 "covid": "0",
                 "korekty": "0",
                 "lokal": "-3239.11",
-                "ksiegowosc": "-369.00",
+                "ksiegowosc": "-516.60",
                 "internet": "0",
                 "administracyjne": "0",
                 "bank": "-68.80",
@@ -8581,7 +8898,8 @@
                 "zakupy": "-1626.40",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-147.60"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8610,6 +8928,13 @@
                     "category": "eventy",
                     "name": "Modelathon",
                     "details": "Zamówienie pizzy",
+                    "listed": true
+                },
+                {
+                    "value": -147.6,
+                    "category": "ksiegowosc",
+                    "name": "Infakt",
+                    "details": "Abonament",
                     "listed": true
                 },
                 {
@@ -8687,7 +9012,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -8700,7 +9026,7 @@
             ],
             "koszty": {
                 "nieprzeparsowane": "0",
-                "eventy": "-167.95",
+                "eventy": "-187.95",
                 "covid": "0",
                 "korekty": "0",
                 "lokal": "-3375.74",
@@ -8713,7 +9039,8 @@
                 "zakupy": "-485.82",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "-20.00"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8721,6 +9048,13 @@
                     "category": "eventy",
                     "details": "Druk programów",
                     "name": "Burzenin",
+                    "listed": true
+                },
+                {
+                    "value": -20.0,
+                    "category": "eventy",
+                    "name": "Burzenin",
+                    "details": "Ksero kolor",
                     "listed": true
                 },
                 {
@@ -8760,12 +9094,21 @@
                 "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
-                "eventy": "0",
+                "eventy": "6150.00",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "6150.00"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
-            "income_described": [],
+            "income_described": [
+                {
+                    "value": 6150.0,
+                    "category": "eventy",
+                    "name": "Burzenin",
+                    "details": "Sponsoring",
+                    "listed": true
+                }
+            ],
             "koszty": {
                 "nieprzeparsowane": "0",
                 "eventy": "-8100.00",
@@ -8781,7 +9124,8 @@
                 "zakupy": "-1601.07",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8866,7 +9210,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -8884,7 +9229,8 @@
                 "zakupy": "-2738.33",
                 "ubezpieczenia": "0",
                 "hosting": "-258.91",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -8997,7 +9343,8 @@
                 "eventy": "0",
                 "korekty": "786.13",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -9037,7 +9384,8 @@
                 "zakupy": "-1536.62",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -9108,7 +9456,8 @@
                 "eventy": "0",
                 "korekty": "423.65",
                 "umowy": "0",
-                "inne_wplywy": "237.61"
+                "inne_wplywy": "237.61",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [
                 {
@@ -9148,7 +9497,8 @@
                 "zakupy": "-2553.28",
                 "ubezpieczenia": "0",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [
                 {
@@ -9289,7 +9639,8 @@
                 "eventy": "0",
                 "korekty": "0",
                 "umowy": "0",
-                "inne_wplywy": "0"
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
             },
             "income_described": [],
             "koszty": {
@@ -9307,7 +9658,8 @@
                 "zakupy": "0",
                 "ubezpieczenia": "-287.25",
                 "hosting": "0",
-                "inne_koszty": "0"
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
             },
             "koszty_described": [],
             "summary": {
@@ -9325,7 +9677,7 @@
         }
     },
     "stats": {
-        "parsing_date": "11/02/2024 04:47",
+        "parsing_date": "17/02/2024 01:02",
         "operations": {
             "all": "7867",
             "months": {
