@@ -246,7 +246,7 @@ export function Summary({
           <TabsContent value="incomes_and_costs">
             <Card>
               <CardContent>
-                <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-4">
+                <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4">
                   <div className="col-span-2">
                     <Card>
                       <CardHeader>
@@ -399,7 +399,7 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
+                    <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
                       <div>
                         <Card>
                           <CardHeader>
@@ -580,7 +580,7 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-5 md:grid-cols-1 lg:grid-cols-2">
+                    <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
                       <div>
                         {" "}
                         <Card>
