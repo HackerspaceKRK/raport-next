@@ -399,103 +399,94 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                      <div>
-                        <Card>
-                          <CardHeader>
-                            <CardTitle>Podział kosztów</CardTitle>
-                            <CardDescription>na kategorie</CardDescription>
-                          </CardHeader>
-                          <CardContent>
-                            <Table className="my-4">
-                              <TableHeader>
-                                <TableRow>
-                                  {Object.values(["Kategoria", "Wartość"]).map(
-                                    (x) => (
-                                      <TableHead
-                                        key={"costs" + currentMonth + x}
-                                      >
-                                        {getTranslations(x)}
-                                      </TableHead>
-                                    )
-                                  )}
-                                </TableRow>
-                              </TableHeader>
-                              <TableBody>
-                                {Object.entries(currentDataset.koszty).map(
-                                  ([key, value], index) =>
-                                    parseFloat(value) < 0 && (
-                                      <TableRow key={"costsRow" + key + value}>
-                                        <TableCell
-                                          key={"costsKey" + key + value}
-                                        >
-                                          {getTranslations(key)}
-                                        </TableCell>
-                                        <TableCell
-                                          key={"costsValue" + key + value}
-                                          className={
-                                            value === "0"
-                                              ? "text-[#9ca3af]"
-                                              : ""
-                                          }
-                                        >
-                                          {value} zł
-                                        </TableCell>
-                                      </TableRow>
-                                    )
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                      <Card>
+                        <CardHeader>
+                          <CardTitle>Podział kosztów</CardTitle>
+                          <CardDescription>na kategorie</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <Table className="my-4">
+                            <TableHeader>
+                              <TableRow>
+                                {Object.values(["Kategoria", "Wartość"]).map(
+                                  (x) => (
+                                    <TableHead key={"costs" + currentMonth + x}>
+                                      {getTranslations(x)}
+                                    </TableHead>
+                                  )
                                 )}
-                              </TableBody>
-                              <TableFooter>
-                                <TableRow>
-                                  <TableCell>Suma</TableCell>
-                                  <TableCell>
-                                    {Object.values(currentDataset.koszty)
-                                      .reduce(
-                                        (a: Decimal, b: string) => a.add(b),
-                                        new Decimal(0)
-                                      )
-                                      .toFixed(2)}{" "}
-                                    zł
-                                  </TableCell>
-                                </TableRow>
-                              </TableFooter>
-                            </Table>
-                          </CardContent>
-                        </Card>
-                      </div>
-                      <div>
-                        <Card>
-                          <CardContent>
-                            <div style={{ width: "100%", height: 700 }}>
-                              <ResponsiveContainer>
-                                <PieChart>
-                                  <Pie
-                                    dataKey={"value"}
-                                    label
-                                    data={pieDataset.cost}
-                                    paddingAngle={5}
-                                    cx="50%"
-                                    cy="50%"
-                                  >
-                                    {pieDataset.cost.map((entry, index) => (
-                                      <Cell
-                                        key={`cell-${index}`}
-                                        fill={
-                                          plotColors[index % plotColors.length]
+                              </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                              {Object.entries(currentDataset.koszty).map(
+                                ([key, value], index) =>
+                                  parseFloat(value) < 0 && (
+                                    <TableRow key={"costsRow" + key + value}>
+                                      <TableCell key={"costsKey" + key + value}>
+                                        {getTranslations(key)}
+                                      </TableCell>
+                                      <TableCell
+                                        key={"costsValue" + key + value}
+                                        className={
+                                          value === "0" ? "text-[#9ca3af]" : ""
                                         }
-                                      />
-                                    ))}
-                                  </Pie>
-                                  <Legend />
-                                  <Tooltip />
-                                </PieChart>
-                              </ResponsiveContainer>
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </div>
+                                      >
+                                        {value} zł
+                                      </TableCell>
+                                    </TableRow>
+                                  )
+                              )}
+                            </TableBody>
+                            <TableFooter>
+                              <TableRow>
+                                <TableCell>Suma</TableCell>
+                                <TableCell>
+                                  {Object.values(currentDataset.koszty)
+                                    .reduce(
+                                      (a: Decimal, b: string) => a.add(b),
+                                      new Decimal(0)
+                                    )
+                                    .toFixed(2)}{" "}
+                                  zł
+                                </TableCell>
+                              </TableRow>
+                            </TableFooter>
+                          </Table>
+                        </CardContent>
+                      </Card>
 
-                      <div className="col-span-2">
+                      <Card>
+                        <CardContent>
+                          <div style={{ width: "100%", height: 700 }}>
+                            <ResponsiveContainer>
+                              <PieChart>
+                                <Pie
+                                  dataKey={"value"}
+                                  label
+                                  data={pieDataset.cost}
+                                  paddingAngle={5}
+                                  cx="50%"
+                                  cy="50%"
+                                >
+                                  {pieDataset.cost.map((entry, index) => (
+                                    <Cell
+                                      key={`cell-${index}`}
+                                      fill={
+                                        plotColors[index % plotColors.length]
+                                      }
+                                    />
+                                  ))}
+                                </Pie>
+                                <Legend />
+                                <Tooltip />
+                              </PieChart>
+                            </ResponsiveContainer>
+                          </div>
+                        </CardContent>
+                      </Card>
+
+                      <div className="col-span-full">
                         <Card>
                           <CardHeader>
                             <CardTitle>Opisane koszty</CardTitle>
@@ -580,113 +571,104 @@ export function Summary({
                     <CardDescription></CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-                      <div>
-                        {" "}
-                        <Card>
-                          <CardHeader>
-                            <CardTitle>Podział wpływów</CardTitle>
-                            <CardDescription>na kategorie</CardDescription>
-                          </CardHeader>
-                          <CardContent>
-                            <Table className="my-4">
-                              <TableHeader>
-                                <TableRow>
-                                  {Object.values(["Kategoria", "Wartość"]).map(
-                                    (x) => (
-                                      <TableHead
-                                        key={"income" + currentMonth + x}
-                                      >
-                                        {getTranslations(x)}
-                                      </TableHead>
-                                    )
-                                  )}
-                                </TableRow>
-                              </TableHeader>
-                              <TableBody>
-                                {Object.entries(currentDataset.income).map(
-                                  ([key, value], index) =>
-                                    parseFloat(value) > 0 && (
-                                      <TableRow key={"incomeRow" + key + value}>
-                                        <TableCell
-                                          key={"incomeKey" + key + value}
-                                        >
-                                          {getTranslations(key)}
-                                        </TableCell>
-                                        <TableCell
-                                          key={"incomeValue" + key + value}
-                                          className={
-                                            value === "0"
-                                              ? "text-[#9ca3af]"
-                                              : ""
-                                          }
-                                        >
-                                          {value} zł
-                                        </TableCell>
-                                      </TableRow>
-                                    )
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                      <Card>
+                        <CardHeader>
+                          <CardTitle>Podział wpływów</CardTitle>
+                          <CardDescription>na kategorie</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <Table className="my-4">
+                            <TableHeader>
+                              <TableRow>
+                                {Object.values(["Kategoria", "Wartość"]).map(
+                                  (x) => (
+                                    <TableHead
+                                      key={"income" + currentMonth + x}
+                                    >
+                                      {getTranslations(x)}
+                                    </TableHead>
+                                  )
                                 )}
-                              </TableBody>
-                              <TableFooter>
-                                <TableRow>
-                                  <TableCell>Suma</TableCell>
-                                  <TableCell>
-                                    {Object.values(currentDataset.income)
-                                      .reduce(
-                                        (a: Decimal, b: string) => a.add(b),
-                                        new Decimal(0)
-                                      )
-                                      .toFixed(2)}{" "}
-                                    zł
-                                  </TableCell>
-                                </TableRow>
-                              </TableFooter>
-                            </Table>
-                          </CardContent>
-                        </Card>
-                      </div>
-
-                      <div>
-                        <Card>
-                          <CardContent>
-                            <div style={{ width: "100%", height: 700 }}>
-                              <ResponsiveContainer>
-                                <PieChart>
-                                  <Pie
-                                    dataKey="value"
-                                    label
-                                    data={
-                                      getPieChartDataset(
-                                        currentYear,
-                                        currentMonth
-                                      ).income
-                                    }
-                                    paddingAngle={5}
-                                    cx="50%"
-                                    cy="50%"
-                                  >
-                                    {getPieChartDataset(
+                              </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                              {Object.entries(currentDataset.income).map(
+                                ([key, value], index) =>
+                                  parseFloat(value) > 0 && (
+                                    <TableRow key={"incomeRow" + key + value}>
+                                      <TableCell
+                                        key={"incomeKey" + key + value}
+                                      >
+                                        {getTranslations(key)}
+                                      </TableCell>
+                                      <TableCell
+                                        key={"incomeValue" + key + value}
+                                        className={
+                                          value === "0" ? "text-[#9ca3af]" : ""
+                                        }
+                                      >
+                                        {value} zł
+                                      </TableCell>
+                                    </TableRow>
+                                  )
+                              )}
+                            </TableBody>
+                            <TableFooter>
+                              <TableRow>
+                                <TableCell>Suma</TableCell>
+                                <TableCell>
+                                  {Object.values(currentDataset.income)
+                                    .reduce(
+                                      (a: Decimal, b: string) => a.add(b),
+                                      new Decimal(0)
+                                    )
+                                    .toFixed(2)}{" "}
+                                  zł
+                                </TableCell>
+                              </TableRow>
+                            </TableFooter>
+                          </Table>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent>
+                          <div style={{ width: "100%", height: 700 }}>
+                            <ResponsiveContainer>
+                              <PieChart>
+                                <Pie
+                                  dataKey="value"
+                                  label
+                                  data={
+                                    getPieChartDataset(
                                       currentYear,
                                       currentMonth
-                                    ).income.map((entry, index) => (
-                                      <Cell
-                                        key={`cell-${index}`}
-                                        fill={
-                                          plotColors[index % plotColors.length]
-                                        }
-                                      />
-                                    ))}
-                                  </Pie>
-                                  <Legend />
-                                  <Tooltip />
-                                </PieChart>
-                              </ResponsiveContainer>
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </div>
-
-                      <div className="col-span-2">
+                                    ).income
+                                  }
+                                  paddingAngle={5}
+                                  cx="50%"
+                                  cy="50%"
+                                >
+                                  {getPieChartDataset(
+                                    currentYear,
+                                    currentMonth
+                                  ).income.map((entry, index) => (
+                                    <Cell
+                                      key={`cell-${index}`}
+                                      fill={
+                                        plotColors[index % plotColors.length]
+                                      }
+                                    />
+                                  ))}
+                                </Pie>
+                                <Legend />
+                                <Tooltip />
+                              </PieChart>
+                            </ResponsiveContainer>
+                          </div>
+                        </CardContent>
+                      </Card>
+                      <div className="col-span-full">
                         <Card>
                           <CardHeader>
                             <CardTitle>Opisane wpływy</CardTitle>
