@@ -146,8 +146,10 @@ export function Summary({
   },
   []);
 
-  const [currentYear, setCurrentYear] = useState(availableYears[1]);
-  const [currentMonth, setCurrentMonth] = useState(years[currentYear][1]);
+  const [currentYear, setCurrentYear] = useState(availableYears[0]);
+  
+  const monthsInCurrentYear = years[currentYear]
+  const [currentMonth, setCurrentMonth] = useState(monthsInCurrentYear[monthsInCurrentYear.length - 1]);
 
   const getDataset = useCallback(
     function getDataset(year: string, month: string) {
