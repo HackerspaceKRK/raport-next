@@ -9798,19 +9798,40 @@
         "2024-03": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "7439.01",
-                "darowizny_celowe": "0",
+                "darowizny_statutowe": "7619.01",
+                "darowizny_celowe": "100.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "280.00",
+                "darowizny_inne": "0",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
                 "umowy": "0",
                 "korekty": "0",
-                "inne_wplywy": "0",
-                "nieprzyporzadkowane_wplywy": "606.09"
+                "inne_wplywy": "606.09",
+                "nieprzyporzadkowane_wplywy": "0"
             },
-            "income_described": [],
+            "income_described": [
+                {
+                    "value": 100.0,
+                    "category": "darowizny_celowe",
+                    "details": "Na szlifierkę Tormek",
+                    "listed": true
+                },
+                {
+                    "value": 325.17,
+                    "category": "inne_wplywy",
+                    "details": "Darowizny Facebook",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": 280.92,
+                    "category": "inne_wplywy",
+                    "details": "Benevity",
+                    "listed": true,
+                    "name": ""
+                }
+            ],
             "koszty": {
                 "nieprzeparsowane": "0",
                 "lokal": "-4493.58",
@@ -10001,7 +10022,7 @@
         }
     },
     "stats": {
-        "parsing_date": "03/04/2024 23:15",
+        "parsing_date": "04/04/2024 01:24",
         "operations": {
             "all": "8086",
             "months": {
