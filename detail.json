@@ -10024,55 +10024,6 @@
                     "name": ""
                 },
                 {
-                    "value": -2.0,
-                    "category": "bank",
-                    "details": "Opłata za zlecenie stałe",
-                    "listed": true,
-                    "name": ""
-                },
-                {
-                    "value": -6.0,
-                    "category": "bank",
-                    "details": "Opłata za kartę płatniczą",
-                    "listed": true,
-                    "name": ""
-                },
-                {
-                    "value": -1.5,
-                    "category": "bank",
-                    "details": "Opłata za przelew",
-                    "listed": true,
-                    "name": ""
-                },
-                {
-                    "value": -1.5,
-                    "category": "bank",
-                    "details": "Opłata za przelew",
-                    "listed": true,
-                    "name": ""
-                },
-                {
-                    "value": -6.0,
-                    "category": "bank",
-                    "details": "Opłata za kartę płatniczą",
-                    "listed": true,
-                    "name": ""
-                },
-                {
-                    "value": -1.5,
-                    "category": "bank",
-                    "details": "Opłata za przelew",
-                    "listed": true,
-                    "name": ""
-                },
-                {
-                    "value": -1.5,
-                    "category": "bank",
-                    "details": "Opłata za przelew",
-                    "listed": true,
-                    "name": ""
-                },
-                {
                     "value": -615.06,
                     "category": "zakupy",
                     "details": "Przystawka do renowacji kamienia i przystawka centrująca do ostrzenia noży krótkich",
@@ -10137,7 +10088,7 @@
         }
     },
     "stats": {
-        "parsing_date": "25/04/2024 21:03",
+        "parsing_date": "25/04/2024 21:07",
         "operations": {
             "all": "8149",
             "months": {
