@@ -9938,10 +9938,10 @@
         "2024-04": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "1600.00",
-                "darowizny_celowe": "0",
+                "darowizny_statutowe": "5525.01",
+                "darowizny_celowe": "2549.00",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "0",
+                "darowizny_inne": "80.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -9952,6 +9952,30 @@
             },
             "income_described": [
                 {
+                    "value": 300.0,
+                    "category": "darowizny_celowe",
+                    "details": "Na szlifierke wolnoobrotową",
+                    "listed": true
+                },
+                {
+                    "value": 1999.0,
+                    "category": "darowizny_celowe",
+                    "details": "Na szlifierke wolnoobrotową",
+                    "listed": true
+                },
+                {
+                    "value": 200.0,
+                    "category": "darowizny_celowe",
+                    "details": "Na szlifierke wolnoobrotową",
+                    "listed": true
+                },
+                {
+                    "value": 50.0,
+                    "category": "darowizny_celowe",
+                    "details": "Na szlifierke wolnoobrotową",
+                    "listed": true
+                },
+                {
                     "value": 121.33,
                     "category": "inne_wplywy",
                     "details": "Benevity",
@@ -9961,14 +9985,14 @@
             ],
             "koszty": {
                 "nieprzeparsowane": "0",
-                "lokal": "-2735.75",
-                "ksiegowosc": "0",
+                "lokal": "-4584.96",
+                "ksiegowosc": "-369.00",
                 "internet": "0",
                 "administracyjne": "0",
-                "bank": "0",
+                "bank": "-20.00",
                 "umowy": "0",
                 "zwroty": "0",
-                "zakupy": "-221.50",
+                "zakupy": "-2575.76",
                 "ubezpieczenia": "0",
                 "hosting": "-52.28",
                 "eventy": "0",
@@ -9979,9 +10003,100 @@
             },
             "koszty_described": [
                 {
+                    "value": -546.12,
+                    "category": "lokal",
+                    "details": "Prąd (546,12)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -1303.09,
+                    "category": "lokal",
+                    "details": "Ogrzewanie (745,50) + śmieci (68,98) + prąd (403,75) + woda (84,36)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
                     "value": -2735.75,
                     "category": "lokal",
                     "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2.0,
+                    "category": "bank",
+                    "details": "Opłata za zlecenie stałe",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -6.0,
+                    "category": "bank",
+                    "details": "Opłata za kartę płatniczą",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -1.5,
+                    "category": "bank",
+                    "details": "Opłata za przelew",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -1.5,
+                    "category": "bank",
+                    "details": "Opłata za przelew",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -6.0,
+                    "category": "bank",
+                    "details": "Opłata za kartę płatniczą",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -1.5,
+                    "category": "bank",
+                    "details": "Opłata za przelew",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -1.5,
+                    "category": "bank",
+                    "details": "Opłata za przelew",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -615.06,
+                    "category": "zakupy",
+                    "details": "Przystawka do renowacji kamienia i przystawka centrująca do ostrzenia noży krótkich",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -175.3,
+                    "category": "zakupy",
+                    "details": "Stretch, samle i worki strunowe",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -1504.86,
+                    "category": "zakupy",
+                    "details": "Wkrętarki Stanley",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -59.04,
+                    "category": "zakupy",
+                    "details": "Napełnienie butli z argonem",
                     "listed": true,
                     "name": ""
                 },
@@ -10010,21 +10125,21 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "97711.02",
-                "balance": "-1288.20",
-                "end_saldo": "96422.82",
-                "safe_threshold_difference": "6422.82",
+                "balance": "673.34",
+                "end_saldo": "98384.36",
+                "safe_threshold_difference": "8384.36",
                 "date": "2024-04-02",
-                "incomes": "1721.33",
-                "costs": "-3009.53",
-                "venue_expenses": "-2735.75",
-                "other_expenses": "-273.78"
+                "incomes": "8275.34",
+                "costs": "-7602.00",
+                "venue_expenses": "-4584.96",
+                "other_expenses": "-3017.04"
             }
         }
     },
     "stats": {
-        "parsing_date": "04/04/2024 01:24",
+        "parsing_date": "25/04/2024 21:03",
         "operations": {
-            "all": "8086",
+            "all": "8149",
             "months": {
                 "2012-12": 10,
                 "2013-01": 5,
@@ -10162,7 +10277,7 @@
                 "2024-01": 118,
                 "2024-02": 117,
                 "2024-03": 117,
-                "2024-04": 23
+                "2024-04": 86
             }
         }
     }
