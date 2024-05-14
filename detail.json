@@ -9938,7 +9938,7 @@
         "2024-04": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "5525.01",
+                "darowizny_statutowe": "7103.01",
                 "darowizny_celowe": "2549.00",
                 "darowizny_koronawirus": "0",
                 "darowizny_inne": "80.00",
@@ -9989,10 +9989,10 @@
                 "ksiegowosc": "-369.00",
                 "internet": "0",
                 "administracyjne": "0",
-                "bank": "-20.00",
+                "bank": "-63.90",
                 "umowy": "0",
                 "zwroty": "0",
-                "zakupy": "-2575.76",
+                "zakupy": "-5055.24",
                 "ubezpieczenia": "0",
                 "hosting": "-52.28",
                 "eventy": "0",
@@ -10020,6 +10020,27 @@
                     "value": -2735.75,
                     "category": "lokal",
                     "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -63.98,
+                    "category": "zakupy",
+                    "details": "Masa szpachlowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -137.5,
+                    "category": "zakupy",
+                    "details": "Myszy logitech",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2278.0,
+                    "category": "zakupy",
+                    "details": "Szlifierka Tormek + jig do szlifowania",
                     "listed": true,
                     "name": ""
                 },
@@ -10076,21 +10097,119 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "97711.02",
-                "balance": "673.34",
-                "end_saldo": "98384.36",
-                "safe_threshold_difference": "8384.36",
+                "balance": "-272.04",
+                "end_saldo": "97438.98",
+                "safe_threshold_difference": "7438.98",
                 "date": "2024-04-02",
-                "incomes": "8275.34",
-                "costs": "-7602.00",
+                "incomes": "9853.34",
+                "costs": "-10125.38",
                 "venue_expenses": "-4584.96",
-                "other_expenses": "-3017.04"
+                "other_expenses": "-5540.42"
+            }
+        },
+        "2024-05": {
+            "income": {
+                "nieprzeparsowane": "0",
+                "darowizny_statutowe": "3311.00",
+                "darowizny_celowe": "0",
+                "darowizny_koronawirus": "0",
+                "darowizny_inne": "0",
+                "darowizny_sponsoring": "0",
+                "warsztaty": "0",
+                "eventy": "0",
+                "umowy": "0",
+                "korekty": "0",
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "0"
+            },
+            "income_described": [],
+            "koszty": {
+                "nieprzeparsowane": "0",
+                "lokal": "-4432.26",
+                "ksiegowosc": "0",
+                "internet": "0",
+                "administracyjne": "0",
+                "bank": "-13.50",
+                "umowy": "0",
+                "zwroty": "0",
+                "zakupy": "-360.66",
+                "ubezpieczenia": "0",
+                "hosting": "-305.96",
+                "eventy": "0",
+                "covid": "0",
+                "korekty": "0",
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
+            },
+            "koszty_described": [
+                {
+                    "value": -835.59,
+                    "category": "lokal",
+                    "details": "Prąd (439,23 + 396,36)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -860.92,
+                    "category": "lokal",
+                    "details": "Ogrzewanie (507,56), + śmieci (68,98) + okresowy, półroczny przegląd węzła cieplnego (284,38)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2735.75,
+                    "category": "lokal",
+                    "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -211.96,
+                    "category": "zakupy",
+                    "details": "Akcesoria druku 3D, Taśmy, pędzle, klej cyjanoakrylowy i tarcze 125mm",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -37.65,
+                    "category": "zakupy",
+                    "details": "Toner do drukarki Brother",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -111.05,
+                    "category": "zakupy",
+                    "details": "Antyramy",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -305.96,
+                    "category": "hosting",
+                    "details": "Opłata za platformę",
+                    "listed": true,
+                    "name": "Meetup"
+                }
+            ],
+            "summary": {
+                "safe_threshold": "90000",
+                "start_saldo": "97438.98000000001",
+                "balance": "-1801.38000000001",
+                "end_saldo": "95637.60",
+                "safe_threshold_difference": "5637.60",
+                "date": "2024-05-02",
+                "incomes": "3311.00",
+                "costs": "-5112.38",
+                "venue_expenses": "-4432.26",
+                "other_expenses": "-680.12"
             }
         }
     },
     "stats": {
-        "parsing_date": "25/04/2024 21:07",
+        "parsing_date": "14/05/2024 22:41",
         "operations": {
-            "all": "8149",
+            "all": "8228",
             "months": {
                 "2012-12": 10,
                 "2013-01": 5,
@@ -10228,7 +10347,8 @@
                 "2024-01": 118,
                 "2024-02": 117,
                 "2024-03": 117,
-                "2024-04": 86
+                "2024-04": 111,
+                "2024-05": 54
             }
         }
     }
