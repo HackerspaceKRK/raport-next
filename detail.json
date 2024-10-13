@@ -9516,6 +9516,20 @@
                     "name": ""
                 },
                 {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -6.0,
+                    "category": "bank",
+                    "details": "Opłata miesięczna za kartę płatniczą",
+                    "listed": "ffalse",
+                    "name": ""
+                },
+                {
                     "value": -143.4,
                     "category": "zakupy",
                     "details": "Przedłużki i nasadki kluczy, tarcze i reduktory",
@@ -9680,6 +9694,13 @@
                     "value": -2735.75,
                     "category": "lokal",
                     "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
                     "listed": true,
                     "name": ""
                 },
@@ -9873,6 +9894,13 @@
                     "name": ""
                 },
                 {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
                     "value": -59.04,
                     "category": "zakupy",
                     "details": "Argon",
@@ -10024,6 +10052,13 @@
                     "name": ""
                 },
                 {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
                     "value": -63.98,
                     "category": "zakupy",
                     "details": "Masa szpachlowa",
@@ -10110,10 +10145,10 @@
         "2024-05": {
             "income": {
                 "nieprzeparsowane": "0",
-                "darowizny_statutowe": "3311.00",
+                "darowizny_statutowe": "7450.01",
                 "darowizny_celowe": "0",
                 "darowizny_koronawirus": "0",
-                "darowizny_inne": "0",
+                "darowizny_inne": "80.00",
                 "darowizny_sponsoring": "0",
                 "warsztaty": "0",
                 "eventy": "0",
@@ -10126,13 +10161,13 @@
             "koszty": {
                 "nieprzeparsowane": "0",
                 "lokal": "-4432.26",
-                "ksiegowosc": "0",
+                "ksiegowosc": "-369.00",
                 "internet": "0",
                 "administracyjne": "0",
-                "bank": "-13.50",
+                "bank": "-68.70",
                 "umowy": "0",
-                "zwroty": "0",
-                "zakupy": "-360.66",
+                "zwroty": "-149.96",
+                "zakupy": "-634.73",
                 "ubezpieczenia": "0",
                 "hosting": "-305.96",
                 "eventy": "0",
@@ -10164,16 +10199,44 @@
                     "name": ""
                 },
                 {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -149.96,
+                    "category": "zwroty",
+                    "details": "Siatka i masa szpachlowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -60.0,
+                    "category": "zakupy",
+                    "details": "Taśma do szlifierki Trizact 50x2000mm",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -214.07,
+                    "category": "zakupy",
+                    "details": "Worki na śmieci, Smary, Rękawice nitrylowe",
+                    "listed": true,
+                    "name": ""
+                },
+                {
                     "value": -211.96,
                     "category": "zakupy",
-                    "details": "Akcesoria druku 3D, Taśmy, pędzle, klej cyjanoakrylowy i tarcze 125mm",
+                    "details": "Akcesoria druku 3D, Taśmy, pędzle i klej cyjanoakrylowy, Tarcze 125mm",
                     "listed": true,
                     "name": ""
                 },
                 {
                     "value": -37.65,
                     "category": "zakupy",
-                    "details": "Toner do drukarki Brother",
+                    "details": "Toner Brother",
                     "listed": true,
                     "name": ""
                 },
@@ -10195,21 +10258,786 @@
             "summary": {
                 "safe_threshold": "90000",
                 "start_saldo": "97438.98000000001",
-                "balance": "-1801.38000000001",
-                "end_saldo": "95637.60",
-                "safe_threshold_difference": "5637.60",
+                "balance": "1569.39999999999",
+                "end_saldo": "99008.38",
+                "safe_threshold_difference": "9008.38",
                 "date": "2024-05-02",
-                "incomes": "3311.00",
-                "costs": "-5112.38",
+                "incomes": "7530.01",
+                "costs": "-5960.61",
                 "venue_expenses": "-4432.26",
-                "other_expenses": "-680.12"
+                "other_expenses": "-1528.35"
+            }
+        },
+        "2024-06": {
+            "income": {
+                "nieprzeparsowane": "0",
+                "darowizny_statutowe": "6789.63",
+                "darowizny_celowe": "0",
+                "darowizny_koronawirus": "0",
+                "darowizny_inne": "0",
+                "darowizny_sponsoring": "0",
+                "warsztaty": "0",
+                "eventy": "0",
+                "umowy": "0",
+                "korekty": "0",
+                "inne_wplywy": "281.07",
+                "nieprzyporzadkowane_wplywy": "0"
+            },
+            "income_described": [
+                {
+                    "value": 281.07,
+                    "category": "inne_wplywy",
+                    "details": "Benevity",
+                    "listed": true,
+                    "name": ""
+                }
+            ],
+            "koszty": {
+                "nieprzeparsowane": "0",
+                "lokal": "-4172.14",
+                "ksiegowosc": "-369.00",
+                "internet": "0",
+                "administracyjne": "0",
+                "bank": "-77.70",
+                "umowy": "0",
+                "zwroty": "-591.58",
+                "zakupy": "-1603.51",
+                "ubezpieczenia": "0",
+                "hosting": "-2.75",
+                "eventy": "0",
+                "covid": "0",
+                "korekty": "0",
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-209.79"
+            },
+            "koszty_described": [
+                {
+                    "value": -970.8,
+                    "category": "lokal",
+                    "details": "Prąd (565,34 + 405,46)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -465.59,
+                    "category": "lokal",
+                    "details": "Ogrzewanie (306,41), + śmieci (68,98) + woda (90,20)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2735.75,
+                    "category": "lokal",
+                    "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -34.98,
+                    "category": "zwroty",
+                    "details": "Emulsja gruntująca",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -460.0,
+                    "category": "zwroty",
+                    "details": "Filament",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -96.6,
+                    "category": "zwroty",
+                    "details": "Lakiery",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -108.98,
+                    "category": "zakupy",
+                    "details": "Worki i filtry do odkurzacza",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -220.99,
+                    "category": "zakupy",
+                    "details": "Folia - zaciemnienie namiotu",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -613.9,
+                    "category": "zakupy",
+                    "details": "Kosze na śmieci",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -115.01,
+                    "category": "zakupy",
+                    "details": "Papier do lakierowania",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -288.74,
+                    "category": "zakupy",
+                    "details": "Ręczniki i ludwik",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -255.89,
+                    "category": "zakupy",
+                    "details": "Samle, Plecionka",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2.75,
+                    "category": "hosting",
+                    "details": "Offsite backup",
+                    "listed": true,
+                    "name": ""
+                }
+            ],
+            "summary": {
+                "safe_threshold": "90000",
+                "start_saldo": "99008.38",
+                "balance": "44.23",
+                "end_saldo": "99052.61",
+                "safe_threshold_difference": "9052.61",
+                "date": "2024-06-01",
+                "incomes": "7070.70",
+                "costs": "-7026.47",
+                "venue_expenses": "-4172.14",
+                "other_expenses": "-2854.33"
+            }
+        },
+        "2024-07": {
+            "income": {
+                "nieprzeparsowane": "0",
+                "darowizny_statutowe": "6529.01",
+                "darowizny_celowe": "0",
+                "darowizny_koronawirus": "0",
+                "darowizny_inne": "0",
+                "darowizny_sponsoring": "0",
+                "warsztaty": "0",
+                "eventy": "0",
+                "umowy": "0",
+                "korekty": "0",
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "75.00"
+            },
+            "income_described": [],
+            "koszty": {
+                "nieprzeparsowane": "0",
+                "lokal": "-3872.08",
+                "ksiegowosc": "-369.00",
+                "internet": "0",
+                "administracyjne": "0",
+                "bank": "-78.00",
+                "umowy": "0",
+                "zwroty": "-962.17",
+                "zakupy": "-366.50",
+                "ubezpieczenia": "0",
+                "hosting": "0",
+                "eventy": "0",
+                "covid": "0",
+                "korekty": "0",
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
+            },
+            "koszty_described": [
+                {
+                    "value": -754.34,
+                    "category": "lokal",
+                    "details": "Prąd (358,86 + 395,48)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -381.99,
+                    "category": "lokal",
+                    "details": "Ogrzewanie (313,01), + śmieci (68,98)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2735.75,
+                    "category": "lokal",
+                    "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -111.25,
+                    "category": "zwroty",
+                    "details": "Baterie cr2032 - Polandrock",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -251.98,
+                    "category": "zwroty",
+                    "details": "Kosze na śmieci",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -59.98,
+                    "category": "zwroty",
+                    "details": "Oprawa do lampy - HR",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -113.99,
+                    "category": "zwroty",
+                    "details": "Zatyczka do rur - fi 38mm (polandrock), Mydło w płynie - 2x5l",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -424.97,
+                    "category": "zwroty",
+                    "details": "Folie i grunt, Maseczki KN95, Taśmy malarskie, Preparat przeciw pleśni, Worki na gruz - Remont",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -99.98,
+                    "category": "zakupy",
+                    "details": "Plandeka (polandrock)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -8.98,
+                    "category": "zakupy",
+                    "details": "Arkusze Origami",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -31.92,
+                    "category": "zakupy",
+                    "details": "Szekle do zaciemnienia namiotu na Festiwal",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -49.44,
+                    "category": "zakupy",
+                    "details": "Pleksi do lasera",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -107.76,
+                    "category": "zakupy",
+                    "details": "Szczotki do rdzy i pożywienie dla ekipy remontującej elelab",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -68.42,
+                    "category": "zakupy",
+                    "details": "Korytka do kabli, głowica do kranu",
+                    "listed": true,
+                    "name": ""
+                }
+            ],
+            "summary": {
+                "safe_threshold": "90000",
+                "start_saldo": "99052.61",
+                "balance": "956.26",
+                "end_saldo": "100008.87",
+                "safe_threshold_difference": "10008.87",
+                "date": "2024-07-01",
+                "incomes": "6604.01",
+                "costs": "-5647.75",
+                "venue_expenses": "-3872.08",
+                "other_expenses": "-1775.67"
+            }
+        },
+        "2024-08": {
+            "income": {
+                "nieprzeparsowane": "0",
+                "darowizny_statutowe": "7434.01",
+                "darowizny_celowe": "0",
+                "darowizny_koronawirus": "0",
+                "darowizny_inne": "80.00",
+                "darowizny_sponsoring": "0",
+                "warsztaty": "0",
+                "eventy": "0",
+                "umowy": "0",
+                "korekty": "0",
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "2602.72"
+            },
+            "income_described": [],
+            "koszty": {
+                "nieprzeparsowane": "0",
+                "lokal": "-4138.95",
+                "ksiegowosc": "-516.60",
+                "internet": "0",
+                "administracyjne": "0",
+                "bank": "-80.10",
+                "umowy": "0",
+                "zwroty": "-777.14",
+                "zakupy": "-2853.42",
+                "ubezpieczenia": "0",
+                "hosting": "-2.72",
+                "eventy": "0",
+                "covid": "0",
+                "korekty": "0",
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-603.38"
+            },
+            "koszty_described": [
+                {
+                    "value": -933.5,
+                    "category": "lokal",
+                    "details": "Prąd (481,56 + 451,94)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -469.7,
+                    "category": "lokal",
+                    "details": "Ogrzewanie (306,58), + śmieci (68,98) + woda (94,14)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2735.75,
+                    "category": "lokal",
+                    "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -147.6,
+                    "category": "ksiegowosc",
+                    "details": "Abonament",
+                    "listed": true,
+                    "name": "Infakt"
+                },
+                {
+                    "value": -17.89,
+                    "category": "zwroty",
+                    "details": "Papier do drukarki",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -76.8,
+                    "category": "zwroty",
+                    "details": "Aceton i benzyna ekstrakcyjna",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -179.0,
+                    "category": "zwroty",
+                    "details": "Pistolet malarski",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -60.5,
+                    "category": "zwroty",
+                    "details": "Rękawice nitrylowe",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -118.7,
+                    "category": "zwroty",
+                    "details": "Pizza",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -53.9,
+                    "category": "zwroty",
+                    "details": "Pizza",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -224.0,
+                    "category": "zwroty",
+                    "details": "Filamenty - 4kg (PLA biały i czarny)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -46.35,
+                    "category": "zwroty",
+                    "details": "Cyściki do grotów - Polandrock",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -56.9,
+                    "category": "zakupy",
+                    "details": "Pizza dla ekipy remontującej softroom",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -678.0,
+                    "category": "zakupy",
+                    "details": "Ekrany na Burzenin",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -1824.72,
+                    "category": "zakupy",
+                    "details": "Zestaw wkrętaków, Przekaźniki koncentryczne, Moduły LoRa, Moduły LoRa z GPS, Komputery Lenovo na Burzenin",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -224.0,
+                    "category": "zakupy",
+                    "details": "Akumulator Brother",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -69.8,
+                    "category": "zakupy",
+                    "details": "Granulat Silica Gel do filamentu",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2.72,
+                    "category": "hosting",
+                    "details": "Offsite backup",
+                    "listed": true,
+                    "name": ""
+                }
+            ],
+            "summary": {
+                "safe_threshold": "90000",
+                "start_saldo": "100008.87",
+                "balance": "1144.42",
+                "end_saldo": "101153.29",
+                "safe_threshold_difference": "11153.29",
+                "date": "2024-08-01",
+                "incomes": "10116.73",
+                "costs": "-8972.31",
+                "venue_expenses": "-4138.95",
+                "other_expenses": "-4833.36"
+            }
+        },
+        "2024-09": {
+            "income": {
+                "nieprzeparsowane": "0",
+                "darowizny_statutowe": "7128.01",
+                "darowizny_celowe": "0",
+                "darowizny_koronawirus": "0",
+                "darowizny_inne": "0",
+                "darowizny_sponsoring": "0",
+                "warsztaty": "0",
+                "eventy": "0",
+                "umowy": "0",
+                "korekty": "147.60",
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "6313.80"
+            },
+            "income_described": [
+                {
+                    "value": 147.6,
+                    "category": "korekty",
+                    "details": "Zwrot nieprawidłowo naliczonej opłaty za infakt",
+                    "listed": true,
+                    "name": ""
+                }
+            ],
+            "koszty": {
+                "nieprzeparsowane": "0",
+                "lokal": "-4004.43",
+                "ksiegowosc": "-522.75",
+                "internet": "0",
+                "administracyjne": "0",
+                "bank": "-71.40",
+                "umowy": "0",
+                "zwroty": "-134.22",
+                "zakupy": "-8960.04",
+                "ubezpieczenia": "0",
+                "hosting": "-4.71",
+                "eventy": "0",
+                "covid": "0",
+                "korekty": "0",
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "-7300.00"
+            },
+            "koszty_described": [
+                {
+                    "value": -893.12,
+                    "category": "lokal",
+                    "details": "Prąd (444,80 + 448,32)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -375.56,
+                    "category": "lokal",
+                    "details": "Ogrzewanie (306,58), + śmieci (68,98)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2735.75,
+                    "category": "lokal",
+                    "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -369.0,
+                    "category": "ksiegowosc",
+                    "details": "Obsluga ksiegowa",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -147.6,
+                    "category": "ksiegowosc",
+                    "details": "Abonament",
+                    "listed": true,
+                    "name": "Infakt"
+                },
+                {
+                    "value": -6.15,
+                    "category": "ksiegowosc",
+                    "details": "Abonament",
+                    "listed": true,
+                    "name": "Infakt"
+                },
+                {
+                    "value": -76.8,
+                    "category": "zwroty",
+                    "details": "Aceton i benzyna ekstrakcyjna",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -57.42,
+                    "category": "zwroty",
+                    "details": "Cyna i gogle ochronne",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -6400.0,
+                    "category": "zakupy",
+                    "details": "Zakup tokarki",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -373.62,
+                    "category": "zakupy",
+                    "details": "Lampy i akcesoria elektryczne",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -182.32,
+                    "category": "zakupy",
+                    "details": "Śruby nierdzewne",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -39.5,
+                    "category": "zakupy",
+                    "details": "Kable HDMI",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -726.73,
+                    "category": "zakupy",
+                    "details": "Części elektroniczne - burzenin",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -155.28,
+                    "category": "zakupy",
+                    "details": "Farba lateksowa, folia malarska i taśma",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -114.97,
+                    "category": "zakupy",
+                    "details": "Samle na nagłośnienie i rzutnik",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -718.95,
+                    "category": "zakupy",
+                    "details": "Opłaty celne DHL do elektroniki",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -248.67,
+                    "category": "zakupy",
+                    "details": "Papier ścierny i Karty microSD 32Gx10",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -4.71,
+                    "category": "hosting",
+                    "details": "Offsite backup",
+                    "listed": true,
+                    "name": ""
+                }
+            ],
+            "summary": {
+                "safe_threshold": "90000",
+                "start_saldo": "101153.29000000001",
+                "balance": "-7408.14000000001",
+                "end_saldo": "93745.15",
+                "safe_threshold_difference": "3745.15",
+                "date": "2024-09-02",
+                "incomes": "13589.41",
+                "costs": "-20997.55",
+                "venue_expenses": "-4004.43",
+                "other_expenses": "-16993.12"
+            }
+        },
+        "2024-10": {
+            "income": {
+                "nieprzeparsowane": "0",
+                "darowizny_statutowe": "3505.00",
+                "darowizny_celowe": "0",
+                "darowizny_koronawirus": "0",
+                "darowizny_inne": "90.70",
+                "darowizny_sponsoring": "0",
+                "warsztaty": "0",
+                "eventy": "0",
+                "umowy": "0",
+                "korekty": "39.50",
+                "inne_wplywy": "0",
+                "nieprzyporzadkowane_wplywy": "100.00"
+            },
+            "income_described": [],
+            "koszty": {
+                "nieprzeparsowane": "0",
+                "lokal": "-3398.10",
+                "ksiegowosc": "0",
+                "internet": "0",
+                "administracyjne": "0",
+                "bank": "-15.00",
+                "umowy": "0",
+                "zwroty": "-157.88",
+                "zakupy": "-1258.69",
+                "ubezpieczenia": "0",
+                "hosting": "0",
+                "eventy": "0",
+                "covid": "0",
+                "korekty": "0",
+                "inne_koszty": "0",
+                "nieprzyporzadkowane_koszty": "0"
+            },
+            "koszty_described": [
+                {
+                    "value": -662.35,
+                    "category": "lokal",
+                    "details": "Ogrzewanie (308,99), + śmieci (68,98) + okresowy, półroczny przegląd węzła cieplnego (284,38)",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -2735.75,
+                    "category": "lokal",
+                    "details": "Czynsz",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -53.9,
+                    "category": "zwroty",
+                    "details": "Pizza",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -62.99,
+                    "category": "zwroty",
+                    "details": "Transport tokarki",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -40.99,
+                    "category": "zwroty",
+                    "details": "Wyłącznik odkurzacza",
+                    "listed": true,
+                    "name": ""
+                },
+                {
+                    "value": -1258.69,
+                    "category": "zakupy",
+                    "details": "Kamera IP, Suszarka do filamentu, Kable, Odkurzacz Karcher",
+                    "listed": true,
+                    "name": ""
+                }
+            ],
+            "summary": {
+                "safe_threshold": "90000",
+                "start_saldo": "93745.15",
+                "balance": "-1094.47",
+                "end_saldo": "92650.68",
+                "safe_threshold_difference": "2650.68",
+                "date": "2024-10-01",
+                "incomes": "3735.20",
+                "costs": "-4829.67",
+                "venue_expenses": "-3398.10",
+                "other_expenses": "-1431.57"
             }
         }
     },
     "stats": {
-        "parsing_date": "14/05/2024 22:41",
+        "parsing_date": "13/10/2024 13:59",
         "operations": {
-            "all": "8228",
+            "all": "8816",
             "months": {
                 "2012-12": 10,
                 "2013-01": 5,
@@ -10348,7 +11176,12 @@
                 "2024-02": 117,
                 "2024-03": 117,
                 "2024-04": 111,
-                "2024-05": 54
+                "2024-05": 112,
+                "2024-06": 115,
+                "2024-07": 117,
+                "2024-08": 120,
+                "2024-09": 118,
+                "2024-10": 60
             }
         }
     }
